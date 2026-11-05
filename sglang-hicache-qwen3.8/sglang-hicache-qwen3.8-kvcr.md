@@ -1,4 +1,8 @@
-# Reproduce Qwen3.8 SGLang HiCache + KVCR on GB300
+# Google Repo workflow: SGLang HiCache + KVCR on GB300
+
+This is the **KVCR Google Repo workflow**. The separate [KVCR manual](manual-running-kvcr.md)
+provides Git-only checkout and individual component commands; [comparison.md](comparison.md)
+compares the completed KVCR, Mooncake random and Mooncake local-first results.
 
 These guides reproduce the **three completed `hicache-1800-r5` experiments**:
 KVCR, Mooncake random placement, and Mooncake local-first placement. They use
@@ -187,7 +191,7 @@ commit; save `repo manifest -r` with every experiment. Repo sync does not alloca
 a pod, install native packages, download model weights or start a benchmark.
 Never sync or switch the source tree of an actively running experiment.
 
-Follow [manual-running.md](manual-running.md) for both a Repo-based checkout and
+Follow [KVCR manual-running guide](manual-running-kvcr.md) for both a Repo-based checkout and
 the manual Git-clone alternative, dependency installation, individual component
 startup, real peer qualification, cache reset, client/capture and collection.
 All archived commands are in `recorded/<case>/run/`; configs/scripts in

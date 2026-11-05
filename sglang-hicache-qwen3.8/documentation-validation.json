@@ -1,0 +1,18 @@
+{
+  "scope": "Documentation layout, relative links, fenced shell syntax and unchanged runtime/source/config contents only; no native/GPU/AgentX test executed.",
+  "parent_benchmark_commit": "faca33f18452a2cb5a8b73f74f09b4b3977fd040",
+  "documentation_files": [
+    "README.md",
+    "manual-running.md",
+    "manual-running-kvcr.md",
+    "manual-running-mooncake.md",
+    "sglang-hicache-qwen3.8-kvcr.md",
+    "sglang-hicache-qwen3.8-mooncake.md",
+    "comparison.md"
+  ],
+  "relative_links_checked": 49,
+  "bash_blocks_syntax_checked": 22,
+  "unchanged_existing_non_doc_files": 162,
+  "numerical_source": "results/historical-summary.json",
+  "comparison_tables": "Generated directly from the pinned historical summary; manual narrative rounded consistently."
+}

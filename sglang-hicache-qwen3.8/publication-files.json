@@ -2,8 +2,8 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 409,
-      "sha256": "9c5650ca234e69c4e27d30450f0770984859cbdb510298348db02858afb85abe"
+      "bytes": 1541,
+      "sha256": "d5339c765602343a55698cf3d5dacf0349885f57868706809176ed42b08b275c"
     },
     {
       "path": "client-package.lock.json",
@@ -21,9 +21,29 @@
       "sha256": "216124bf2310da808797d472463c64e0c53c3dfeba2054c4c46c43dbf9cde246"
     },
     {
+      "path": "comparison.md",
+      "bytes": 24600,
+      "sha256": "10d3beca844383f790775923c46bb3a3c94a20a7f41ca306906ce6b0107701cf"
+    },
+    {
+      "path": "documentation-validation.json",
+      "bytes": 761,
+      "sha256": "a2bd761ad3573c87dc8970e4f283e6c516653a7b3e66d8108765c72114bd7b50"
+    },
+    {
+      "path": "manual-running-kvcr.md",
+      "bytes": 16665,
+      "sha256": "83aefc77f4c43037b8ea05dd2a6f4c9a60d00cc9ace6c3823bc084f4b5edb162"
+    },
+    {
+      "path": "manual-running-mooncake.md",
+      "bytes": 17180,
+      "sha256": "d08aaea05df14010dfd2fd59f1593a507345075b65ac5ef397dd0ecefabd9db2"
+    },
+    {
       "path": "manual-running.md",
-      "bytes": 14306,
-      "sha256": "73cd467a63f589a2518e464b361cedacc03af92cc3b697ff268471cf99104a1a"
+      "bytes": 664,
+      "sha256": "e16877ecfc86c59d8f94b8aa2881be29a3097530ee85666a9a1dd86d9ee16e38"
     },
     {
       "path": "observer/bounded_sink.py",
@@ -817,13 +837,13 @@
     },
     {
       "path": "sglang-hicache-qwen3.8-kvcr.md",
-      "bytes": 13275,
-      "sha256": "80e4259be6dfccd4b3202d858b09167859ab41fdc46f9a8dd60bcb6e418ea173"
+      "bytes": 13559,
+      "sha256": "f417bec4203f6e84b17803f2a72d57045d339f15913470e20f6626611b04b198"
     },
     {
       "path": "sglang-hicache-qwen3.8-mooncake.md",
-      "bytes": 13863,
-      "sha256": "911408f5a05ba7b61a39f1b130258c99ba73f91adc91049e983b6dfff3b4dcc7"
+      "bytes": 14167,
+      "sha256": "6f1ea959fcccd29a3c39175172328ba13d535c20171b59b87e55efa1b288163c"
     },
     {
       "path": "sources.lock.json",
