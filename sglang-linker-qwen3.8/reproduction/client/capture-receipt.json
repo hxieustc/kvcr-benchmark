@@ -1,0 +1,46 @@
+{
+  "utc": 1793430876.1045375,
+  "runtime_modified": false,
+  "copied_files": [
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/trace-receipt.json",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/trace-receipt.json",
+      "sha256": "f3a41a82c572ebf5d91aee7a3dc2e9fe022777bb28e1c805d759d76d422b894e"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/config/client-trace-pin.patch",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/client-trace-pin.patch",
+      "sha256": "3a719cf3bd071acc71cfb123e03d73d3ede769d52cf511959105c521f94c1505"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/scripts/pin-client-trace.py",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/pin-client-trace.py",
+      "sha256": "ad30d59830905777099d87b805e155343cd2b7c3d2c07c9c1dff882c44f7b8ba"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/sources/agentx-requirements.txt",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/agentx-requirements.txt",
+      "sha256": "72db2e1a36f2e6076ac512222907e49fb26472d6bd014791d13b77c14f261343"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/sources/reference-input-config.json",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/reference-input-config.json",
+      "sha256": "fbd133a66611b62df36f26223eb274ec7199dd454ee31bf967391d0d9f81d242"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/sources/reference-worker-command.txt",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/reference-worker-command.txt",
+      "sha256": "14326b4ddc56780af7a6c9a826c751b2aa01c64608b05d5e76627f8617fa860b"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/sources/reference-receipt.json",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/reference-receipt.json",
+      "sha256": "239bb4dea2ad33d06907177e0730384f7fa7a436f77036ca785db5d7bc538508"
+    },
+    {
+      "source": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/clientenv/lib/python3.12/site-packages/aiperf/dataset/loader/base_hf_dataset.py",
+      "copy": "/workspace/sglang-kvcr-parity-20261031-r1/sources/client-provenance/installed-base_hf_dataset.py",
+      "sha256": "8e05613f7f99cf416994eb7b973226b05f3ff8c6e89a07757a071b21388f07b6"
+    }
+  ]
+}

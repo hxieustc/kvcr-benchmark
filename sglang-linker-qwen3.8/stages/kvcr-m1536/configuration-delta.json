@@ -1,0 +1,30 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-pool-index-capacity",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-pool-index-capacity-followup"
+  },
+  "kvcr_options": {
+    "parent": {
+      "kvcr_service_socket_path": null,
+      "dram_size_gb": 128,
+      "publish_inventory": true,
+      "enable_telemetry": true,
+      "startup_timeout_seconds": 300,
+      "operation_timeout_ms": 20000,
+      "abandon_timeout_ms": 60000,
+      "profile_owner": true,
+      "mamba_checkpoint_capacity": 2176
+    },
+    "stage": {
+      "kvcr_service_socket_path": null,
+      "dram_size_gb": 128,
+      "publish_inventory": true,
+      "enable_telemetry": true,
+      "startup_timeout_seconds": 300,
+      "operation_timeout_ms": 20000,
+      "abandon_timeout_ms": 60000,
+      "profile_owner": true,
+      "mamba_checkpoint_capacity": 1536
+    }
+  }
+}

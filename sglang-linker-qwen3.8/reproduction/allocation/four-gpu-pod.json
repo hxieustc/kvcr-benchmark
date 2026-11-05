@@ -1,0 +1,142 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "sglang-linker-qwen38-gb300-4gpu-r1",
+    "namespace": "harryx-kv-egm",
+    "labels": {
+      "app": "sglang-linker-qwen38-agentx",
+      "owner": "harryx"
+    },
+    "annotations": {
+      "gpu-reaper.nvidia.com/opt-out": "true",
+      "benchmark-state": "migration-qualification-no-replay"
+    }
+  },
+  "spec": {
+    "restartPolicy": "Never",
+    "nodeSelector": {
+      "nvidia.com/gpu.product": "NVIDIA-GB300",
+      "kubernetes.io/arch": "arm64"
+    },
+    "tolerations": [
+      {
+        "key": "nvidia.com/gpu",
+        "operator": "Equal",
+        "value": "true",
+        "effect": "NoSchedule"
+      }
+    ],
+    "containers": [
+      {
+        "name": "main",
+        "image": "lmsysorg/sglang:v0.5.21-cu130-runtime@sha256:417fc90dfa9392d0e62f3c0a586a297b6d75082eccc90e63905832ac58ae85ff",
+        "command": [
+          "sleep",
+          "infinity"
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "40",
+            "memory": "850Gi",
+            "nvidia.com/gpu": "4",
+            "ephemeral-storage": "64Gi"
+          },
+          "limits": {
+            "cpu": "48",
+            "memory": "850Gi",
+            "nvidia.com/gpu": "4",
+            "ephemeral-storage": "128Gi"
+          },
+          "claims": [
+            {
+              "name": "roce"
+            }
+          ]
+        },
+        "securityContext": {
+          "capabilities": {
+            "add": [
+              "IPC_LOCK",
+              "SYS_PTRACE",
+              "SYS_RESOURCE"
+            ]
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "workspace",
+            "mountPath": "/workspace"
+          },
+          {
+            "name": "models",
+            "mountPath": "/models-shared",
+            "readOnly": true
+          },
+          {
+            "name": "shm",
+            "mountPath": "/dev/shm"
+          }
+        ],
+        "env": [
+          {
+            "name": "POD_IP",
+            "valueFrom": {
+              "fieldRef": {
+                "fieldPath": "status.podIP"
+              }
+            }
+          },
+          {
+            "name": "HF_HOME",
+            "value": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/cache/huggingface"
+          },
+          {
+            "name": "NIXL_UCX_SGL_ENABLE",
+            "value": "1"
+          },
+          {
+            "name": "UCX_MAX_RNDV_RAILS",
+            "value": "1"
+          },
+          {
+            "name": "PYTHONNOUSERSITE",
+            "value": "1"
+          },
+          {
+            "name": "PYTHONDONTWRITEBYTECODE",
+            "value": "1"
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "workspace",
+        "persistentVolumeClaim": {
+          "claimName": "kv-p2p-workspace"
+        }
+      },
+      {
+        "name": "models",
+        "persistentVolumeClaim": {
+          "claimName": "shared-model-cache"
+        }
+      },
+      {
+        "name": "shm",
+        "emptyDir": {
+          "medium": "Memory",
+          "sizeLimit": "16Gi"
+        }
+      }
+    ],
+    "automountServiceAccountToken": false,
+    "resourceClaims": [
+      {
+        "name": "roce",
+        "resourceClaimTemplateName": "sglang-kvcr-single-rnic"
+      }
+    ]
+  }
+}

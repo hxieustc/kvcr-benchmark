@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL-full-model-harness-ready-not-executed",
+  "supersedes_unexecuted_freeze_sha256": "c48bf7305a2da2481f462774030089822dfd9d2d7e3d219bb0d1708f7dfced95",
+  "files_sha256": {
+    "common.py": "1a42b9cf1ffc9c269349041cd8663dce6242cdecc759bf0cfd8867f0a5225a99",
+    "prepare.py": "b66c8b9a7270c9a9209692e6e1f59acb4d89459a3f59abf3a8372f9fc449d8fe",
+    "run.py": "0e03fd294dcd3875350aa711c6a2ea4f4bd2079092519d231748b3e6ed64028b",
+    "archive.py": "c9e43f324049be64f02f50c23bdaa1bf2a463852eeb464815ee9bac683009df4",
+    "test_harness.py": "d8f3ae6891816c8f360cd99ebf90f1f8a9a6eb3357e7a5a39963235cb13fc7cb",
+    "README.md": "9e9666bd2e0f643a2d5edfd9da924735c91295951044ca920fc84867385ba1b3",
+    "analysis-bindings.json": "c7869676b6c6b05b886ea20cef4821303bca8e497bc43fc1ea7bfda8bd9b1998",
+    "red.log": "c5b27c9cd3d58a31ff579b09130d953608d4f02243f89037ff43e0d355d02a76",
+    "red-native-proof.log": "68d1201b483ea5969773ab92083492041b076399035067050a3728938f643556",
+    "red-engine-generations.log": "5a1ae418f145c3135a41321e5afabd02e6b9beb00d1de49f37b377136a959338",
+    "green.log": "3b4b04649ced8eb3bbe9df63ea198882ef1c7521d590bc795a5ce784b40098da"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-pool-index",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-pool-index-capacity"
+  },
+  "state": {
+    "parent": "prepared index-only GB300 arm; not launched",
+    "stage": "prepared capacity-only GB300 arm; not launched"
+  },
+  "kvcr_options": {
+    "parent": {
+      "kvcr_service_socket_path": null,
+      "dram_size_gb": 128,
+      "publish_inventory": true,
+      "enable_telemetry": true,
+      "startup_timeout_seconds": 300,
+      "operation_timeout_ms": 20000,
+      "abandon_timeout_ms": 60000,
+      "profile_owner": true
+    },
+    "stage": {
+      "kvcr_service_socket_path": null,
+      "dram_size_gb": 128,
+      "publish_inventory": true,
+      "enable_telemetry": true,
+      "startup_timeout_seconds": 300,
+      "operation_timeout_ms": 20000,
+      "abandon_timeout_ms": 60000,
+      "profile_owner": true,
+      "mamba_checkpoint_capacity": 2176
+    }
+  },
+  "experiment": {
+    "parent": {
+      "baseline": "gb300-kvcr",
+      "single_change": "single-physical-pool eviction candidate index",
+      "cache_budget_unchanged": true
+    },
+    "stage": {
+      "baseline_case": "gb300-kvcr-pool-index",
+      "baseline_attempt": "gb300-pool-index-r1",
+      "single_change": "explicit mamba_checkpoint_capacity",
+      "total_store_gib_per_worker": 128
+    }
+  }
+}

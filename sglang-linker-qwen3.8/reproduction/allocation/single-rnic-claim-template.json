@@ -1,0 +1,24 @@
+{
+  "apiVersion": "resource.k8s.io/v1",
+  "kind": "ResourceClaimTemplate",
+  "metadata": {
+    "name": "sglang-kvcr-single-rnic",
+    "namespace": "harryx-kv-egm"
+  },
+  "spec": {
+    "spec": {
+      "devices": {
+        "requests": [
+          {
+            "name": "roce",
+            "exactly": {
+              "allocationMode": "ExactCount",
+              "count": 1,
+              "deviceClassName": "roce.networking.k8s.aws"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

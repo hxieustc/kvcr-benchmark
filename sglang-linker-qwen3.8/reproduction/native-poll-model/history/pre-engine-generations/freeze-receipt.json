@@ -1,0 +1,15 @@
+{
+  "status": "LOCAL-full-model-harness-ready-not-executed",
+  "files_sha256": {
+    "common.py": "5bb3b86696e6fe9854f82c2135de7506d4c8e29cec8879e50e423d0e89f03d95",
+    "prepare.py": "b66c8b9a7270c9a9209692e6e1f59acb4d89459a3f59abf3a8372f9fc449d8fe",
+    "run.py": "6a9171b3354f9d5219c76aee6a75459111770180c5005cc443f3c219dff57dbc",
+    "archive.py": "c9e43f324049be64f02f50c23bdaa1bf2a463852eeb464815ee9bac683009df4",
+    "test_harness.py": "e2e29eb171c1eb1d44b73dfaa6af68fd938511855be2d916a81f5a63766ac90a",
+    "README.md": "8bf5464f7e51b519a4d40fb560c2603d15bfabaf1274d23c5563b5371ff91f73",
+    "analysis-bindings.json": "c7869676b6c6b05b886ea20cef4821303bca8e497bc43fc1ea7bfda8bd9b1998",
+    "red.log": "c5b27c9cd3d58a31ff579b09130d953608d4f02243f89037ff43e0d355d02a76",
+    "red-native-proof.log": "68d1201b483ea5969773ab92083492041b076399035067050a3728938f643556",
+    "green.log": "30e09e9b8776e8be899a54aebcfe17d6465abd2d84bc5348d0fc7c5e94553e38"
+  }
+}

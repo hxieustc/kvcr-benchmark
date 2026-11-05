@@ -1,0 +1,2359 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 469,
+      "sha256": "3416da853ccf21822e8f4b2019f6890afcd59e0b4047d981e355e190947f84c4"
+    },
+    {
+      "path": "architecture-kvcr.md",
+      "bytes": 20047,
+      "sha256": "5b996496aae5d07c63f1709f4e14a4c78107af4d5c9a62ba1b8596c765532949"
+    },
+    {
+      "path": "architecture-mooncake.md",
+      "bytes": 14340,
+      "sha256": "ce3d066197354b0d45c4add23e5ae8f256ae05841d06640bdabc7dfa11efa039"
+    },
+    {
+      "path": "client-package.lock.json",
+      "bytes": 742,
+      "sha256": "3fbad4bf5e0551c5fb8a023adc5774e6b2e072071bd94a8ce86bbfedfec569b4"
+    },
+    {
+      "path": "comparison.md",
+      "bytes": 22065,
+      "sha256": "2e7c3996ccf636dd826a6e4a89de527062ceaffe699ce4bcea8fbb8cfe22b49c"
+    },
+    {
+      "path": "evidence/reports/mooncake-placement.md",
+      "bytes": 10276,
+      "sha256": "8ce33980501f3171e4c266781abb662362dd5b9f8cc8743bd08fcdcdcb04a869"
+    },
+    {
+      "path": "manual-running.md",
+      "bytes": 19557,
+      "sha256": "9118d5df0f54e7ffb9b56f2f2d20aa0a5fdbaea0c23c2fbf94cd46920756d1dd"
+    },
+    {
+      "path": "patches/kvcr-baseline/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-baseline/kvcr-full.patch",
+      "bytes": 558,
+      "sha256": "afd9f83e2a6e381ff3af56a5d55a0c5d13260dbd63be97326021231915739e7f"
+    },
+    {
+      "path": "patches/kvcr-baseline/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "patches/kvcr-first-page-negative/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-first-page-negative/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-first-page-negative/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-first-page-negative/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-first-page-negative/sglang-from-parent.patch",
+      "bytes": 1253,
+      "sha256": "3278df9370c00e9064358be868374e81c1d55e05e7f094eee6abe3bcfe3fc952"
+    },
+    {
+      "path": "patches/kvcr-first-page-negative/sglang-full.patch",
+      "bytes": 34684,
+      "sha256": "4b718c3463c0de58424e8c3f9de27c0d6967bede0da8baaeb2cf35cef94285c4"
+    },
+    {
+      "path": "patches/kvcr-gil-1ms/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-gil-1ms/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-gil-1ms/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-gil-1ms/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-gil-1ms/sglang-from-parent.patch",
+      "bytes": 1496,
+      "sha256": "56c2a55404b2d264ad112bb84b2b66a108b9c3866c76168000250f0525484a7b"
+    },
+    {
+      "path": "patches/kvcr-gil-1ms/sglang-full.patch",
+      "bytes": 45088,
+      "sha256": "dff2b66ce928531011461476cfe95b090666e6023fe1d17a9aacf833e304e052"
+    },
+    {
+      "path": "patches/kvcr-incremental-confirmation/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-incremental-confirmation/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-incremental-confirmation/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-incremental-confirmation/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-incremental-confirmation/sglang-from-parent.patch",
+      "bytes": 10417,
+      "sha256": "2b3243728ee34ddcde6dc1cad609a4bbb5f3fb9b26a5a25f7a2831cd4407a739"
+    },
+    {
+      "path": "patches/kvcr-incremental-confirmation/sglang-full.patch",
+      "bytes": 44253,
+      "sha256": "93d9ca8685a4f6e6b54fca80ea06355225f023d67ea162012a19c35f21f90ca8"
+    },
+    {
+      "path": "patches/kvcr-m1536/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-m1536/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-m1536/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-m1536/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-m1536/sglang-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-m1536/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "patches/kvcr-m2176/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-m2176/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-m2176/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-m2176/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-m2176/sglang-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-m2176/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "patches/kvcr-native-poll-1ms/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-native-poll-1ms/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-native-poll-1ms/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-native-poll-1ms/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-native-poll-1ms/sglang-from-parent.patch",
+      "bytes": 59091,
+      "sha256": "d231b276f76298ae548b1a86c32926c9976616e96a0788ec0ea2b0afc6eababd"
+    },
+    {
+      "path": "patches/kvcr-native-poll-1ms/sglang-full.patch",
+      "bytes": 45671,
+      "sha256": "d6134ee32e8da437f6f00e6a0b6dda386a932378fb07c32d5eed4cd6baecb6cf"
+    },
+    {
+      "path": "patches/kvcr-pool-index-m2261/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-pool-index-m2261/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/kvcr-pool-index-m2261/kvcr-from-parent.patch",
+      "bytes": 6156,
+      "sha256": "d4e896ab116c4b204902022c3b7a1f802293689c3a894827ab142565316b6e36"
+    },
+    {
+      "path": "patches/kvcr-pool-index-m2261/kvcr-full.patch",
+      "bytes": 6920,
+      "sha256": "ec35aef0aadc1340b23fff90c014885d7c3b7ea0d457f98871d3a47f305ea616"
+    },
+    {
+      "path": "patches/kvcr-pool-index-m2261/sglang-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/kvcr-pool-index-m2261/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "patches/mooncake-baseline/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/mooncake-baseline/kvcr-full.patch",
+      "bytes": 558,
+      "sha256": "afd9f83e2a6e381ff3af56a5d55a0c5d13260dbd63be97326021231915739e7f"
+    },
+    {
+      "path": "patches/mooncake-baseline/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "patches/mooncake-gil-1ms/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-gil-1ms/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/mooncake-gil-1ms/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-gil-1ms/kvcr-full.patch",
+      "bytes": 558,
+      "sha256": "afd9f83e2a6e381ff3af56a5d55a0c5d13260dbd63be97326021231915739e7f"
+    },
+    {
+      "path": "patches/mooncake-gil-1ms/sglang-from-parent.patch",
+      "bytes": 1619,
+      "sha256": "3994c4319636c77c31cc98c82855072b587a1d2d2c91f80576f1a94a12cbdb65"
+    },
+    {
+      "path": "patches/mooncake-gil-1ms/sglang-full.patch",
+      "bytes": 35164,
+      "sha256": "a3d8f99db191786ddb0cc8075f9b1f1e10b63ba6dc5eb15cd4336d2876931da3"
+    },
+    {
+      "path": "patches/mooncake-local-first/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-local-first/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/mooncake-local-first/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-local-first/kvcr-full.patch",
+      "bytes": 558,
+      "sha256": "afd9f83e2a6e381ff3af56a5d55a0c5d13260dbd63be97326021231915739e7f"
+    },
+    {
+      "path": "patches/mooncake-local-first/sglang-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-local-first/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "patches/mooncake-random/dynamo-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-random/dynamo-full.patch",
+      "bytes": 2110,
+      "sha256": "da59b7973721f8ad163b8181f322045360d7b6ece2293085c7eac678d7fcc37b"
+    },
+    {
+      "path": "patches/mooncake-random/kvcr-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-random/kvcr-full.patch",
+      "bytes": 558,
+      "sha256": "afd9f83e2a6e381ff3af56a5d55a0c5d13260dbd63be97326021231915739e7f"
+    },
+    {
+      "path": "patches/mooncake-random/sglang-from-parent.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "patches/mooncake-random/sglang-full.patch",
+      "bytes": 33797,
+      "sha256": "13566946639a25551a179d6ef68d01bf70fe6b2c0aa4373950b2c99270e0bcfe"
+    },
+    {
+      "path": "published-source-validation.json",
+      "bytes": 20587,
+      "sha256": "89f16f22b81db2922cc5a9b148d34101ae51300989da8eba7f9c75d8edc369af"
+    },
+    {
+      "path": "reproduction/allocation/four-gpu-pod.json",
+      "bytes": 3295,
+      "sha256": "06349ff4f859d6f97dfea4868ce185608c7e2c0bd4d07c24635866ada3d0582a"
+    },
+    {
+      "path": "reproduction/allocation/single-rnic-claim-template.json",
+      "bytes": 487,
+      "sha256": "771c52d4b6295788dd97828e43d0bd7374394b973507921735e6e0587a6d6f6b"
+    },
+    {
+      "path": "reproduction/allocation/workspace-ebs-pvc.json",
+      "bytes": 324,
+      "sha256": "7b8208e444a7a1c07c3fe386c8415d406c16ef4a0fdf8171c244bf7750fb0c0e"
+    },
+    {
+      "path": "reproduction/bootstrap/bootstrap-online.sh",
+      "bytes": 4091,
+      "sha256": "2fe1b6452ec40550987287886b2d75fcc427f7f3d4b7981ba8dd9c2ade4d6d71"
+    },
+    {
+      "path": "reproduction/bootstrap/bootstrap_arm.py",
+      "bytes": 14790,
+      "sha256": "8a19495332a0b70e5b29ef359dad366c9b7088619aec337cac45936a69e0a405"
+    },
+    {
+      "path": "reproduction/bootstrap/online-pins-receipt.py",
+      "bytes": 3528,
+      "sha256": "b4cf522a16b98e020ba756a9a39906502bd164012803a321f5e0f38f48afdab6"
+    },
+    {
+      "path": "reproduction/bootstrap/original-bootstrap-receipt.json",
+      "bytes": 24470,
+      "sha256": "a9370e72d3147ae0f58a2bcb7b16194b7771605478e7495ee61764de6a1613e8"
+    },
+    {
+      "path": "reproduction/bootstrap/original-effective-packages.json",
+      "bytes": 830,
+      "sha256": "652b358ff2960814e1c62c7fd51bbfaea2a3bad865742c35ac10eca35343a12a"
+    },
+    {
+      "path": "reproduction/client/agentx-requirements.txt",
+      "bytes": 40,
+      "sha256": "72db2e1a36f2e6076ac512222907e49fb26472d6bd014791d13b77c14f261343"
+    },
+    {
+      "path": "reproduction/client/capture-receipt.json",
+      "bytes": 2580,
+      "sha256": "c9c46a3e6cc22e255bba475f56127bd3d2a5943f473f7b43fed42941ba23da52"
+    },
+    {
+      "path": "reproduction/client/client-constraints.txt",
+      "bytes": 7884,
+      "sha256": "444ce8e311d2c886c9710e48fd26840757a43047799a19cd4a6e4dadebb2911d"
+    },
+    {
+      "path": "reproduction/client/client-trace-pin.patch",
+      "bytes": 399,
+      "sha256": "3a719cf3bd071acc71cfb123e03d73d3ede769d52cf511959105c521f94c1505"
+    },
+    {
+      "path": "reproduction/client/installed-base_hf_dataset.py",
+      "bytes": 8892,
+      "sha256": "8e05613f7f99cf416994eb7b973226b05f3ff8c6e89a07757a071b21388f07b6"
+    },
+    {
+      "path": "reproduction/client/installed-packages.txt",
+      "bytes": 8372,
+      "sha256": "5def19f1fc68cab5ccc4d5e5ce77d90f12639f669f90a8b838f36ffa0f1ee309"
+    },
+    {
+      "path": "reproduction/client/pin-client-trace.py",
+      "bytes": 972,
+      "sha256": "ad30d59830905777099d87b805e155343cd2b7c3d2c07c9c1dff882c44f7b8ba"
+    },
+    {
+      "path": "reproduction/client/reference-input-config.json",
+      "bytes": 1599,
+      "sha256": "fbd133a66611b62df36f26223eb274ec7199dd454ee31bf967391d0d9f81d242"
+    },
+    {
+      "path": "reproduction/client/reference-receipt.json",
+      "bytes": 549,
+      "sha256": "239bb4dea2ad33d06907177e0730384f7fa7a436f77036ca785db5d7bc538508"
+    },
+    {
+      "path": "reproduction/client/reference-worker-command.txt",
+      "bytes": 1800,
+      "sha256": "14326b4ddc56780af7a6c9a826c751b2aa01c64608b05d5e76627f8617fa860b"
+    },
+    {
+      "path": "reproduction/client/trace-receipt.json",
+      "bytes": 1395,
+      "sha256": "f3a41a82c572ebf5d91aee7a3dc2e9fe022777bb28e1c805d759d76d422b894e"
+    },
+    {
+      "path": "reproduction/collection/qualify-nixl-layout.py",
+      "bytes": 5806,
+      "sha256": "bdcf523cdc7b7dd8a944b0fef3f7afd7d10e3373c36236abdb41ed776ceab93d"
+    },
+    {
+      "path": "reproduction/collection/stop-closed-services.py",
+      "bytes": 2381,
+      "sha256": "e9ba0d2fbd1916e534c5b1bac79ac43ffbe41e7e66bd833cf813d1f89a651cba"
+    },
+    {
+      "path": "reproduction/collection/thread-cpu-sampler.py",
+      "bytes": 8377,
+      "sha256": "7cfce47ff0014f4b025bd880f98a257b80a36d61996523829db8f8ef5ee0f971"
+    },
+    {
+      "path": "reproduction/model-validation.json",
+      "bytes": 7921,
+      "sha256": "8e5a5c2f2a033d6c01b6c0a49fabd814c9759f45f6eb9f971b676a3b51595b66"
+    },
+    {
+      "path": "reproduction/native-poll-model/README.md",
+      "bytes": 11283,
+      "sha256": "9e9666bd2e0f643a2d5edfd9da924735c91295951044ca920fc84867385ba1b3"
+    },
+    {
+      "path": "reproduction/native-poll-model/analysis-bindings.json",
+      "bytes": 901,
+      "sha256": "c7869676b6c6b05b886ea20cef4821303bca8e497bc43fc1ea7bfda8bd9b1998"
+    },
+    {
+      "path": "reproduction/native-poll-model/archive.py",
+      "bytes": 3965,
+      "sha256": "c9e43f324049be64f02f50c23bdaa1bf2a463852eeb464815ee9bac683009df4"
+    },
+    {
+      "path": "reproduction/native-poll-model/common.py",
+      "bytes": 23694,
+      "sha256": "1a42b9cf1ffc9c269349041cd8663dce6242cdecc759bf0cfd8867f0a5225a99"
+    },
+    {
+      "path": "reproduction/native-poll-model/freeze-receipt.json",
+      "bytes": 1174,
+      "sha256": "76196b98904aa4246fcf9db32dacf8caafc4a817c326e564a03af95af2e0dc0c"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/README.md",
+      "bytes": 9133,
+      "sha256": "8bf5464f7e51b519a4d40fb560c2603d15bfabaf1274d23c5563b5371ff91f73"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/analysis-bindings.json",
+      "bytes": 901,
+      "sha256": "c7869676b6c6b05b886ea20cef4821303bca8e497bc43fc1ea7bfda8bd9b1998"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/archive.py",
+      "bytes": 3965,
+      "sha256": "c9e43f324049be64f02f50c23bdaa1bf2a463852eeb464815ee9bac683009df4"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/common.py",
+      "bytes": 20362,
+      "sha256": "5bb3b86696e6fe9854f82c2135de7506d4c8e29cec8879e50e423d0e89f03d95"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/freeze-receipt.json",
+      "bytes": 963,
+      "sha256": "c48bf7305a2da2481f462774030089822dfd9d2d7e3d219bb0d1708f7dfced95"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/prepare.py",
+      "bytes": 2653,
+      "sha256": "b66c8b9a7270c9a9209692e6e1f59acb4d89459a3f59abf3a8372f9fc449d8fe"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/ready-receipt.json",
+      "bytes": 575,
+      "sha256": "6ff2b0dd30acd8cedcc883ef5da9f12f9e03d115451fa4ba54e68a65d80e9e97"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/run.py",
+      "bytes": 2098,
+      "sha256": "6a9171b3354f9d5219c76aee6a75459111770180c5005cc443f3c219dff57dbc"
+    },
+    {
+      "path": "reproduction/native-poll-model/history/pre-engine-generations/test_harness.py",
+      "bytes": 9813,
+      "sha256": "e2e29eb171c1eb1d44b73dfaa6af68fd938511855be2d916a81f5a63766ac90a"
+    },
+    {
+      "path": "reproduction/native-poll-model/prepare.py",
+      "bytes": 2653,
+      "sha256": "b66c8b9a7270c9a9209692e6e1f59acb4d89459a3f59abf3a8372f9fc449d8fe"
+    },
+    {
+      "path": "reproduction/native-poll-model/ready-receipt.json",
+      "bytes": 832,
+      "sha256": "3df93d5cf3cc99422934722aa3193992fb879f18bd7b7b8ead8d6212d6db2446"
+    },
+    {
+      "path": "reproduction/native-poll-model/run.py",
+      "bytes": 2107,
+      "sha256": "0e03fd294dcd3875350aa711c6a2ea4f4bd2079092519d231748b3e6ed64028b"
+    },
+    {
+      "path": "reproduction/native-poll-model/test_harness.py",
+      "bytes": 12033,
+      "sha256": "d8f3ae6891816c8f360cd99ebf90f1f8a9a6eb3357e7a5a39963235cb13fc7cb"
+    },
+    {
+      "path": "results.csv",
+      "bytes": 1908,
+      "sha256": "8cea55b4ccfedc045e358eecdd10cd737d510d98516855da0f3938a949c33051"
+    },
+    {
+      "path": "results.json",
+      "bytes": 4147,
+      "sha256": "800df1d40059f2e69f5bfea9e88a15b2260dbfb320241ab86d794cf3c5ce4c09"
+    },
+    {
+      "path": "scripts/install-client.py",
+      "bytes": 1096,
+      "sha256": "8de04fe032f68de81bb78690895968f9e5364ef137533ab98c35bcf82a6f6122"
+    },
+    {
+      "path": "scripts/pin-client-trace.py",
+      "bytes": 906,
+      "sha256": "332b1f9ae151b56d05f370d3ee894ece21eaaa8aa07e10cc0ff7960357e0dda5"
+    },
+    {
+      "path": "scripts/record-process.py",
+      "bytes": 979,
+      "sha256": "85f825a1614c7002243ebc83e42f6fd0d670a8ef26ad3967eca316f0a12f71be"
+    },
+    {
+      "path": "scripts/render-commands.py",
+      "bytes": 6789,
+      "sha256": "ccec052153310a677d3dd472168d460fd3472f94233707b8946081a4d333398b"
+    },
+    {
+      "path": "scripts/verify-sources.py",
+      "bytes": 945,
+      "sha256": "f09d63d10cf247218a86d06235c783862031968978c70e24f21072db914d4a08"
+    },
+    {
+      "path": "sglang-linker-qwen3.8-kvcr.md",
+      "bytes": 9049,
+      "sha256": "f4c779cc31a2411b21988d6b303e23a5fe69a7224b725646b0abab3fc1375feb"
+    },
+    {
+      "path": "sglang-linker-qwen3.8-mooncake.md",
+      "bytes": 7973,
+      "sha256": "2344fad74c03a0e75276c6202a18ce27bcd528adbf9db80708f4e5971a1a09d3"
+    },
+    {
+      "path": "source-publication.json",
+      "bytes": 1876,
+      "sha256": "464f077eecd31f5c7e2d532de734a9f9142eda1c652724b0fa59ff841258bcdd"
+    },
+    {
+      "path": "sources.lock.json",
+      "bytes": 17216,
+      "sha256": "97ef566fdcdaf66df2603768568ee8f0ab28bf7de86adbf43dd2c229e763ba06"
+    },
+    {
+      "path": "stages/kvcr-baseline/config/client-argv.approved.json",
+      "bytes": 648,
+      "sha256": "db98069b417651614107ec05fbc9a51e6ccca515fb0e7fb1515df2abf2cbe1a7"
+    },
+    {
+      "path": "stages/kvcr-baseline/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-baseline/config/setup.deployment.json",
+      "bytes": 17472,
+      "sha256": "31d9ed5da49a1743b9c65c75e4078c2349a6d2e7e99ee7124f481f59f33db958"
+    },
+    {
+      "path": "stages/kvcr-baseline/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/benchmark-command.json",
+      "bytes": 784,
+      "sha256": "0b340393f844013c7442b8c4d32c7e4ef058839afc142254e228ccad1185a040"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/profile_export_aiperf.json",
+      "bytes": 43243,
+      "sha256": "e8108f73bc7965861a508ad198d6f9bc35e35309221fb69a52bdc266fa5f9582"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/service-pids.json",
+      "bytes": 32031,
+      "sha256": "77685808584b4aff5a6b1274de0f1e6da3fb1b2a0e0b9d0d4fc29bf5f0b24121"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/setup.resolved.json",
+      "bytes": 17472,
+      "sha256": "31d9ed5da49a1743b9c65c75e4078c2349a6d2e7e99ee7124f481f59f33db958"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "663573804e5922702e5d785c79cfb66320b406a9e9c17d452f9f256175e74a71"
+    },
+    {
+      "path": "stages/kvcr-baseline/recorded/validation-cache-clear.json",
+      "bytes": 992,
+      "sha256": "f1b2f3735ab529d114f44910025a5f9bc76af4ae65157cd1adb1935bc30368c4"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/clear-validation-cache.py",
+      "bytes": 2114,
+      "sha256": "fb7eb76fd998377b9d658563c8f97534e31272200fe467fe766fd7baae698cf4"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/collect.py",
+      "bytes": 2455,
+      "sha256": "c1d300f8b0a3fac9eb5d0a65514c51175278d9080328b3e6e3418498f32d5be4"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/run-benchmark.py",
+      "bytes": 5992,
+      "sha256": "226b674f48ddf562af1cda5cd27d3fcbcb3c1188be01e9540a18b0900672bcdd"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/services.py",
+      "bytes": 7995,
+      "sha256": "0d4332e54bfd57fde5c9d1984438badcb50f910984dc7e64465f9abf048ee8f0"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/stop-recorded-services.py",
+      "bytes": 1559,
+      "sha256": "c5d54b5ff08bad687022cd434f4cb77f1cfb6b881dcaddce4a24eeb016913d91"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/validate-reuse.py",
+      "bytes": 7992,
+      "sha256": "f168f8e495f61169f405a054a91c6937e30446bfdca8af6c0a38d3e84efd52bc"
+    },
+    {
+      "path": "stages/kvcr-baseline/scripts/verify-cache-mode.py",
+      "bytes": 1442,
+      "sha256": "e4384bcd1659e054ffec61393b455d9ca820fcd2e0c8e93a28ab1ed3ac16133a"
+    },
+    {
+      "path": "stages/kvcr-baseline/stage.json",
+      "bytes": 22695,
+      "sha256": "8f8c3c2250414e98550f3fec4a7659900bdd8bda104aae2f57abda44777ef3c2"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/config/client-argv.approved.json",
+      "bytes": 668,
+      "sha256": "59bd436b88b1ba49f964b6ec619817ee94b4c9e970ecd9012f13d12dff12e48e"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/config/setup.deployment.json",
+      "bytes": 17785,
+      "sha256": "f6008be34f7d606c01d54d5b9c7724ef1fa0d3ee9c856010ec1ca394b7a7ba2e"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/configuration-delta.json",
+      "bytes": 829,
+      "sha256": "440b60b4abbb0ccba4b62e03cc7413e1fbff09d3b2ac8018f0f39082c8d8730d"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/benchmark-command.json",
+      "bytes": 849,
+      "sha256": "236fb61dbdf3f1f652d8527144d3ceb98fba508aeb95ac0bf509f29854bb1d81"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/profile_export_aiperf.json",
+      "bytes": 43197,
+      "sha256": "ce58987b7c651d18aa5a12559b3211d22e9812bd523a0eadd86ff082472823a7"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/runner-complete.json",
+      "bytes": 128,
+      "sha256": "c7196c4e2354ecd9956028911279c63f5bf9e53860e4d43b561c87ae830c69e3"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/service-pids.json",
+      "bytes": 33815,
+      "sha256": "3eb0f766c9c3411fe8399dbc92ca3b075d41994418355c0e8292c4a583d53b4c"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/setup.resolved.json",
+      "bytes": 17785,
+      "sha256": "f6008be34f7d606c01d54d5b9c7724ef1fa0d3ee9c856010ec1ca394b7a7ba2e"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "ac8c3c7929c03577cacb857f5b8b58640c4193163aca624f31864a96cb65bfbe"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/recorded/validation-cache-clear.json",
+      "bytes": 996,
+      "sha256": "699d3b159e339764e53cf97eff7359a43fb2a5384ecb812169d79d329c66b96d"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/clear-validation-cache.py",
+      "bytes": 2134,
+      "sha256": "88904b25f76be6cf62f4074646d597bcfc5908fd5db7272fb8f7815b52688a64"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/collect.py",
+      "bytes": 2475,
+      "sha256": "facc6cb8c62cdebc4b9841e28e3db28706f8cd6e66ec85fbfb6fa085638a2fab"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/run-benchmark.py",
+      "bytes": 6012,
+      "sha256": "575a4591cc3e1a3d94f9f7eb70eb3a78843bf66ae05060e2d49e31cf9c708237"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/services.py",
+      "bytes": 8046,
+      "sha256": "4028471229bb64d7d35112e72ea2d164c6159500356ff7cb85c5d955cca499e3"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/stop-recorded-services.py",
+      "bytes": 1579,
+      "sha256": "86a8844a9350e40bb3b1520a189ee6a0cab79cafe64cd33102fb5bf5dadd0563"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/validate-reuse.py",
+      "bytes": 8012,
+      "sha256": "9c5f29993fea70b91171958e3a8d5f8f43e2e8a066cb2e50aefa02631f5cd823"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/scripts/verify-cache-mode.py",
+      "bytes": 1462,
+      "sha256": "850d40895b5a3e932f49f1d90660f21ab350b81286c8a7b72e5a6d6da6b6e3e9"
+    },
+    {
+      "path": "stages/kvcr-first-page-negative/stage.json",
+      "bytes": 23431,
+      "sha256": "42a35e31028799da71f072c6681a539a6be755471655a3e247d57ee3f958eb1c"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/config/client-argv.approved.json",
+      "bytes": 661,
+      "sha256": "80a176eccb71f56571049184bc22b66a984a7a851b8d471c400fef6bc212f91e"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/config/setup.deployment.json",
+      "bytes": 17895,
+      "sha256": "be6708b2741c3da054fce4bb972bea1afc9c4e178481f931cd9da33682ada704"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/configuration-delta.json",
+      "bytes": 1694,
+      "sha256": "d9c9d281025f92900c94e2bc76c97aabf21b6ef33609c1d0d83d5e8e44851721"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/benchmark-command.json",
+      "bytes": 816,
+      "sha256": "42bc3f071feda324986d527981881153c2b22fe7d1aaa38dad2503d3ad5b0854"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/profile_export_aiperf.json",
+      "bytes": 42772,
+      "sha256": "cd0bf4060bdef5a66edf1ce46d61ae66e1ec1482b763b3177dd61b90296ed2f8"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/runner-complete.json",
+      "bytes": 116,
+      "sha256": "9ba2523c2d1bbfc46c08d9a38d3a8e89405459da423aece0f3832527dc809e35"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/service-pids.json",
+      "bytes": 33386,
+      "sha256": "32957a798072a7407a54c65cc1272e18ce14fd0179ea27b7f79bf01a26642e7f"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/setup.resolved.json",
+      "bytes": 17895,
+      "sha256": "be6708b2741c3da054fce4bb972bea1afc9c4e178481f931cd9da33682ada704"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/thread-cpu-meta.json",
+      "bytes": 551,
+      "sha256": "ad4bf294deade6ce689f9ed713f48ea6eef72cb1f450ecd98e2a339ca55dced9"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/recorded/validation-cache-clear.json",
+      "bytes": 996,
+      "sha256": "6523923e7c00aee6a220ca166a4bb3d4a6638340656d7f74d89934c049ba55b8"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/clear-validation-cache.py",
+      "bytes": 2127,
+      "sha256": "1b964df7bd130e119b60dd100114631abf646008a6701a69524c778f6ecb9e44"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/collect.py",
+      "bytes": 2468,
+      "sha256": "8faa21a684ac5367f00204189d779141c4029858fe878024b2f28f4c54f73fa4"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/run-benchmark.py",
+      "bytes": 6005,
+      "sha256": "f75080469ae791a3d8c7798f7f4eafee603d51cbce2ae89dfbbc6eca15b1adf1"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/services.py",
+      "bytes": 8045,
+      "sha256": "48e7fb50e396bae6e9fd92ac7a7f6657837f5b948b4f73db884d4e1e1725fb2e"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/stop-recorded-services.py",
+      "bytes": 1572,
+      "sha256": "126e893d6c2b32943e3bdfaabd22271d356ee7812b2be39364a487ab209d8c0a"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/validate-reuse.py",
+      "bytes": 8005,
+      "sha256": "738a49a8a3a316e3c336164e8d6805107015f48033138032fcd157a89cc07e3b"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/scripts/verify-cache-mode.py",
+      "bytes": 1455,
+      "sha256": "98b60ffa799cb381ef109875e4bed63d9141f00dc7c533ab068a2b48009dcf12"
+    },
+    {
+      "path": "stages/kvcr-gil-1ms/stage.json",
+      "bytes": 23017,
+      "sha256": "20da80818585fa6d650ef67f7d5399683e087d9fe42e439242bb368eb0beb192"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/config/client-argv.approved.json",
+      "bytes": 673,
+      "sha256": "9a5214ea59a9240e5a5cfdbb4f2e4b7cdd8e36528bb9a9fb68edabaab0b54760"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/config/setup.deployment.json",
+      "bytes": 17859,
+      "sha256": "46abd5749d0adfea877d40c1998a59468cc3314fa5ba1e3911220b6bd215f6ad"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/configuration-delta.json",
+      "bytes": 1044,
+      "sha256": "ebf01717f4c301bff72bcc30168fccdfeb40c8e5a23d9d23fa36ed39b6f25388"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/benchmark-command.json",
+      "bytes": 869,
+      "sha256": "174e8b47de8f63889e1a160de145fa8e6629116fdf7dec5879c4736ecade1315"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/profile_export_aiperf.json",
+      "bytes": 43185,
+      "sha256": "fa42b5b7ae719903808be91810b9f0acbcf1aa4830f1ad362c130df5aa617e96"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/runner-complete.json",
+      "bytes": 133,
+      "sha256": "79c67810affcf83d870212231f00127f14f36ab9e70b0b84991840cf96d25811"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/service-pids.json",
+      "bytes": 34408,
+      "sha256": "73a69e146a8c3750a76d2026776cb46e0ecafbe441fb9b1bc9375d107c8ef45c"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/setup.resolved.json",
+      "bytes": 17859,
+      "sha256": "46abd5749d0adfea877d40c1998a59468cc3314fa5ba1e3911220b6bd215f6ad"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/thread-cpu-meta.json",
+      "bytes": 551,
+      "sha256": "b4d0cf891b11f870f9ec77c8ae0f098cb305882e0ecd13d5909a2320752b0ca7"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/recorded/validation-cache-clear.json",
+      "bytes": 996,
+      "sha256": "e4b782edfac11d7bb47b92166a8286e8bda8bdc80d5aa559743cf115a5c04d26"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/clear-validation-cache.py",
+      "bytes": 2139,
+      "sha256": "33003de33590554c2253af0edd294597091a68330964fae3b6464234c8b3f576"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/collect.py",
+      "bytes": 2480,
+      "sha256": "bbea61e1f5540bdccb4304cdc642c32ab8bac157b7e8c29da441317de508a482"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/run-benchmark.py",
+      "bytes": 6017,
+      "sha256": "7c7f8f367a17c928cb0d7dcbbbaeea68d769974e5510d9e8f3c6ea45b54a1b4a"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/services.py",
+      "bytes": 8081,
+      "sha256": "c492a7ebfee83b881d22b1b96585486eb7e8555c02419eb435ae29d6dd021f16"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/stop-recorded-services.py",
+      "bytes": 1584,
+      "sha256": "9add2e229b193ceb6d8079e5b23ba34af8ce0960b53e584f5e9dc6118999591a"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/validate-reuse.py",
+      "bytes": 8017,
+      "sha256": "586910e3fdd9f39cbcae1d9612ae72fcd72b0299a70f976f2e0ca8497194fa0f"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/scripts/verify-cache-mode.py",
+      "bytes": 1467,
+      "sha256": "e956dcfa9d06e1d9c933662a282a205bfa19abc9a153cac09f415baeb60a7f1b"
+    },
+    {
+      "path": "stages/kvcr-incremental-confirmation/stage.json",
+      "bytes": 23673,
+      "sha256": "3f9d8946dc0efc4aee32277fa15ad2813408ead4a2766fbb9d6b89f3f02b5bf8"
+    },
+    {
+      "path": "stages/kvcr-m1536/config/client-argv.approved.json",
+      "bytes": 677,
+      "sha256": "da601804e4c53fead5e34687579c45c021f55fa83346b93ba4dd0e7a33e906c0"
+    },
+    {
+      "path": "stages/kvcr-m1536/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-m1536/config/setup.deployment.json",
+      "bytes": 17799,
+      "sha256": "d70180fd48f07182d54a79e04ac6a580beeedf92a8bf29eefb1577cc7bf37655"
+    },
+    {
+      "path": "stages/kvcr-m1536/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-m1536/configuration-delta.json",
+      "bytes": 920,
+      "sha256": "362b1cee9293568bd28e0c634b39542a543faab8193210fbc4c3962ecaf1c052"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/benchmark-command.json",
+      "bytes": 862,
+      "sha256": "ca0bb2f0b5557df395c8a00953169a284935b1c2ae30f272d15e6fb356ecb663"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/profile_export_aiperf.json",
+      "bytes": 43377,
+      "sha256": "797aad1770b8ac643b7c5304edd33f64e2a6202185c1bf27e3656457b404bb6c"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/runner-complete.json",
+      "bytes": 114,
+      "sha256": "6a85896317960c07034897810b93ca70870bb3768e8b7c26db7ca946b02ec020"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/service-pids.json",
+      "bytes": 34294,
+      "sha256": "e6cf9f81f0db16f39769b4f36027c32b197a577b7bb8dd628216fede8eab8f21"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/setup.resolved.json",
+      "bytes": 17799,
+      "sha256": "d70180fd48f07182d54a79e04ac6a580beeedf92a8bf29eefb1577cc7bf37655"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "5c2b13edbba3afa3a9ad477a5fd56b3a5344702a4e3a54e5b39fb02243cff1b1"
+    },
+    {
+      "path": "stages/kvcr-m1536/recorded/validation-cache-clear.json",
+      "bytes": 995,
+      "sha256": "592a1adb3228b63c63e9d23e23e29b66f43c4534a87cce92262a87ea4c952257"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/clear-validation-cache.py",
+      "bytes": 2143,
+      "sha256": "a3981f92cf95d6f1b81d7e4fb82da5cf76c05edade02ce01b9d8fdda93ae9422"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/collect.py",
+      "bytes": 2484,
+      "sha256": "f24ad2441313ca34f8706968f5e1f73eff9d62274663994bf10ec085d2432a87"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/run-benchmark.py",
+      "bytes": 6021,
+      "sha256": "aaf2798d5edc17012472d71c93aa4060b87ef90ea7af7a0b9ec5f64d0f347bed"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/services.py",
+      "bytes": 8064,
+      "sha256": "06233e602144dcaa68a857df28ad1805bf3f4328538d148e9f9152daafd5b709"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/stop-recorded-services.py",
+      "bytes": 1588,
+      "sha256": "8f72a7dd79fbff9f715c8652be50762de5c23061120261ef7cbe08117f57e313"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/validate-reuse.py",
+      "bytes": 8021,
+      "sha256": "20aa15e4404649918adbdbe10a03c1e02b6da35b70c4c61eb254b35c983c5362"
+    },
+    {
+      "path": "stages/kvcr-m1536/scripts/verify-cache-mode.py",
+      "bytes": 1471,
+      "sha256": "4eb69b86b72c36730f2e605c46d23761b7198e82e79c040772b43e3a8d6b153c"
+    },
+    {
+      "path": "stages/kvcr-m1536/stage.json",
+      "bytes": 23334,
+      "sha256": "b5f19545f1b9542666ed5c289b218d5c9851c644ac8caf3b21559edb7f002b54"
+    },
+    {
+      "path": "stages/kvcr-m2176/config/client-argv.approved.json",
+      "bytes": 668,
+      "sha256": "118bc3c56bac0d611ecee5c84b0e3d5ea6dfeb004a308bae080b5c2e0b24cbce"
+    },
+    {
+      "path": "stages/kvcr-m2176/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-m2176/config/setup.deployment.json",
+      "bytes": 17790,
+      "sha256": "4f48575e749f2523ce93d9673ccd9d96348da007c64281395b33976c13911f6d"
+    },
+    {
+      "path": "stages/kvcr-m2176/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-m2176/configuration-delta.json",
+      "bytes": 1408,
+      "sha256": "40c3a629c744b6a3e2b7d5af8939b61bce12436c52754bd1410ac57a122cefc5"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/benchmark-command.json",
+      "bytes": 835,
+      "sha256": "1d26be922c5e4a5547805a0578583d215863f5763e25adf141cfc8a7e14d851b"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/profile_export_aiperf.json",
+      "bytes": 43199,
+      "sha256": "443c08fece293cbc4b333a1de044f68997fe3e0125bcca1def2016cf8a9b3392"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/runner-complete.json",
+      "bytes": 114,
+      "sha256": "9665793f4b549edf78e2787bf8cdbb9a583a9c2069930dd9deae4c07fb9c6372"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/service-pids.json",
+      "bytes": 33619,
+      "sha256": "168be08d601ae75b49e1b35ca7901a047c11fdfe536391060dee8badecb81b03"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/setup.resolved.json",
+      "bytes": 17790,
+      "sha256": "4f48575e749f2523ce93d9673ccd9d96348da007c64281395b33976c13911f6d"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "09fd4606f06f6403364420729f8ddd2432713c6a95583c82e44a633f4eac4070"
+    },
+    {
+      "path": "stages/kvcr-m2176/recorded/validation-cache-clear.json",
+      "bytes": 994,
+      "sha256": "779a7e2a1d9b706582461c43f095f5e411facbe537356bf938b1e7d6e4a3a01d"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/clear-validation-cache.py",
+      "bytes": 2134,
+      "sha256": "04900136149071e5cd5b4eb9d453e0b33b233ee1433107aa37a4cb88087d3fb0"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/collect.py",
+      "bytes": 2475,
+      "sha256": "516296b75018bc4c7bb35f7d32a50370d66144581cc68850db2330ad31b10da7"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/run-benchmark.py",
+      "bytes": 6012,
+      "sha256": "9ea2c754d918b616b6ed8adf2c58536da1868d90d4a70f1a097642077a92bef6"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/services.py",
+      "bytes": 8046,
+      "sha256": "54e83bbcd143f430df87e10dc42ef6c0a40daedb3e9397f102f4a8d7e4ecfb61"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/stop-recorded-services.py",
+      "bytes": 1579,
+      "sha256": "6a5d3205fc2b2becba818a3db3345aa7c4c9e8364afa9f730483b1ffa5a68dfe"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/validate-reuse.py",
+      "bytes": 8012,
+      "sha256": "ec52e9ced3bb807d7a731003ced50fb7fd8c9492aae85bb1bb32d93436da1880"
+    },
+    {
+      "path": "stages/kvcr-m2176/scripts/verify-cache-mode.py",
+      "bytes": 1462,
+      "sha256": "d29b5ef249187e207bd14c7695acc429902b80427d73d235c0970a80215ae10b"
+    },
+    {
+      "path": "stages/kvcr-m2176/stage.json",
+      "bytes": 23180,
+      "sha256": "5d8fc34b56c3b097775eea3566c06d14cdf920a4174d3955cc8e173decbdf736"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/config/client-argv.approved.json",
+      "bytes": 666,
+      "sha256": "73464d279884d42a407f30c531abeb10220f4f0defb2ae0832bbe408726cd5e1"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/config/setup.deployment.json",
+      "bytes": 17921,
+      "sha256": "9044171cc679cdb52229cae90d839b21206c21ba6b6a773eee84b554ae0b7469"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/configuration-delta.json",
+      "bytes": 1760,
+      "sha256": "a352a147537cc07d1ec12a34fc4b92f947f6796be65ad315cf20f7ea3147d3b0"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/benchmark-command.json",
+      "bytes": 839,
+      "sha256": "2d6233d2e12148e28a5deb18be1295ea07167797a705a506e60774f39b680fb7"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/profile_export_aiperf.json",
+      "bytes": 43156,
+      "sha256": "5d8d8f5c2bb286140d05e12a5c6032ee6276f40d32a6775153aadef3b1ca1284"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/runner-complete.json",
+      "bytes": 123,
+      "sha256": "58021e7fb9ddfd73dcf9ffa770f65bf826ff63381712de87450ab7d638d78a08"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/service-pids.json",
+      "bytes": 34057,
+      "sha256": "59aa8bcf1fe6da430effe46aaf09408eceffb8cdc4c731972513a0892ecc47d9"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/setup.resolved.json",
+      "bytes": 17921,
+      "sha256": "9044171cc679cdb52229cae90d839b21206c21ba6b6a773eee84b554ae0b7469"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "b336e6e039f2af22911b6ccc7bd4ce7c5541cbd2742d3f1af7411759ce979f81"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/recorded/validation-cache-clear.json",
+      "bytes": 993,
+      "sha256": "ba551cfdbf21017fe9a2aa25dd004fed8f5c3e1c4a3cbe01ee5a1fbdbd620078"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/clear-validation-cache.py",
+      "bytes": 2132,
+      "sha256": "2ef12aa1e9a0e9652bfc23c479f12f69ca82e49beadd47411847bae1d539fbc6"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/collect.py",
+      "bytes": 2473,
+      "sha256": "53257a348e65a0228e447765006766578801e604b8652d3e0f80642122b39585"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/native-poll-after-clear.py",
+      "bytes": 606,
+      "sha256": "1cc52173080b98081e473a1a6c5161ecc94f2def43a7ec669b0e3485780488a8"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/run-benchmark.py",
+      "bytes": 6126,
+      "sha256": "36f7b270e7817f0412b4d805803473e77e80abbe326d05f3388d03b51c979050"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/services.py",
+      "bytes": 8060,
+      "sha256": "72514d867b3900271ad123e76934c833c5a9e8b8ab3554e2a23fcbced17c2070"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/stop-recorded-services.py",
+      "bytes": 1577,
+      "sha256": "e703f0a8c22eb71c0b852c5fb522faa543ce5bce197e82e83d465d29a397ec16"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/validate-reuse.py",
+      "bytes": 8010,
+      "sha256": "e8b15b623536e191e3121e225d0fc3e21bf9940d65c2a578e7634e056d9353f1"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/scripts/verify-cache-mode.py",
+      "bytes": 1460,
+      "sha256": "652c5a2b2cf14f33fe68e9dd904ef060f4d04a1c45d379b3158cef79b13f3fc5"
+    },
+    {
+      "path": "stages/kvcr-native-poll-1ms/stage.json",
+      "bytes": 23512,
+      "sha256": "d4ba108ae7b3fafd89143dd4bb6e2803e6aed17e72e9db7368c4d4efb572f079"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/config/client-argv.approved.json",
+      "bytes": 659,
+      "sha256": "db551161b369b7105238f8c653190c33bd6a7debb7218ade26e2ee62c1774ef7"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/config/setup.deployment.json",
+      "bytes": 17684,
+      "sha256": "21335ab7c2b495fae502d8ee96a53a25cd5eed4f0f7a735312dd54ad17134f0f"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/config/worker-args.proposed.json",
+      "bytes": 2352,
+      "sha256": "5f456413e3c8325e47ac4ab2df31f24a57260596704abfe1184a8e40633153f6"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/configuration-delta.json",
+      "bytes": 622,
+      "sha256": "b54b3682b6f42ad943e4bb55f162e1ca212100e710a14fc55ea75321a5f44a26"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/benchmark-command.json",
+      "bytes": 813,
+      "sha256": "6dd81cd0729e830b68d624cf5d9cc1fccb0a10aec39aaf651b3c442703ab72ce"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/profile_export_aiperf.json",
+      "bytes": 42911,
+      "sha256": "cfb92339d8f32b54c3e2ca5286bbdfb6ea5382ac0ca38aa2c5b2f98d7413f27d"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/runner-complete.json",
+      "bytes": 119,
+      "sha256": "3e3548bb2dac9ea1c75fc93d97db44315e41960442175f4d42cef5b7b0fb07a3"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/service-pids.json",
+      "bytes": 32866,
+      "sha256": "33734d8ef14652cbc9ef46f2377f30f9adb9a69499dfa60af0983d63e50d2da7"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/setup.resolved.json",
+      "bytes": 17684,
+      "sha256": "21335ab7c2b495fae502d8ee96a53a25cd5eed4f0f7a735312dd54ad17134f0f"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "ae60a90dd45306d4acd82d56d06f4b9bce85b3bd8c9111b485fb6748f5072d3d"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/recorded/validation-cache-clear.json",
+      "bytes": 994,
+      "sha256": "b49be17630e055c3601e448056fb9297c9dc5f1c415a7e2bbab9bbd7f03561d2"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/analyze-system.py",
+      "bytes": 6704,
+      "sha256": "8adfea20b3ef5005803179c1f7d662e662021ce42584ab9d5c031861931175ec"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/analyze.py",
+      "bytes": 5059,
+      "sha256": "34fa55c57635b643638e5a81a3f0012f5980d8a3128ffe12e97a5e56cf4ec014"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/clear-validation-cache.py",
+      "bytes": 2125,
+      "sha256": "51ce8e29fc49d0f3f2b18122094e60eb6ac904c65737aede11d58bd9d40e3902"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/collect.py",
+      "bytes": 2466,
+      "sha256": "cca384ef36b9531df9071a98be26ef4302fbf7b4b0c76552a9810a48030405b8"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/compare-reference.py",
+      "bytes": 3437,
+      "sha256": "f6d251c1581f19f017b5a3695ae123944fdc006ceeabc3d6b7ac86f95c10f446"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/run-benchmark.py",
+      "bytes": 6003,
+      "sha256": "f01cbda4914d6143a5210534cf4feff8adbca25b7824f066c97f0c32278652de"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/services.py",
+      "bytes": 8028,
+      "sha256": "08781ba99eea4612005370b549ae16001beaaeb07454236b5c7cb4ff235c9316"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/stop-recorded-services.py",
+      "bytes": 1570,
+      "sha256": "d3f7fcbfd6e5099e69a5db82a618c461697a8ca7bee17f5a9dc996a1b104b7ab"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/validate-reuse.py",
+      "bytes": 8003,
+      "sha256": "72151c98d33920cf8addc8b06cdb04888088fbc59358835aa1293e257df66d68"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/scripts/verify-cache-mode.py",
+      "bytes": 1453,
+      "sha256": "5046c646cc280cc84fcdaf22f1365d680198b7ad5733e239b6e79a458ed03d39"
+    },
+    {
+      "path": "stages/kvcr-pool-index-m2261/stage.json",
+      "bytes": 23042,
+      "sha256": "e1de792b8594ec3cbcbff06a3b68ab26cc87645be0f260f7e5d8f39c4c641123"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/client-argv.approved.json",
+      "bytes": 652,
+      "sha256": "7adc3c35cc7a289cdaf184066f4a30628e2394331bca049e775fcfaf830674fc"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/mooncake-worker-0.json",
+      "bytes": 337,
+      "sha256": "c40a29f77fbc7b70d0656089e7b31f5fecc5c57353c419cb559a64a20ef5eb54"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/mooncake-worker-1.json",
+      "bytes": 337,
+      "sha256": "b9ce0dac944bc22c81c71920be7c533eb733b9fb0dbc772be3700fdb4f9dcc05"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/mooncake-worker-2.json",
+      "bytes": 337,
+      "sha256": "9c7872efc4a94199a358584b5ba953e63a4661bb1367b0fdd5db352d582e3abd"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/mooncake-worker-3.json",
+      "bytes": 337,
+      "sha256": "d7dc01fe93d9a0a3036956fa0dbd60bbefce5e47d07b9fdcd36484df1d449201"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/setup.deployment.json",
+      "bytes": 17796,
+      "sha256": "f7d4fc1fcbefeeb304f9f5d38c61a55f8492de057927762a1560b832741dfa9c"
+    },
+    {
+      "path": "stages/mooncake-baseline/config/worker-args.proposed.json",
+      "bytes": 2360,
+      "sha256": "bf6b271f798a993f648365001f0dcd39727998b45262bd64881cfb3b53069d42"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/benchmark-command.json",
+      "bytes": 776,
+      "sha256": "cba1ee1febf47431db0abd64fe8334c1030cf1f5f381ff2e4da1c29a5c01af15"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/profile_export_aiperf.json",
+      "bytes": 42768,
+      "sha256": "771aae720f99ad566cfb2609e60bb345ade9b61985d336e293221704e2aebe5a"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/service-pids.json",
+      "bytes": 34153,
+      "sha256": "f11b7307e675de58d8afd9c31793805ebb26617245c373cb6696b63a4d4e86ad"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/setup.resolved.json",
+      "bytes": 17796,
+      "sha256": "f7d4fc1fcbefeeb304f9f5d38c61a55f8492de057927762a1560b832741dfa9c"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "fe0408ab1cae59325120e2afce4d6849847c42b7c8e75562ed3372264ae45060"
+    },
+    {
+      "path": "stages/mooncake-baseline/recorded/validation-cache-clear.json",
+      "bytes": 992,
+      "sha256": "1b40fceda0d0bc68f1286b4ffccfb60668ef1fabe8d9341d4d0cd8a0871cf8ca"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/analyze-mooncake.py",
+      "bytes": 12366,
+      "sha256": "3c6190259fa73ed7d4c4a6b5ed50c13237b310c50233d64dc9d832d7b37e52ef"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/analyze-native-metrics.py",
+      "bytes": 5811,
+      "sha256": "e75e8e3cba06a8164609db71698fdd2c9e5eaafc3b91c018fd404864644b3144"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/analyze-system.py",
+      "bytes": 6765,
+      "sha256": "8085cdfdb57ba791d88e18d57bfa972677164aceac8671aa10ceda73ba66d204"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/analyze.py",
+      "bytes": 5080,
+      "sha256": "0318fd32ac1a5889e746b9fc9e09af8f6df9ac4be9261531c242c2258468ceac"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/clear-store.py",
+      "bytes": 556,
+      "sha256": "e3d1efc952925e6569bee482299ed014a9d1dc0909096b6af32950f64e7e8e05"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/clear-validation-cache.py",
+      "bytes": 2259,
+      "sha256": "34ee5986ff5a06ad417a1d6be78fe9bf8c8b32fb1f36f7ac93fab5d4211b6172"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/collect.py",
+      "bytes": 2805,
+      "sha256": "faa4289723319515fb9edf9da44a67d6e2cf50105ee046112034aa02740f7447"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/mooncake_observer.py",
+      "bytes": 2901,
+      "sha256": "05929cb56d14f7de4b0c42e15de9c36698dbb86386bb570e1dc0fca6ecc08841"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/run-benchmark.py",
+      "bytes": 6507,
+      "sha256": "e80746f2a757d678b35d077a30aca5a604d8d53a7e78526474d55162aa06cb03"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/services.py",
+      "bytes": 9129,
+      "sha256": "aadddb175536f2706e68055359aa5c0d0d047a69c182e7a223564e7ea2e1dd72"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/stop-recorded-services.py",
+      "bytes": 1563,
+      "sha256": "c14ea6b6f11cf491ae6cc5011a576373a0ba3941fe5f0c7f5a248f00dc9e84c7"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/validate-reuse.py",
+      "bytes": 8206,
+      "sha256": "1b9eb48ddbe6c4e8b1da779a71f4e4ff91a20431b08c6adba54f0d55892195f0"
+    },
+    {
+      "path": "stages/mooncake-baseline/scripts/verify-cache-mode.py",
+      "bytes": 1446,
+      "sha256": "a42f29b6085eaf64e8a93ec1cbb90edc275b55e35527002ce49e1267c913ffbe"
+    },
+    {
+      "path": "stages/mooncake-baseline/stage.json",
+      "bytes": 23102,
+      "sha256": "e13e930bed3d8c9189955f2cc77e7d5883d1bef12444cf2a07f63d0731dbf271"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/client-argv.approved.json",
+      "bytes": 665,
+      "sha256": "08a0a092a6cd583e5b03cac12789acb79384c43dd9a9eb73fd4b19d952802adb"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/mooncake-worker-0.json",
+      "bytes": 385,
+      "sha256": "160c8b43cd15b3d26cb3b4e8968935eb38de251f1ffcf4bcf0900207483481dd"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/mooncake-worker-1.json",
+      "bytes": 385,
+      "sha256": "276bd26ddebec1331b34728b94bcaf7a671a5fc45bb2c4d095218bdd7c4934f8"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/mooncake-worker-2.json",
+      "bytes": 385,
+      "sha256": "6f1764116efaefce5d78529f540fa7f7cf2acd7e005e444a5de27b54f3633bce"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/mooncake-worker-3.json",
+      "bytes": 385,
+      "sha256": "c59265133927b27bc9650d72d2c795e456e419607c60095b01a6f1aa4e4ecc37"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/setup.deployment.json",
+      "bytes": 18083,
+      "sha256": "6d4a061bee68e6cb6646c3e7795cc103448565c8c4507135a0eee6430941c923"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/config/worker-args.proposed.json",
+      "bytes": 2360,
+      "sha256": "bf6b271f798a993f648365001f0dcd39727998b45262bd64881cfb3b53069d42"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/configuration-delta.json",
+      "bytes": 3623,
+      "sha256": "ee5af7d5eb800273053dc37a91d53f3ef5ea98dde9fe56063074a2e8a4e58681"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/benchmark-command.json",
+      "bytes": 791,
+      "sha256": "530bdeb16e8577f64c074fb2578310df15f0e54e0ba877bb1513c00127adbc06"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/profile_export_aiperf.json",
+      "bytes": 43019,
+      "sha256": "950f4574ab0cee5575d167701bdb2d14ff4ac189cb5f330ca91a35eaf03ade33"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/runner-complete.json",
+      "bytes": 125,
+      "sha256": "531ba15ca4aebc6420cb28f1dfb70ce3390491b5eac6403d598afce105a965ec"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/service-pids.json",
+      "bytes": 35038,
+      "sha256": "170e3514f3da648b979d5d7b537ada6d976ac238dcced2d130f14cdfce8340ea"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/setup.resolved.json",
+      "bytes": 18083,
+      "sha256": "6d4a061bee68e6cb6646c3e7795cc103448565c8c4507135a0eee6430941c923"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "b6015a56f204514b3c4d3cebcff67f6d76d648bd55e742d26590e0a9c45a99b3"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/recorded/validation-cache-clear.json",
+      "bytes": 994,
+      "sha256": "e28bf17c8d8c638c09ac6347274c06d5dfcfb20f3250c15d1bac3117ad36db7e"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/analyze-mooncake.py",
+      "bytes": 12366,
+      "sha256": "3c6190259fa73ed7d4c4a6b5ed50c13237b310c50233d64dc9d832d7b37e52ef"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/analyze-native-metrics.py",
+      "bytes": 5811,
+      "sha256": "e75e8e3cba06a8164609db71698fdd2c9e5eaafc3b91c018fd404864644b3144"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/analyze-system.py",
+      "bytes": 6765,
+      "sha256": "8085cdfdb57ba791d88e18d57bfa972677164aceac8671aa10ceda73ba66d204"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/analyze.py",
+      "bytes": 5080,
+      "sha256": "0318fd32ac1a5889e746b9fc9e09af8f6df9ac4be9261531c242c2258468ceac"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/clear-store.py",
+      "bytes": 556,
+      "sha256": "e3d1efc952925e6569bee482299ed014a9d1dc0909096b6af32950f64e7e8e05"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/clear-validation-cache.py",
+      "bytes": 2272,
+      "sha256": "69fc54745ab106832b22bc9614071030ed70bbbad2536d389f28535c6b33e6d3"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/collect.py",
+      "bytes": 2818,
+      "sha256": "afe844d02e2935992b1083b95f9e2e1c772d50c05c4aa7cef702c49bf3b45e19"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/mooncake_observer.py",
+      "bytes": 2901,
+      "sha256": "05929cb56d14f7de4b0c42e15de9c36698dbb86386bb570e1dc0fca6ecc08841"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/run-benchmark.py",
+      "bytes": 6520,
+      "sha256": "acfe53e13637ddffc7ad688c7de67b0b1212b86034765f0ec0b12025a3d52114"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/services.py",
+      "bytes": 9299,
+      "sha256": "8868209a7f48f3bcd9ed501bd73083bb8fe5ce4248d82d1bef46596aca77a3da"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/stop-recorded-services.py",
+      "bytes": 1576,
+      "sha256": "364b629f73d44c9f133e560248e0a546869dc9290e83f0289f80cb70baaa0e68"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/validate-reuse.py",
+      "bytes": 8219,
+      "sha256": "094122c0cf4c10cf006fb72dc0ad576b2c0e8ba7288a2585c7b49398bebb4df6"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/scripts/verify-cache-mode.py",
+      "bytes": 1459,
+      "sha256": "70ad83524c1705b60413138b4b5d656877f2f7d2333f12df0550d710d22f96af"
+    },
+    {
+      "path": "stages/mooncake-gil-1ms/stage.json",
+      "bytes": 23632,
+      "sha256": "4707fc07f33807ded6079c736bfe8b156e5537ed7dac674c2822ebbf74d10e8d"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/client-argv.approved.json",
+      "bytes": 674,
+      "sha256": "2c29990fbf751d972a14d822659c6ce78e87e42430edf486a8ac3bccd15fa07c"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/mooncake-worker-0.json",
+      "bytes": 338,
+      "sha256": "8e0f3049a9fb470480aeaa042f54ec16ce19c456ed746778115ea071578bce17"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/mooncake-worker-1.json",
+      "bytes": 338,
+      "sha256": "e942313ad221211fff10c6892699c4eb7329f549b09ff923c1c2f2cd0c68e5b4"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/mooncake-worker-2.json",
+      "bytes": 338,
+      "sha256": "3c3fdab57b7cc2d0d5cb5834c1bb8aaaa7c56c9bf84196a8ba1e09ef83dfd3a8"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/mooncake-worker-3.json",
+      "bytes": 338,
+      "sha256": "6a7a4ff0554c072e01e8637bf509887253d9a2ce035085cf668524ea4fad88b8"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/setup.deployment.json",
+      "bytes": 18066,
+      "sha256": "a1487b6d74578c398c8577a17489e03f04c37aaa71560a0bc96a233e5902c3f7"
+    },
+    {
+      "path": "stages/mooncake-local-first/config/worker-args.proposed.json",
+      "bytes": 2360,
+      "sha256": "bf6b271f798a993f648365001f0dcd39727998b45262bd64881cfb3b53069d42"
+    },
+    {
+      "path": "stages/mooncake-local-first/configuration-delta.json",
+      "bytes": 3529,
+      "sha256": "52ef507c32f8e0f69ab5aed584da2593da4780f34e9bd12169d6bbfca4e82b34"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/benchmark-command.json",
+      "bytes": 804,
+      "sha256": "fa11bc3559e415503bd5263407cfd36ee3bbfd92a5956d256025359b02210004"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/profile_export_aiperf.json",
+      "bytes": 43188,
+      "sha256": "1783a00590833df911fbdd6e8c93c275d0ae404305a2ec21432d6acb974a7a49"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/runner-complete.json",
+      "bytes": 368,
+      "sha256": "5c53f31c84f577245daf7caf03f9310cf71cd5619d1c74ea26dbca52788c7435"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/service-pids.json",
+      "bytes": 35362,
+      "sha256": "fbfa4d695729ad18f963daf7e53b2782df65b791070f35d58c17a1ca231fa73f"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/setup.resolved.json",
+      "bytes": 18066,
+      "sha256": "a1487b6d74578c398c8577a17489e03f04c37aaa71560a0bc96a233e5902c3f7"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/thread-cpu-meta.json",
+      "bytes": 552,
+      "sha256": "4826a7e1f09483f1f53abaded9955b31c95fb35ff014b11fb90bea2cd111ac1b"
+    },
+    {
+      "path": "stages/mooncake-local-first/recorded/validation-cache-clear.json",
+      "bytes": 996,
+      "sha256": "762eaf074da17fc41a6cda5035b05d26ffbd4726012908eac09a7a2ad530e685"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/analyze-mooncake.py",
+      "bytes": 12366,
+      "sha256": "3c6190259fa73ed7d4c4a6b5ed50c13237b310c50233d64dc9d832d7b37e52ef"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/analyze-native-metrics.py",
+      "bytes": 5811,
+      "sha256": "e75e8e3cba06a8164609db71698fdd2c9e5eaafc3b91c018fd404864644b3144"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/analyze-system.py",
+      "bytes": 6765,
+      "sha256": "8085cdfdb57ba791d88e18d57bfa972677164aceac8671aa10ceda73ba66d204"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/analyze.py",
+      "bytes": 5080,
+      "sha256": "0318fd32ac1a5889e746b9fc9e09af8f6df9ac4be9261531c242c2258468ceac"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/clear-store.py",
+      "bytes": 556,
+      "sha256": "e3d1efc952925e6569bee482299ed014a9d1dc0909096b6af32950f64e7e8e05"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/clear-validation-cache.py",
+      "bytes": 2281,
+      "sha256": "651d8bcdbf30c093d8d7bdcec7977d366efef5f9b91eeab103739d54903a979f"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/collect.py",
+      "bytes": 2827,
+      "sha256": "433d3cf38a25d6b1c26446586126fdcea9709714fd350b8908af8c0243b4ea8e"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/mooncake_observer.py",
+      "bytes": 2901,
+      "sha256": "05929cb56d14f7de4b0c42e15de9c36698dbb86386bb570e1dc0fca6ecc08841"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/placement-proof.py",
+      "bytes": 483,
+      "sha256": "9833c830f2011b3df24edc19e3b4fd471d9afe7a9ed2c9e95be4b0df0a8bc4d0"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/run-benchmark.py",
+      "bytes": 6636,
+      "sha256": "6c3e36fcfe19fe41e02caeec35cd6a39b55b8c3ee4e552aae43dae49bba925de"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/services.py",
+      "bytes": 9242,
+      "sha256": "ff2356439c50e9928a3c781b0af471bf8fa95f7d8f4f0875147056cecc91e749"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/stop-recorded-services.py",
+      "bytes": 1585,
+      "sha256": "2a7975074193fe4f091362edd026332b648d5cbe0d513f123e505c83914ca1d7"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/validate-reuse.py",
+      "bytes": 8228,
+      "sha256": "48eabe066f5e895250eb51de74895f05a98a6f00dd9d4cf604c46f890d9cbb82"
+    },
+    {
+      "path": "stages/mooncake-local-first/scripts/verify-cache-mode.py",
+      "bytes": 1468,
+      "sha256": "56056224a4f7a15f2b854d9368fabb5f56010539b846187598c2f642178da044"
+    },
+    {
+      "path": "stages/mooncake-local-first/stage.json",
+      "bytes": 23609,
+      "sha256": "480394622565091a48524bc4d798cd2eb2b4df88b644ac72a70df8b39790d6c2"
+    },
+    {
+      "path": "stages/mooncake-random/config/client-argv.approved.json",
+      "bytes": 669,
+      "sha256": "1d2f1c53683581eda2f09321436d05ec7c78a3ceeacfd13a8a13655224359867"
+    },
+    {
+      "path": "stages/mooncake-random/config/mooncake-worker-0.json",
+      "bytes": 338,
+      "sha256": "8e0f3049a9fb470480aeaa042f54ec16ce19c456ed746778115ea071578bce17"
+    },
+    {
+      "path": "stages/mooncake-random/config/mooncake-worker-1.json",
+      "bytes": 338,
+      "sha256": "e942313ad221211fff10c6892699c4eb7329f549b09ff923c1c2f2cd0c68e5b4"
+    },
+    {
+      "path": "stages/mooncake-random/config/mooncake-worker-2.json",
+      "bytes": 338,
+      "sha256": "3c3fdab57b7cc2d0d5cb5834c1bb8aaaa7c56c9bf84196a8ba1e09ef83dfd3a8"
+    },
+    {
+      "path": "stages/mooncake-random/config/mooncake-worker-3.json",
+      "bytes": 338,
+      "sha256": "6a7a4ff0554c072e01e8637bf509887253d9a2ce035085cf668524ea4fad88b8"
+    },
+    {
+      "path": "stages/mooncake-random/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "stages/mooncake-random/config/setup.deployment.json",
+      "bytes": 18041,
+      "sha256": "2ff12c5c696028fa125f6be83042bf8afc9ad13616f6255cf3b14bebeb06c917"
+    },
+    {
+      "path": "stages/mooncake-random/config/worker-args.proposed.json",
+      "bytes": 2360,
+      "sha256": "bf6b271f798a993f648365001f0dcd39727998b45262bd64881cfb3b53069d42"
+    },
+    {
+      "path": "stages/mooncake-random/configuration-delta.json",
+      "bytes": 3658,
+      "sha256": "75be31b69762db76b29e7cfa9a42280c5435af2f2c61b4e7cde5e645668a96fd"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/benchmark-command.json",
+      "bytes": 794,
+      "sha256": "6e4902f7e531580d14bf43368a81b7e2b9c4e8a103b0d0709034f69176cffabb"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/profile_export_aiperf.json",
+      "bytes": 43205,
+      "sha256": "efb6489f7e8279ceb3f844a8fa0d2023df5f073aff7485fa3121224bdeb2fb16"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/runner-complete.json",
+      "bytes": 124,
+      "sha256": "621601ad686d66cb4247c0a3c1af5fceb93804fcef6dfaf4ba0ed9c94db03451"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/service-pids.json",
+      "bytes": 35020,
+      "sha256": "aff7a7adab598c603c37e5a76fe1ef3f7186c6ad364ef16c2923cb0b651a64b7"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/setup.resolved.json",
+      "bytes": 18041,
+      "sha256": "2ff12c5c696028fa125f6be83042bf8afc9ad13616f6255cf3b14bebeb06c917"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/thread-cpu-meta.json",
+      "bytes": 551,
+      "sha256": "1e26a76767288ae8843d936423da48dd8f0a7822dbf75341891f98679178b376"
+    },
+    {
+      "path": "stages/mooncake-random/recorded/validation-cache-clear.json",
+      "bytes": 991,
+      "sha256": "d2629980cc64a6d4a633f92a0b7a0e23cc0893f60afe7c0ca41a450d2e5fbf69"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/analyze-mooncake.py",
+      "bytes": 12366,
+      "sha256": "3c6190259fa73ed7d4c4a6b5ed50c13237b310c50233d64dc9d832d7b37e52ef"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/analyze-native-metrics.py",
+      "bytes": 5811,
+      "sha256": "e75e8e3cba06a8164609db71698fdd2c9e5eaafc3b91c018fd404864644b3144"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/analyze-system.py",
+      "bytes": 6765,
+      "sha256": "8085cdfdb57ba791d88e18d57bfa972677164aceac8671aa10ceda73ba66d204"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/analyze.py",
+      "bytes": 5080,
+      "sha256": "0318fd32ac1a5889e746b9fc9e09af8f6df9ac4be9261531c242c2258468ceac"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/clear-store.py",
+      "bytes": 556,
+      "sha256": "e3d1efc952925e6569bee482299ed014a9d1dc0909096b6af32950f64e7e8e05"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/clear-validation-cache.py",
+      "bytes": 2276,
+      "sha256": "f5b8c1d96c9a5aa81c44405b68767216a055bf758fcedaecb1c11a7eba31444c"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/collect.py",
+      "bytes": 2822,
+      "sha256": "bf47637bfaaa8499b1e3e25a11cfb782346f5de3be0e77aaa1cf606c4aaa729b"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/mooncake_observer.py",
+      "bytes": 2901,
+      "sha256": "05929cb56d14f7de4b0c42e15de9c36698dbb86386bb570e1dc0fca6ecc08841"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/placement-proof.py",
+      "bytes": 483,
+      "sha256": "9833c830f2011b3df24edc19e3b4fd471d9afe7a9ed2c9e95be4b0df0a8bc4d0"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/run-benchmark.py",
+      "bytes": 6631,
+      "sha256": "33c6902888f660e7a1f31ff572563f40def419e11e95b9838b1b603c98eb4110"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/services.py",
+      "bytes": 9227,
+      "sha256": "dddf5917f1096dcdb9ffb1867a31772c202c1e0bdac8a65c10586b6ecf0b5def"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/stop-recorded-services.py",
+      "bytes": 1580,
+      "sha256": "2714a0950ad50d5d725bdb2206fbd1a6ff99aacc0bfe7c0650632b6f0220fdd5"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/validate-reuse.py",
+      "bytes": 8223,
+      "sha256": "d411a044dd35e0e526ea8f52cf3e1dfd6ed32c2a35b8d137c6856aea68649c79"
+    },
+    {
+      "path": "stages/mooncake-random/scripts/verify-cache-mode.py",
+      "bytes": 1463,
+      "sha256": "baed5553b8352b79565110cb632b62c3a7b0af899695dbaa0aadeca1528f991b"
+    },
+    {
+      "path": "stages/mooncake-random/stage.json",
+      "bytes": 23444,
+      "sha256": "8df53aa9f527022cf02a4e07baef9c71a66eae32610b8ea7dcddb58c814454da"
+    },
+    {
+      "path": "stages.json",
+      "bytes": 288680,
+      "sha256": "d33f748972471846c8cdcfda5813554733aa2fde69a225a4a4a475a33f9ea8aa"
+    },
+    {
+      "path": "supplements/sglang/python/sglang/_version.py",
+      "bytes": 770,
+      "sha256": "d3df0ab1c2d8341d408c5cda43d058f9417e265704a70f7b5933e53e1abbae19"
+    },
+    {
+      "path": "supplements/sglang/test/registered/unit/mem_cache/test_kvcr_owner_timing.py",
+      "bytes": 17924,
+      "sha256": "4042f5366df1ca0f7239a99e5b5d463d05da21ee186f6b375b10fd40342370f1"
+    },
+    {
+      "path": "supplements/sglang/test/registered/unit/mem_cache/test_kvcr_pool_budget.py",
+      "bytes": 8203,
+      "sha256": "1c7349d2248d24a2e1c22371d6344701e7e8b0dcca50721f0bbf312ac81a5e44"
+    },
+    {
+      "path": "supplements/sglang/test/registered/unit/mem_cache/test_qwen38_direct_linker_cpu.py",
+      "bytes": 24164,
+      "sha256": "a6655de7db974315e07cc95d700befb36a20336caf0f78b60c27ee0babe4220d"
+    },
+    {
+      "path": "supplements/sglang/test/registered/unit/mem_cache/test_qwen38_kvcr_hints_cpu.py",
+      "bytes": 10427,
+      "sha256": "0f14ee09931427dd711eb91f680056a1b8d09f8d56144663836ec31605170797"
+    }
+  ]
+}

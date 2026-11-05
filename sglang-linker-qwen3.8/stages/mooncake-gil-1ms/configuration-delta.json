@@ -1,0 +1,103 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-mooncake",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-mooncake-gil-interval"
+  },
+  "worker_env": {
+    "parent": {
+      "PYTHONNOUSERSITE": "1",
+      "PYTHONUNBUFFERED": "1",
+      "NO_COLOR": "1",
+      "SGLANG_TIMEOUT_KEEP_ALIVE": "1800",
+      "SGLANG_NVFP4_CKPT_FP8_NEXTN_MOE": "0",
+      "SGLANG_SIMULATE_ACC_LEN": "2.32",
+      "SGLANG_SIMULATE_ACC_METHOD": "match-expected",
+      "SGLANG_SIMULATE_ACC_TOKEN_MODE": "real-draft-token",
+      "SGLANG_BUILD_RUST_EXTS": "none",
+      "SGLANG_RUST_BUILD_MODE": "never",
+      "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": "python",
+      "TOKENIZERS_PARALLELISM": "false",
+      "PYTHONHASHSEED": "0",
+      "OMP_NUM_THREADS": "4",
+      "SGLANG_JIT_DEEPGEMM_PRECOMPILE": "0",
+      "DYN_RUNTIME_NUM_WORKER_THREADS": "4",
+      "DYN_RUNTIME_MAX_BLOCKING_THREADS": "8",
+      "MC_TE_METRIC": "1",
+      "PYTHONPATH": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-mooncake/scripts",
+      "WITH_NVIDIA_PEERMEM": "0"
+    },
+    "stage": {
+      "PYTHONNOUSERSITE": "1",
+      "PYTHONUNBUFFERED": "1",
+      "NO_COLOR": "1",
+      "SGLANG_TIMEOUT_KEEP_ALIVE": "1800",
+      "SGLANG_NVFP4_CKPT_FP8_NEXTN_MOE": "0",
+      "SGLANG_SIMULATE_ACC_LEN": "2.32",
+      "SGLANG_SIMULATE_ACC_METHOD": "match-expected",
+      "SGLANG_SIMULATE_ACC_TOKEN_MODE": "real-draft-token",
+      "SGLANG_BUILD_RUST_EXTS": "none",
+      "SGLANG_RUST_BUILD_MODE": "never",
+      "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": "python",
+      "TOKENIZERS_PARALLELISM": "false",
+      "PYTHONHASHSEED": "0",
+      "OMP_NUM_THREADS": "4",
+      "SGLANG_JIT_DEEPGEMM_PRECOMPILE": "0",
+      "DYN_RUNTIME_NUM_WORKER_THREADS": "4",
+      "DYN_RUNTIME_MAX_BLOCKING_THREADS": "8",
+      "MC_TE_METRIC": "1",
+      "PYTHONPATH": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-mooncake-gil-interval/scripts",
+      "WITH_NVIDIA_PEERMEM": "0"
+    }
+  },
+  "state": {
+    "parent": "prepared fresh matched GB300 baseline; not run",
+    "stage": "prepared Moon1ms trial; not launched"
+  },
+  "mooncake": {
+    "parent": {
+      "version": "0.3.13",
+      "package": "mooncake-transfer-engine-cuda13",
+      "master_server_address": "127.0.0.1:25001",
+      "metadata_server": "P2PHANDSHAKE",
+      "global_segment_size": 137438953472,
+      "protocol": "rdma",
+      "device_name": "rocep172s0",
+      "allocation_strategy": "local_first",
+      "replicas": 1,
+      "master_metrics_port": 25002,
+      "standalone_storage": false,
+      "extra_backend_tag": "sglang-mooncake-agentx-20261031-r1"
+    },
+    "stage": {
+      "version": "0.3.13",
+      "package": "mooncake-transfer-engine-cuda13",
+      "master_server_address": "127.0.0.1:25001",
+      "metadata_server": "P2PHANDSHAKE",
+      "global_segment_size": 137438953472,
+      "protocol": "rdma",
+      "device_name": "rocep172s0",
+      "allocation_strategy": "local_first",
+      "replicas": 1,
+      "master_metrics_port": 25002,
+      "standalone_storage": false,
+      "extra_backend_tag": "sglang-mooncake-agentx-20261031-r1",
+      "python_gil_switch_interval_seconds": 0.001
+    }
+  },
+  "pod": {
+    "parent": "sglang-linker-qwen38-gb300-4gpu-r1",
+    "stage": "sglang-linker-qwen38-gb300-4gpu-r2"
+  },
+  "sglang_source_directory": {
+    "parent": null,
+    "stage": "sglang-mooncake-gil-interval"
+  },
+  "experiment": {
+    "parent": null,
+    "stage": {
+      "parent_case": "gb300-mooncake",
+      "parent_attempt": "gb300-router-control-r3",
+      "single_change": "owning SG interpreter GIL1ms"
+    }
+  }
+}

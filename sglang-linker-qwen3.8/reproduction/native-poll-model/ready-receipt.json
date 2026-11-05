@@ -1,0 +1,21 @@
+{
+  "status": "READY-reviewed-engine-generation-correction",
+  "cpu_tests_passed": 8,
+  "freeze_sha256": "76196b98904aa4246fcf9db32dacf8caafc4a817c326e564a03af95af2e0dc0c",
+  "supersedes_unexecuted_freeze_sha256": "c48bf7305a2da2481f462774030089822dfd9d2d7e3d219bb0d1708f7dfced95",
+  "case": "gb300-kvcr-native-poll-delay",
+  "attempt": "gb300-native-poll-1ms-r1",
+  "source": "software/sglang-native-poll-delay",
+  "source_patch_sha256": "d6134ee32e8da437f6f00e6a0b6dda386a932378fb07c32d5eed4cd6baecb6cf",
+  "constructor_generations": {
+    "startup": 1,
+    "after_clear_before_AgentX": 2,
+    "closed": 2
+  },
+  "post_clear_gate": true,
+  "model_launched": false,
+  "cluster_actions": false,
+  "scientific_analysis_executed": false,
+  "launcher_owned_by_Main": true,
+  "whole_qualification_and_canonical_review_required": true
+}

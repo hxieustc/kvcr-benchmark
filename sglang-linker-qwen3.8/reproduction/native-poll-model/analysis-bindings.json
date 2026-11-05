@@ -1,0 +1,19 @@
+{
+  "case": "gb300-kvcr-native-poll-delay",
+  "attempt": "gb300-native-poll-1ms-r1",
+  "profiling_seconds": 1800,
+  "concurrency": 48,
+  "warmup_extra_per_lane": 5,
+  "sglang_source_directory": "sglang-native-poll-delay",
+  "candidate_sha256": "a5b47d0330655e92e14224bd3cdbd7d060ca4f78b71f351845e47cc8de863d0e",
+  "candidate_full_patch_abbrev8_sha256": "d6134ee32e8da437f6f00e6a0b6dda386a932378fb07c32d5eed4cd6baecb6cf",
+  "primary_reference": {"case": "gb300-kvcr-gil-interval", "attempt": "gb300-gil-1ms-r1"},
+  "matched_moon_reference": {"case": "gb300-mooncake-gil-interval", "attempt": "gb300-mooncake-gil-1ms-r1"},
+  "python_gil_switch_interval_seconds": 0.001,
+  "nixl_prog_thread_delay_us": 1000,
+  "mamba_checkpoint_capacity": 1536,
+  "dram_gib_per_worker": 128,
+  "analysis_location": "local server after complete verified download",
+  "measured_efficacy": false,
+  "parity_result": false
+}

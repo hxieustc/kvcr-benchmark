@@ -1,0 +1,439 @@
+{
+  "kvcr-baseline": {
+    "manifest": "sglang-linker-qwen3.8-kvcr.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr",
+    "historical_attempt": "gb300-router-control-r2",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+        "branch": "qwen3.8-linker-native-bg-progress",
+        "parent": "3d8c9b831e8fde161d510ac233550314724880e9"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-baseline/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-pool-index-m2261": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-pool-index-m2261.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-pool-index",
+    "historical_attempt": "gb300-pool-index-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-pool-index-m2261/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-m2176": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-m2176.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-pool-index-capacity",
+    "historical_attempt": "gb300-m2176-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-m2176/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-m1536": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-m1536.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-pool-index-capacity-followup",
+    "historical_attempt": "gb300-m1536-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-m1536/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-first-page-negative": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-first-page-negative.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-first-page-negative",
+    "historical_attempt": "gb300-first-page-negative-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+        "branch": "qwen3.8-linker-first-page-negative",
+        "parent": "76b29b63408277c04e9554b8abbc8503673abd95"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-first-page-negative/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-incremental-confirmation": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-incremental-confirmation.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-incremental-confirmation",
+    "historical_attempt": "gb300-incremental-confirmation-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+        "branch": "qwen3.8-linker-incremental-confirmation",
+        "parent": "bb6795e14ec9a62207b421f7625fbf9987e4e456"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-incremental-confirmation/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-gil-1ms": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-gil-1ms.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-gil-interval",
+    "historical_attempt": "gb300-gil-1ms-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "8cfe084a22a65dac45790e079b1f920039be8b18",
+        "branch": "qwen3.8-linker-gil-1ms",
+        "parent": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-gil-1ms/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "kvcr-native-poll-1ms": {
+    "manifest": "sglang-linker-qwen3.8-kvcr-native-poll-1ms.xml",
+    "backend": "kvcr",
+    "historical_case": "gb300-kvcr-native-poll-delay",
+    "historical_attempt": "gb300-native-poll-1ms-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+        "branch": "qwen3.8-linker-native-poll-1ms",
+        "parent": "8cfe084a22a65dac45790e079b1f920039be8b18"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+        "branch": "qwen3.8-linker-per-pool-eviction-index",
+        "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/kvcr-native-poll-1ms/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "mooncake-baseline": {
+    "manifest": "sglang-linker-qwen3.8-mooncake.xml",
+    "backend": "mooncake",
+    "historical_case": "gb300-mooncake",
+    "historical_attempt": "gb300-router-control-r3",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+        "branch": "qwen3.8-linker-native-bg-progress",
+        "parent": "3d8c9b831e8fde161d510ac233550314724880e9"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/mooncake-baseline/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "mooncake-gil-1ms": {
+    "manifest": "sglang-linker-qwen3.8-mooncake-gil-1ms.xml",
+    "backend": "mooncake",
+    "historical_case": "gb300-mooncake-gil-interval",
+    "historical_attempt": "gb300-mooncake-gil-1ms-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+        "branch": "qwen3.8-linker-mooncake-gil-1ms",
+        "parent": "76b29b63408277c04e9554b8abbc8503673abd95"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+        "branch": "qwen3.8-linker-native-bg-progress",
+        "parent": "3d8c9b831e8fde161d510ac233550314724880e9"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/mooncake-gil-1ms/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "mooncake-random": {
+    "manifest": "sglang-linker-qwen3.8-mooncake-random.xml",
+    "backend": "mooncake",
+    "historical_case": "gb300-mooncake-placement-random",
+    "historical_attempt": "gb300-mooncake-random-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+        "branch": "qwen3.8-linker-native-bg-progress",
+        "parent": "3d8c9b831e8fde161d510ac233550314724880e9"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/mooncake-random/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  },
+  "mooncake-local-first": {
+    "manifest": "sglang-linker-qwen3.8-mooncake-local-first.xml",
+    "backend": "mooncake",
+    "historical_case": "gb300-mooncake-placement-local-first",
+    "historical_attempt": "gb300-mooncake-local-first-r1",
+    "sources": {
+      "sglang": {
+        "repository": "hxieustc/sglang",
+        "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+        "branch": "qwen3.8-linker-qsa-base"
+      },
+      "kvcr": {
+        "repository": "hxieustc/kvcr",
+        "sha": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+        "branch": "qwen3.8-linker-native-bg-progress",
+        "parent": "3d8c9b831e8fde161d510ac233550314724880e9"
+      },
+      "dynamo": {
+        "repository": "hxieustc/dynamo",
+        "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+        "branch": "qwen3.8-linker-cache-key-handshake"
+      },
+      "aiperf": {
+        "repository": "SemiAnalysisAI/agentx-harness",
+        "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+        "tag": "agentx-v1.0.12",
+        "role": "Release-source reference; install the SHA256-locked wheel and apply only the trace revision fixture."
+      }
+    },
+    "settings": "stages/mooncake-local-first/stage.json",
+    "recorded_upstream_heads": {
+      "sglang": "5b65e088969b872b924355d20a329e9816a1b094",
+      "kvcr": "3d8c9b831e8fde161d510ac233550314724880e9",
+      "dynamo": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+    }
+  }
+}

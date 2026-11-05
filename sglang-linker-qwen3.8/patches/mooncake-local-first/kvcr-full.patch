@@ -1,0 +1,13 @@
+diff --git a/src/kvcr/runtime/progress.py b/src/kvcr/runtime/progress.py
+index 7b9e8980..9867f210 100644
+--- a/src/kvcr/runtime/progress.py
++++ b/src/kvcr/runtime/progress.py
+@@ -746,7 +746,7 @@ class _KVCRProgress:
+             self._nixl_agent = nixl_agent(
+                 self._nixl_agent_name,
+                 nixl_agent_config(
+-                    num_threads=4,
++                    num_threads=0,
+                     capture_telemetry=True,
+                     enable_listen_thread=True,
+                     listen_port=self._nixl_listen_port,

@@ -1,0 +1,78 @@
+{
+  "models": {
+    "items": [
+      {
+        "name": "nvidia/Qwen3.8-Flash-Next-NVFP4"
+      }
+    ]
+  },
+  "endpoint": {
+    "urls": [
+      "http://10.3.10.66:8000"
+    ],
+    "type": "chat",
+    "streaming": true,
+    "use_server_token_count": true
+  },
+  "datasets": [
+    {
+      "name": "main",
+      "type": "public",
+      "dataset": "semianalysis_cc_traces_weka_062126_256k",
+      "entries": 393,
+      "random_seed": 42,
+      "trace_idle_gap_cap_seconds": 300.0
+    }
+  ],
+  "phases": [
+    {
+      "name": "profiling",
+      "kind": "profiling",
+      "type": "concurrency",
+      "duration": 3600.0,
+      "concurrency": 48,
+      "grace_period": 30.0,
+      "timing_mode": "agentic_replay",
+      "failed_request_threshold": 0.1,
+      "trajectory_start_min_ratio": 0.25,
+      "trajectory_start_max_ratio": 0.75,
+      "system_idle_gap_cap_seconds": 10.0,
+      "warmup_requests_per_lane": 10,
+      "agentic_warmup_grace_period": 1800.0
+    }
+  ],
+  "artifacts": {
+    "dir": "/logs/agentic/aiperf_artifacts",
+    "slice_duration": 1.0,
+    "auto_plot": false,
+    "plot_required": false
+  },
+  "tokenizer": {
+    "name": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "trust_remote_code": true
+  },
+  "gpu_telemetry": {
+    "enabled": false
+  },
+  "server_metrics": {
+    "enabled": true,
+    "urls": [
+      "http://10.3.10.66:8000/metrics"
+    ],
+    "formats": [
+      "json",
+      "csv"
+    ]
+  },
+  "network_latency": {
+    "enabled": false
+  },
+  "otel": {},
+  "mlflow": {},
+  "wandb": {},
+  "runtime": {
+    "ui": "none",
+    "stats_interval": 30.0
+  },
+  "scenario": "agentx"
+}

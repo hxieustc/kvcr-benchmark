@@ -1,0 +1,30 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-first-page-negative",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-incremental-confirmation"
+  },
+  "state": {
+    "parent": "prepared first-page-negative full1800s arm; not launched",
+    "stage": "prepared A+B full1800s experiment; not launched"
+  },
+  "pod": {
+    "parent": "sglang-linker-qwen38-gb300-4gpu-r1",
+    "stage": "sglang-linker-qwen38-gb300-4gpu-r2"
+  },
+  "sglang_source_directory": {
+    "parent": null,
+    "stage": "sglang-incremental-confirmation"
+  },
+  "experiment": {
+    "parent": {
+      "parent_case": "gb300-kvcr-pool-index-capacity-followup",
+      "parent_attempt": "gb300-m1536-r1",
+      "single_change": "14-line first ALL_PAGES cached-negative fast path"
+    },
+    "stage": {
+      "parent_case": "gb300-kvcr-first-page-negative",
+      "parent_attempt": "gb300-first-page-negative-r1",
+      "single_change": "encoded plus incremental confirmation only; f6de candidate"
+    }
+  }
+}

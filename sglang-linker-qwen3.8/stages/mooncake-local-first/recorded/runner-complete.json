@@ -1,0 +1,9 @@
+{
+  "attempt": "gb300-mooncake-local-first-r1",
+  "services_closed": true,
+  "utc": 1793649956.5492384,
+  "pod_retained": true,
+  "postcapture_recovery": true,
+  "original_controller_success": false,
+  "recovery_proof": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-mooncake-placement-local-first/sources/postcapture-cache-hit-recovery/recovery-proof.json"
+}

@@ -1,0 +1,41 @@
+diff --git a/components/src/dynamo/sglang/register.py b/components/src/dynamo/sglang/register.py
+index baeefb1b..f162423a 100644
+--- a/components/src/dynamo/sglang/register.py
++++ b/components/src/dynamo/sglang/register.py
+@@ -585,6 +585,17 @@ def _eagle_enabled_for(speculative_algorithm: Optional[str]) -> bool:
+         return False
+ 
+ 
++def _cache_eagle_enabled_for(engine, speculative_algorithm) -> bool:
++    """Advertise actual cache keys; Mamba disables bigrams even with EAGLE."""
++    infos = getattr(getattr(engine, "_scheduler_init_result", None), "scheduler_infos", [])
++    modes = [info["cache_key_is_eagle"] for info in infos if "cache_key_is_eagle" in info]
++    if not modes:
++        return _eagle_enabled_for(speculative_algorithm)
++    if len(modes) != len(infos) or any(type(mode) is not bool for mode in modes) or any(mode != modes[0] for mode in modes):
++        raise ValueError("Scheduler cache key modes must be complete, boolean and consistent")
++    return modes[0]
++
++
+ def _get_token_budget(engine: sgl.Engine, server_args: ServerArgs) -> TokenBudget:
+     """Describe SGLang's request-overflow behavior."""
+     tokenizer_manager = engine.tokenizer_manager
+@@ -733,8 +744,8 @@ async def get_runtime_config(
+     if base_capacity.max_num_batched_tokens is not None:
+         runtime_config.max_num_batched_tokens = base_capacity.max_num_batched_tokens
+ 
+-    if _eagle_enabled_for(server_args.speculative_algorithm):
+-        runtime_config.enable_eagle = True
++    cache_eagle_enabled = _cache_eagle_enabled_for(engine, server_args.speculative_algorithm)
++    runtime_config.enable_eagle = cache_eagle_enabled
+ 
+     spec_decode_runtime_data = get_spec_decode_runtime_data(server_args)
+     if spec_decode_runtime_data is not None:
+@@ -754,6 +765,7 @@ async def get_runtime_config(
+ 
+     mooncake_runtime_data = _get_mooncake_runtime_data(server_args)
+     if mooncake_runtime_data is not None:
++        mooncake_runtime_data["is_eagle"] = cache_eagle_enabled
+         try:
+             runtime_config.set_engine_specific(
+                 SGLANG_HICACHE_MOONCAKE_RUNTIME_KEY,

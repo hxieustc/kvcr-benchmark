@@ -1,0 +1,42 @@
+{
+  "endpoint": "sglkvcrreview.backend.clear_kv_blocks",
+  "transport": "tcp",
+  "workers": [
+    {
+      "instance_id": 4198467020039495734,
+      "begin_utc": 1793524602.2196116,
+      "end_utc": 1793524607.0745022,
+      "result": {
+        "status": "success",
+        "message": "KV cache cleared"
+      }
+    },
+    {
+      "instance_id": 7830162623908311397,
+      "begin_utc": 1793524602.2196527,
+      "end_utc": 1793524610.2463841,
+      "result": {
+        "status": "success",
+        "message": "KV cache cleared"
+      }
+    },
+    {
+      "instance_id": 7954041643969779508,
+      "begin_utc": 1793524602.2196684,
+      "end_utc": 1793524610.0801034,
+      "result": {
+        "status": "success",
+        "message": "KV cache cleared"
+      }
+    },
+    {
+      "instance_id": 11337096884489534305,
+      "begin_utc": 1793524602.2196763,
+      "end_utc": 1793524607.9719846,
+      "result": {
+        "status": "success",
+        "message": "KV cache cleared"
+      }
+    }
+  ]
+}

@@ -1,0 +1,521 @@
+{
+  "passed": true,
+  "stage_file_postimages": 138,
+  "unique_repository_commit_path_checks": 57,
+  "checks": [
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/registry.py",
+      "expected_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "actual_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "expected_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "actual_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py",
+      "expected_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "actual_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py",
+      "expected_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "actual_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/runtime.py",
+      "expected_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "actual_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py",
+      "expected_blob": "f19e7611c983d872bb7ad514a0ecc5966f0db6b5",
+      "actual_blob": "f19e7611c983d872bb7ad514a0ecc5966f0db6b5",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "expected_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "actual_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py",
+      "expected_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "actual_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "commit": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+      "path": "src/kvcr/runtime/progress.py",
+      "expected_blob": "9867f21012ef0a36126a57ba3948bcbc1ff85148",
+      "actual_blob": "9867f21012ef0a36126a57ba3948bcbc1ff85148",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/dynamo",
+      "commit": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+      "path": "components/src/dynamo/sglang/register.py",
+      "expected_blob": "f162423a407b9362bb2608f04609fe2af1788aff",
+      "actual_blob": "f162423a407b9362bb2608f04609fe2af1788aff",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "commit": "013955b73526a01b3f242da185f31deb41d14b5c",
+      "path": "tests/unit/test_kvcr_local_dram.py",
+      "expected_blob": "189b1e92ee354a5b0223c367d1efb225ad6622f7",
+      "actual_blob": "189b1e92ee354a5b0223c367d1efb225ad6622f7",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "commit": "013955b73526a01b3f242da185f31deb41d14b5c",
+      "path": "src/kvcr/runtime/progress.py",
+      "expected_blob": "9867f21012ef0a36126a57ba3948bcbc1ff85148",
+      "actual_blob": "9867f21012ef0a36126a57ba3948bcbc1ff85148",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "commit": "013955b73526a01b3f242da185f31deb41d14b5c",
+      "path": "src/kvcr/backends/local_dram_pools.py",
+      "expected_blob": "47fc2991b156039a4138f51025e36a07725e061f",
+      "actual_blob": "47fc2991b156039a4138f51025e36a07725e061f",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/registry.py",
+      "expected_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "actual_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "expected_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "actual_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py",
+      "expected_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "actual_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py",
+      "expected_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "actual_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/runtime.py",
+      "expected_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "actual_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py",
+      "expected_blob": "a63c72ef1da191988f59b31a767dd0b6418b48b2",
+      "actual_blob": "a63c72ef1da191988f59b31a767dd0b6418b48b2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "expected_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "actual_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py",
+      "expected_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "actual_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/registry.py",
+      "expected_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "actual_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "expected_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "actual_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py",
+      "expected_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "actual_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py",
+      "expected_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "actual_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/runtime.py",
+      "expected_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "actual_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py",
+      "expected_blob": "2078d44760fb1938cacbb415ef50d2bad1b472f5",
+      "actual_blob": "2078d44760fb1938cacbb415ef50d2bad1b472f5",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "expected_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "actual_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py",
+      "expected_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "actual_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/registry.py",
+      "expected_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "actual_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "expected_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "actual_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py",
+      "expected_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "actual_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py",
+      "expected_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "actual_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/runtime.py",
+      "expected_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "actual_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py",
+      "expected_blob": "5a6e22d035220886b0f599844a449254f4ed2b44",
+      "actual_blob": "5a6e22d035220886b0f599844a449254f4ed2b44",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "expected_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "actual_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py",
+      "expected_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "actual_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/registry.py",
+      "expected_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "actual_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "expected_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "actual_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py",
+      "expected_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "actual_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py",
+      "expected_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "actual_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/native_progress_delay.py",
+      "expected_blob": "311f9244d039189b1946174bd5d352f262cc599a",
+      "actual_blob": "311f9244d039189b1946174bd5d352f262cc599a",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/runtime.py",
+      "expected_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "actual_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py",
+      "expected_blob": "e4de02b4909f9d7cf2db02ac9eb1103f30302533",
+      "actual_blob": "e4de02b4909f9d7cf2db02ac9eb1103f30302533",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "expected_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "actual_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py",
+      "expected_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "actual_blob": "c825c2297cf3072afeda644c28c80207e564a27e",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/_native_progress/__init__.py",
+      "expected_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "actual_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/_native_progress/bridge.py",
+      "expected_blob": "a03326991bd29c3e8d23317c6d65cfde4718f56a",
+      "actual_blob": "a03326991bd29c3e8d23317c6d65cfde4718f56a",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/_native_progress/overlay/_api.py",
+      "expected_blob": "a8d8dfb925bdd08b5a1a71743742489c156a292a",
+      "actual_blob": "a8d8dfb925bdd08b5a1a71743742489c156a292a",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/registry.py",
+      "expected_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "actual_blob": "0adf0acf83b7e61e31a671280d1723f1d8038567",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "expected_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "actual_blob": "c084af6d1928be57e2206399250a389f03867609",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py",
+      "expected_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "actual_blob": "fcd40015982bb679b5b7082e9ad9d55af79839f2",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py",
+      "expected_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "actual_blob": "c582c11def652e828d13b165dddd6578770197c1",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/runtime.py",
+      "expected_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "actual_blob": "080bd1d08a78c12059381863290aed0f85bc541c",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py",
+      "expected_blob": "f19e7611c983d872bb7ad514a0ecc5966f0db6b5",
+      "actual_blob": "f19e7611c983d872bb7ad514a0ecc5966f0db6b5",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "expected_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "actual_blob": "fe1b42c1e708a49105d0260f9c8e73e1765f4138",
+      "ok": true,
+      "error": null
+    },
+    {
+      "repository": "hxieustc/sglang",
+      "commit": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py",
+      "expected_blob": "bca0d8a93ec3f5da33a525baf72f0d5d930681b1",
+      "actual_blob": "bca0d8a93ec3f5da33a525baf72f0d5d930681b1",
+      "ok": true,
+      "error": null
+    }
+  ],
+  "scope": "GitHub file blob IDs verified against reconstructed archived experiment postimages. No native/GPU benchmark was run for publication."
+}

@@ -1,0 +1,11 @@
+{
+  "master_server_address": "127.0.0.1:25001",
+  "metadata_server": "P2PHANDSHAKE",
+  "global_segment_size": 137438953472,
+  "protocol": "rdma",
+  "device_name": "rocep172s0",
+  "standalone_storage": false,
+  "extra_backend_tag": "sglang-mooncake-agentx-20261031-r1",
+  "local_hostname": "100.65.83.70:25102",
+  "check_server": false
+}

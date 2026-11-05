@@ -1,0 +1,47 @@
+{
+  "repo": "semianalysisai/cc-traces-weka-062126-256k",
+  "revision": "8fecd2fc56694469f758f0afbbb6335ad3043740",
+  "snapshot": "/workspace/sglang-linker-qwen38-agentx-20261031-r1/cache/huggingface/hub/datasets--semianalysisai--cc-traces-weka-062126-256k/snapshots/8fecd2fc56694469f758f0afbbb6335ad3043740",
+  "file_metadata": [
+    {
+      "file": ".gitattributes",
+      "bytes": 2553,
+      "blob": "a545d70d645793bd59e0135acecf83d12f885286"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3203,
+      "blob": "857e481721f44c5654b3900835756274d48fb258"
+    },
+    {
+      "file": "plots/distributions_linear.png",
+      "bytes": 209505,
+      "blob": "2c7697bce2a716c866d0b7652d8874210f6746c4"
+    },
+    {
+      "file": "plots/distributions_log.png",
+      "bytes": 210925,
+      "blob": "e86a0ee4b53af6c30b0616fdfc24e453474362c3"
+    },
+    {
+      "file": "plots/subagent_distributions_linear.png",
+      "bytes": 200736,
+      "blob": "d4057d72a83e7d3709b662470aa3c9eee31444aa"
+    },
+    {
+      "file": "plots/subagent_distributions_log.png",
+      "bytes": 202710,
+      "blob": "fa8bc43039380d790713e672cf6e00b4f05530a4"
+    },
+    {
+      "file": "stats.txt",
+      "bytes": 237,
+      "blob": "d21d3db33b5ca3b4a2d88b82b640d9cee8f8b098"
+    },
+    {
+      "file": "traces.jsonl",
+      "bytes": 568864747,
+      "blob": "e70b3624f5b2dd7fcea2a6cc657ba84d5f12afc2"
+    }
+  ]
+}

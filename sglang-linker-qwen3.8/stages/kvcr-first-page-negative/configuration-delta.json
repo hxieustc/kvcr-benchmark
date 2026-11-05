@@ -1,0 +1,23 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-pool-index-capacity-followup",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-first-page-negative"
+  },
+  "state": {
+    "parent": "prepared capacity-only GB300 arm; not launched",
+    "stage": "prepared first-page-negative full1800s arm; not launched"
+  },
+  "experiment": {
+    "parent": {
+      "baseline_case": "gb300-kvcr-pool-index",
+      "baseline_attempt": "gb300-pool-index-r1",
+      "single_change": "explicit mamba_checkpoint_capacity",
+      "total_store_gib_per_worker": 128
+    },
+    "stage": {
+      "parent_case": "gb300-kvcr-pool-index-capacity-followup",
+      "parent_attempt": "gb300-m1536-r1",
+      "single_change": "14-line first ALL_PAGES cached-negative fast path"
+    }
+  }
+}

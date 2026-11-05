@@ -1,0 +1,12 @@
+{
+  "reference_job_url": "https://github.com/SemiAnalysisAI/InferenceX/actions/runs/40221796954/job/121432408122",
+  "reference_artifact_id": 12637020002,
+  "reference_artifact_sha256": "7a89553ff95b47dff8dffd4f5c63017bd01929ee1cd7798195f7e7a270fd8e59",
+  "reference_warmup_elapsed_seconds": 365.85,
+  "reference_warmup_mandatory_primers": 46,
+  "reference_warmup_extra_requests_per_lane": 10,
+  "reference_warmup_total_requests": 526,
+  "reference_profile_seconds": 3600,
+  "reference_profile_completed": 5114,
+  "reference_profile_cancelled": 6
+}

@@ -1,0 +1,12 @@
+{
+  "clock_ticks_per_second": 100,
+  "interval_seconds": 5,
+  "max_processes": 256,
+  "max_threads": 4096,
+  "max_process_scan": 4096,
+  "max_task_scan": 16384,
+  "zombie_filter": "all-tasks-Z-with-membership-and-leader-recheck",
+  "sampler_pid": 28488,
+  "script_sha256": "7cfce47ff0014f4b025bd880f98a257b80a36d61996523829db8f8ef5ee0f971",
+  "scope": "Visible pod process/thread counters; identities include start_ticks. Samples miss exited threads and are not exclusive operation CPU or TTFT components. No process cmdlines/environments captured."
+}

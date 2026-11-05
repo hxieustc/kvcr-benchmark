@@ -1,0 +1,22 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-pool-index"
+  },
+  "state": {
+    "parent": "prepared fresh matched GB300 baseline; not run",
+    "stage": "prepared index-only GB300 arm; not launched"
+  },
+  "kvcr_source_directory": {
+    "parent": null,
+    "stage": "kvcr-pool-index"
+  },
+  "experiment": {
+    "parent": null,
+    "stage": {
+      "baseline": "gb300-kvcr",
+      "single_change": "single-physical-pool eviction candidate index",
+      "cache_budget_unchanged": true
+    }
+  }
+}

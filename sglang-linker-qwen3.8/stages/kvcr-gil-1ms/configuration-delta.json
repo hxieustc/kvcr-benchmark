@@ -1,0 +1,51 @@
+{
+  "canonical_root": {
+    "parent": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-incremental-confirmation",
+    "stage": "/workspace/sglang-kvcr-parity-20261031-r1/cases/gb300-kvcr-gil-interval"
+  },
+  "state": {
+    "parent": "prepared A+B full1800s experiment; not launched",
+    "stage": "prepared A+B GIL1ms full1800s experiment; not launched"
+  },
+  "sglang_source_directory": {
+    "parent": "sglang-incremental-confirmation",
+    "stage": "sglang-gil-interval"
+  },
+  "kvcr_options": {
+    "parent": {
+      "kvcr_service_socket_path": null,
+      "dram_size_gb": 128,
+      "publish_inventory": true,
+      "enable_telemetry": true,
+      "startup_timeout_seconds": 300,
+      "operation_timeout_ms": 20000,
+      "abandon_timeout_ms": 60000,
+      "profile_owner": true,
+      "mamba_checkpoint_capacity": 1536
+    },
+    "stage": {
+      "kvcr_service_socket_path": null,
+      "dram_size_gb": 128,
+      "publish_inventory": true,
+      "enable_telemetry": true,
+      "startup_timeout_seconds": 300,
+      "operation_timeout_ms": 20000,
+      "abandon_timeout_ms": 60000,
+      "profile_owner": true,
+      "mamba_checkpoint_capacity": 1536,
+      "python_gil_switch_interval_seconds": 0.001
+    }
+  },
+  "experiment": {
+    "parent": {
+      "parent_case": "gb300-kvcr-first-page-negative",
+      "parent_attempt": "gb300-first-page-negative-r1",
+      "single_change": "encoded plus incremental confirmation only; f6de candidate"
+    },
+    "stage": {
+      "parent_case": "gb300-kvcr-incremental-confirmation",
+      "parent_attempt": "gb300-incremental-confirmation-r1",
+      "single_change": "A+B plus owning-interpreter GIL1ms; b4d62e candidate"
+    }
+  }
+}

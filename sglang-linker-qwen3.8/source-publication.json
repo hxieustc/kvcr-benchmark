@@ -1,0 +1,55 @@
+{
+  "dynamo": {
+    "baseline": {
+      "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+      "branch": "qwen3.8-linker-cache-key-handshake"
+    }
+  },
+  "sglang": {
+    "baseline": {
+      "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "branch": "qwen3.8-linker-qsa-base"
+    },
+    "kvcr-baseline": {
+      "sha": "76b29b63408277c04e9554b8abbc8503673abd95",
+      "branch": "qwen3.8-linker-qsa-base"
+    },
+    "kvcr-first-page-negative": {
+      "sha": "bb6795e14ec9a62207b421f7625fbf9987e4e456",
+      "branch": "qwen3.8-linker-first-page-negative",
+      "parent": "76b29b63408277c04e9554b8abbc8503673abd95"
+    },
+    "kvcr-incremental-confirmation": {
+      "sha": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6",
+      "branch": "qwen3.8-linker-incremental-confirmation",
+      "parent": "bb6795e14ec9a62207b421f7625fbf9987e4e456"
+    },
+    "kvcr-gil-1ms": {
+      "sha": "8cfe084a22a65dac45790e079b1f920039be8b18",
+      "branch": "qwen3.8-linker-gil-1ms",
+      "parent": "115a0fb18396aa0c0ba1ca45f6d96baaf3474fe6"
+    },
+    "kvcr-native-poll-1ms": {
+      "sha": "091b400f267e0340abe31f0fce3c13e129e68ad7",
+      "branch": "qwen3.8-linker-native-poll-1ms",
+      "parent": "8cfe084a22a65dac45790e079b1f920039be8b18"
+    },
+    "mooncake-gil-1ms": {
+      "sha": "e4fc1d0d116f51fc3889a239804c7bd13ba0c27c",
+      "branch": "qwen3.8-linker-mooncake-gil-1ms",
+      "parent": "76b29b63408277c04e9554b8abbc8503673abd95"
+    }
+  },
+  "kvcr": {
+    "kvcr-baseline": {
+      "sha": "3b01cb20b453081cf221ab3b82d91df9228bbc90",
+      "branch": "qwen3.8-linker-native-bg-progress",
+      "parent": "3d8c9b831e8fde161d510ac233550314724880e9"
+    },
+    "kvcr-pool-index-m2261": {
+      "sha": "013955b73526a01b3f242da185f31deb41d14b5c",
+      "branch": "qwen3.8-linker-per-pool-eviction-index",
+      "parent": "3b01cb20b453081cf221ab3b82d91df9228bbc90"
+    }
+  }
+}

@@ -1,0 +1,760 @@
+diff --git a/python/sglang/srt/managers/scheduler.py b/python/sglang/srt/managers/scheduler.py
+index 7e33b189..c084af6d 100644
+--- a/python/sglang/srt/managers/scheduler.py
++++ b/python/sglang/srt/managers/scheduler.py
+@@ -1899,6 +1899,11 @@ class Scheduler(
+             "startup_time": self.startup_time,
+         }
+ 
++        cache_core = getattr(self.tree_cache, "tree_core", self.tree_cache)
++        cache_is_eagle = getattr(cache_core, "is_eagle", None)
++        if type(cache_is_eagle) is bool:
++            result_dict["cache_key_is_eagle"] = cache_is_eagle
++
+         hint_sources = self.kv_events_publisher.kv_hint_sources()
+         if hint_sources:
+             result_dict["kv_hint_sources"] = hint_sources
+diff --git a/python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py b/python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py
+index 4711efca..c582c11d 100644
+--- a/python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py
++++ b/python/sglang/srt/mem_cache/hybrid_cache/hybrid_pool_assembler.py
+@@ -1952,6 +1952,18 @@ class _DeepSeekV4Strategy(StackStrategy):
+ 
+ 
+ class _MambaStrategy(StackStrategy):
++    def build_direct_linker_pool_group(self, *, kvcache, params, page_size):
++        from sglang.srt.mem_cache.hybrid_cache.linker_pool_assembler import (
++            _build_qsa_device_pool_group,
++        )
++        from sglang.srt.mem_cache.qsa_kv_pool import QSATokenToKVPool
++
++        if type(kvcache) is not QSATokenToKVPool:
++            return super().build_direct_linker_pool_group(
++                kvcache=kvcache, params=params, page_size=page_size
++            )
++        return _build_qsa_device_pool_group(kvcache, params, page_size)
++
+     def matches(self, kvcache, components):
+         from sglang.srt.mem_cache.memory_pool import HybridLinearKVPool
+ 
+diff --git a/python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py b/python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py
+index 3a9e54c5..fcd40015 100644
+--- a/python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py
++++ b/python/sglang/srt/mem_cache/hybrid_cache/linker_pool_assembler.py
+@@ -549,6 +549,120 @@ def _build_mamba_swa_device_pool_group(
+     return DevicePoolGroup(entries, num_layers + 1, page_size)
+ 
+ 
++def _build_qsa_device_pool_group(
++    kvcache: Any, params: Any, page_size: int
++) -> DevicePoolGroup:
++    from sglang.srt.mem_cache.memory_pool import MHATokenToKVPool
++    from sglang.srt.mem_cache.qsa_kv_pool import QSATokenToKVPool
++
++    req_pool = params.req_to_token_pool
++    if get_memory().enable_unified_memory:
++        raise ValueError("QSA direct linker does not support unified memory.")
++    if not params.enable_mamba_extra_buffer:
++        raise ValueError("QSA direct linker requires Mamba extra-buffer checkpoints.")
++    if req_pool.mamba_ckpt_pool is not None:
++        raise ValueError("QSA direct linker does not support int8 checkpoints.")
++    if params.pp_size != 1 or params.attn_cp_size != 1 or kvcache.start_layer != 0:
++        raise ValueError("QSA direct linker requires PP1/CP1 and start_layer=0.")
++    if params.mtp_draft_mamba_pools:
++        raise ValueError("QSA direct linker does not support separate draft state.")
++    drafts = params.mtp_draft_device_pools
++    if len(drafts) > 1:
++        raise ValueError("QSA direct linker supports one full-attention MTP draft.")
++
++    kv_buffers, index_buffers = [], []
++    kv_mapping, index_mapping = {}, {}
++    ratio = kvcache.qsa_compress_ratio
++    if ratio <= 0 or page_size <= 1 or page_size % ratio:
++        raise ValueError("QSA direct linker pages must divide into compression groups.")
++    for pool in (kvcache, *drafts):
++        if type(pool) is not QSATokenToKVPool:
++            raise ValueError("QSA direct linker requires QSA target/draft pools.")
++        if pool.page_size != page_size or pool.qsa_compress_ratio != ratio:
++            raise ValueError("QSA target/draft page size and compress ratio must match.")
++        if pool.mamba_pool is not req_pool.mamba_pool:
++            raise ValueError("QSA direct linker requires shared target/draft state.")
++        full = pool.full_kv_pool
++        if type(full) is not MHATokenToKVPool or full.is_quantized_kv_cache:
++            raise ValueError("QSA direct linker requires MHA without scale buffers.")
++        if full.k_scale_buffer is not None or full.native_k_scale_buffer is not None:
++            raise ValueError("QSA direct linker does not support scale buffers.")
++        layers = pool.full_attention_layer_id_mapping
++        if pool is not kvcache and layers != {0: 0}:
++            raise ValueError("QSA direct linker requires one full-attention draft layer.")
++
++        # Page-row byte views support both NHD token rows and HND page rows.
++        # Never reshape a noncontiguous tensor into a detached copy.
++        for buffers, mapping, tensors, tokens_per_row in (
++            (kv_buffers, kv_mapping, full.k_buffer, full._kv_tokens_per_row()),
++            (kv_buffers, kv_mapping, full.v_buffer, full._kv_tokens_per_row()),
++            (index_buffers, index_mapping, pool.qsa_compressed_k_buffer_pool, 1),
++        ):
++            if len(tensors) != len(layers):
++                raise ValueError("QSA direct linker buffer/layer count mismatch.")
++            tokens_per_page = (
++                page_size // ratio if buffers is index_buffers else page_size
++            )
++            for layer, index in layers.items():
++                tensor = tensors[index]
++                span = tokens_per_page // tokens_per_row
++                if not tensor.is_contiguous() or tensor.shape[0] % span:
++                    raise ValueError(
++                        "QSA direct linker requires contiguous complete pages."
++                    )
++                # The draft is consumed after the target forward; attach it to
++                # gate zero even when target layer zero is linear attention.
++                gate = layer if pool is kvcache else 0
++                mapping[gate] = (*mapping.get(gate, ()), len(buffers))
++                buffers.append(
++                    tensor.view(torch.uint8).reshape(tensor.shape[0] // span, -1)
++                )
++
++    # These are the same checkpoint entries used by slot CoW / PD transfer:
++    # temporal + conv + all registered PLE windows and request-wide history.
++    # Speculative intermediates and ReplaySSM scratch are excluded by the pool.
++    state_buffers = [
++        tensor for _, tensor, _, _ in req_pool.mamba_pool._iter_transfer_state_entries()
++    ]
++    entries = [
++        DevicePoolEntry(
++            name=name,
++            indices_from_pool=source,
++            device_pool=pool,
++            components=[buffers],
++            layer_mapping=mapping,
++            page_size=entry_page_size,
++            rows_are_pages=True,
++        )
++        for name, source, pool, buffers, mapping, entry_page_size in (
++            (PoolName.KV, PoolName.KV, kvcache, kv_buffers, kv_mapping, page_size),
++            (
++                PoolName.INDEXER,
++                PoolName.KV,
++                kvcache,
++                index_buffers,
++                index_mapping,
++                page_size,
++            ),
++            # Load the whole slot at gate zero. N-gram history is read before
++            # the decoder loop, and CoW must include PLE on late full layers.
++            (
++                PoolName.MAMBA,
++                PoolName.MAMBA,
++                req_pool.mamba_pool,
++                state_buffers,
++                {0: tuple(range(len(state_buffers)))},
++                1,
++            ),
++        )
++    ]
++    # A reusable prefix ends at a whole page, hence at a compression-group
++    # boundary. No pending QSA key/RoPE members precede the resumed group;
++    # the request ring is rebuilt by subsequent forward tokens, not persisted.
++    num_layers = max(*kv_mapping, *req_pool.mamba_map) + 1
++    return DevicePoolGroup(entries, num_layers, page_size)
++
++
+ def _build_mha_device_pool_group(
+     kvcache: Any,
+     page_size: int,
+diff --git a/python/sglang/srt/mem_cache/registry.py b/python/sglang/srt/mem_cache/registry.py
+index 9421897f..0adf0acf 100644
+--- a/python/sglang/srt/mem_cache/registry.py
++++ b/python/sglang/srt/mem_cache/registry.py
+@@ -228,6 +228,8 @@ def create_unified_radix_cache(
+         counter = cache.linker.layer_done_counter
+         kvcache = params.token_to_kv_pool_allocator.get_kvcache()
+         kvcache.register_layer_transfer_counter(counter)
++        if ComponentType.MAMBA in cache.components:
++            params.req_to_token_pool.register_layer_transfer_counter(counter)
+         ctx.tp_worker.register_hicache_layer_transfer_counter(counter)
+     return cache
+ 
+diff --git a/python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py b/python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py
+index ce0f09c0..f19e7611 100644
+--- a/python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py
++++ b/python/sglang/srt/mem_cache/storage/kvcr/kvcr_direct_linker.py
+@@ -47,6 +47,63 @@ _MAX_DEPOSIT_BYTES = 512 << 20
+ _MAX_DEPOSIT_DESCRIPTORS = 4096
+ 
+ 
++class _OwnerTiming:
++    """Thread-confined interval summaries; no request/key labels or samples.
++
++    Owner and each calling thread use separate instances, so observation and
++    emission need no additional locks. Values are seconds except candidates.
++    """
++
++    def __init__(self, rank, role):
++        self.rank = rank
++        self.role = role
++        self.stats = {}
++        self.last_log = time.perf_counter()
++        self.enabled = True
++
++    def observe(self, metric, value, function=""):
++        if not self.enabled:
++            return
++        key = f"{metric}[{function[:64]}]"
++        if key not in self.stats and len(self.stats) >= 64:
++            key = "overflow[]"
++        count, total, maximum = self.stats.get(key, (0, 0.0, value))
++        self.stats[key] = count + 1, total + value, max(maximum, value)
++
++    def log_stats(self):
++        if not self.enabled:
++            return
++        now = time.perf_counter()
++        elapsed = now - self.last_log
++        if elapsed < 5:
++            return
++        self.last_log = now
++        if not self.stats:
++            return
++        try:
++            logger.info(
++                "KVCR owner timing %s",
++                json.dumps(
++                    {
++                        "rank": self.rank,
++                        "role": self.role,
++                        "thread_id": threading.get_native_id(),
++                        "interval_s": elapsed,
++                        "stats": {
++                            f"{name}.{kind}": value
++                            for name, summary in self.stats.items()
++                            for kind, value in zip(("count", "sum", "max"), summary)
++                        },
++                    },
++                    sort_keys=True,
++                ),
++            )
++        except Exception:
++            # Optional diagnostics must not change transfer/error handling.
++            self.enabled = False
++        self.stats.clear()
++
++
+ @dataclass
+ class _Load:
+     rid: str
+@@ -262,6 +319,13 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+             get_memory().hicache_storage_backend_extra_config
+         )
+         options = dict(options)
++        profile_owner = options.pop("profile_owner", False)
++        if type(profile_owner) is not bool:
++            raise ValueError("KVCR profile_owner must be a boolean")
++        self._timing_rank = rank
++        self._owner_timing = _OwnerTiming(rank, "owner") if profile_owner else None
++        self._caller_timing = threading.local() if profile_owner else None
++        self._last_progress_at = None
+         self._publish_inventory = options.pop("publish_inventory", False)
+         if type(self._publish_inventory) is not bool:
+             raise ValueError("KVCR publish_inventory must be a boolean")
+@@ -394,10 +458,32 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+         ]
+ 
+     def _call(self, function, *args):
++        timing = None
++        if self._caller_timing is not None:
++            timing = getattr(self._caller_timing, "stats", None)
++            if timing is None:
++                timing = _OwnerTiming(self._timing_rank, "caller")
++                self._caller_timing.stats = timing
++        if timing is not None:
++            started = time.perf_counter()
++        try:
++            return self._call_impl(function, *args)
++        finally:
++            if timing is not None:
++                timing.observe(
++                    "call_wall_seconds",
++                    time.perf_counter() - started,
++                    getattr(function, "__name__", type(function).__name__),
++                )
++                timing.log_stats()
++
++    def _call_impl(self, function, *args):
+         future = Future()
+         with self._command_lock:
+             if self._closed:
+                 raise RuntimeError("KVCR linker is closed")
++            if self._owner_timing is not None:
++                future._kvcr_enqueued_at = time.perf_counter()
+             self._commands.put((function, args, future))
+         return future.result()
+ 
+@@ -430,10 +516,32 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+                     # Yield the GIL without pacing active transfers at 1 ms.
+                     time.sleep(0)
+             else:
++                timing = self._owner_timing
++                if timing is not None:
++                    service_started = time.perf_counter()
++                    function_name = getattr(
++                        function, "__name__", type(function).__name__
++                    )
++                    enqueued = getattr(future, "_kvcr_enqueued_at", None)
++                    if enqueued is not None:
++                        timing.observe(
++                            "call_queue_seconds",
++                            service_started - enqueued,
++                            function_name,
++                        )
+                 try:
+-                    if self._fatal is not None and function != self._close:
+-                        raise self._fatal
+-                    future.set_result(function(*args))
++                    try:
++                        if self._fatal is not None and function != self._close:
++                            raise self._fatal
++                        result = function(*args)
++                    finally:
++                        if timing is not None:
++                            timing.observe(
++                                "call_service_seconds",
++                                time.perf_counter() - service_started,
++                                function_name,
++                            )
++                    future.set_result(result)
+                 except BaseException as error:
+                     if function in (self._close, self._reset):
+                         if hasattr(error, "kvcr_runtime"):
+@@ -566,6 +674,9 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+         return self._call(self._confirm_lookup, rid, keys, prepared, hit_pages)
+ 
+     def _confirm_lookup(self, rid, keys, prepared, hit_pages):
++        # call_service_seconds[_confirm_lookup] measures full confirmation time.
++        if self._owner_timing is not None and hit_pages:
++            self._owner_timing.observe("confirmation_candidates", 1)
+         scope = self._request_scopes.get(rid)
+         if not hit_pages:
+             self._discard_lookup(scope)
+@@ -855,6 +966,16 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+         return True
+ 
+     def _prepare_offload(self, transfers):
++        timing = self._owner_timing
++        if timing is None:
++            return self._prepare_offload_impl(transfers)
++        started = time.perf_counter()
++        try:
++            return self._prepare_offload_impl(transfers)
++        finally:
++            timing.observe("offload_prepare_seconds", time.perf_counter() - started)
++
++    def _prepare_offload_impl(self, transfers):
+         # The producer event is ready, but later compute may already occupy its
+         # stream. Index readback must not stall the KVCR progress owner behind it.
+         context = (
+@@ -863,7 +984,16 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+             else nullcontext()
+         )
+         with context:
+-            prepared = self.layout.prepare(list(transfers), allow_partial=True)
++            timing = self._owner_timing
++            if timing is not None:
++                started = time.perf_counter()
++            try:
++                prepared = self.layout.prepare(list(transfers), allow_partial=True)
++            finally:
++                if timing is not None:
++                    timing.observe(
++                        "offload_layout_seconds", time.perf_counter() - started
++                    )
+         if self._shard:
+             prepared = tuple(
+                 replace(
+@@ -880,32 +1010,38 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+                     ]
+                 )
+             )
+-        sizes = {region.label: region.size for region in self.layout.registrations}
+-        batches = []
+-        for blocks in self.layout.mappings(prepared):
+-            batch, size, descriptors = {}, 0, 0
+-            for key, refs in blocks.items():
+-                key_bytes = sum(sizes[ref.label] for ref in refs)
+-                if (
+-                    key_bytes > _MAX_DEPOSIT_BYTES
+-                    or len(refs) > _MAX_DEPOSIT_DESCRIPTORS
+-                ):
+-                    raise ValueError("KVCR page exceeds native deposit limits")
+-                if batch and (
+-                    size + key_bytes > _MAX_DEPOSIT_BYTES
+-                    or descriptors + len(refs) > _MAX_DEPOSIT_DESCRIPTORS
+-                ):
++        if timing is not None:
++            started = time.perf_counter()
++        try:
++            sizes = {region.label: region.size for region in self.layout.registrations}
++            batches = []
++            for blocks in self.layout.mappings(prepared):
++                batch, size, descriptors = {}, 0, 0
++                for key, refs in blocks.items():
++                    key_bytes = sum(sizes[ref.label] for ref in refs)
++                    if (
++                        key_bytes > _MAX_DEPOSIT_BYTES
++                        or len(refs) > _MAX_DEPOSIT_DESCRIPTORS
++                    ):
++                        raise ValueError("KVCR page exceeds native deposit limits")
++                    if batch and (
++                        size + key_bytes > _MAX_DEPOSIT_BYTES
++                        or descriptors + len(refs) > _MAX_DEPOSIT_DESCRIPTORS
++                    ):
++                        batches.append(batch)
++                        batch, size, descriptors = {}, 0, 0
++                    batch[key] = refs
++                    size += key_bytes
++                    descriptors += len(refs)
++                if batch:
+                     batches.append(batch)
+-                    batch, size, descriptors = {}, 0, 0
+-                batch[key] = refs
+-                size += key_bytes
+-                descriptors += len(refs)
+-            if batch:
+-                batches.append(batch)
+-        # Prepare before submitting: invalid pages cannot leave partial work.
+-        # _progress serializes chunks and acknowledges the whole offload only
+-        # after terminal completion, retaining all keys while DMA is uncertain.
+-        return batches
++            # Prepare before submitting: invalid pages cannot leave partial work.
++            # _progress serializes chunks and acknowledges the whole offload only
++            # after terminal completion, retaining all keys while DMA is uncertain.
++            return batches
++        finally:
++            if timing is not None:
++                timing.observe("offload_mapping_seconds", time.perf_counter() - started)
+ 
+     def _fail_batch(self, batch, error, *, fatal=False):
+         batch.error = error
+@@ -918,6 +1054,40 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+             batch.completion.set_exception(error)
+ 
+     def _progress(self):
++        timing = self._owner_timing
++        if timing is None:
++            return self._progress_impl()
++        started = time.perf_counter()
++        cpu_started = time.thread_time()
++        if self._last_progress_at is not None:
++            # End-to-next-start gap: commands, waits and logging, not poll work.
++            timing.observe(
++                "progress_service_gap_seconds", started - self._last_progress_at
++            )
++        try:
++            return self._progress_impl()
++        finally:
++            finished = time.perf_counter()
++            timing.observe("progress_wall_seconds", finished - started)
++            timing.observe("progress_cpu_seconds", time.thread_time() - cpu_started)
++            self._last_progress_at = finished
++            timing.log_stats()
++
++    def _timed_submit(self, function, *args, **kwargs):
++        timing = self._owner_timing
++        if timing is None:
++            return function(*args, **kwargs)
++        started = time.perf_counter()
++        try:
++            return function(*args, **kwargs)
++        finally:
++            timing.observe(
++                "submission_seconds",
++                time.perf_counter() - started,
++                getattr(function, "__name__", type(function).__name__),
++            )
++
++    def _progress_impl(self):
+         results = list(self._runtime.client.poll_completed())
+         while self._runtime.events:
+             event = self._runtime.events.popleft()
+@@ -977,7 +1147,9 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+                     self._complete_layer(batch, layer)
+                     continue
+                 started = time.perf_counter()
+-                handle = self._runtime.client.deliver(blocks, request_id=scope)
++                handle = self._timed_submit(
++                    self._runtime.client.deliver, blocks, request_id=scope
++                )
+                 logger.debug(
+                     "KVCR submission batch=%d layer=%d keys=%d cpu_ms=%.3f",
+                     batch.index,
+@@ -1039,7 +1211,9 @@ class KVCRDirectLinker(UnifiedCacheLinker):
+                     if blocks is None:
+                         task.exhausted = True
+                     else:
+-                        handle = self._runtime.client.deposit(blocks)
++                        handle = self._timed_submit(
++                            self._runtime.client.deposit, blocks
++                        )
+                         self._operations[handle] = _Operation(task, set(blocks))
+                         task.active += 1
+             if task.exhausted and not task.active:
+diff --git a/python/sglang/srt/mem_cache/storage/kvcr/runtime.py b/python/sglang/srt/mem_cache/storage/kvcr/runtime.py
+index 80b457d9..080bd1d0 100644
+--- a/python/sglang/srt/mem_cache/storage/kvcr/runtime.py
++++ b/python/sglang/srt/mem_cache/storage/kvcr/runtime.py
+@@ -12,6 +12,73 @@ from collections import Counter, deque
+ logger = logging.getLogger(__name__)
+ 
+ 
++def _pool_lengths(layout, capacity, divisor, mamba_checkpoint_capacity=None):
++    """Pool byte lengths, reserving complete checkpoints before token pages.
++
++    Explicit checkpoint sizing supports non-trailing KV/indexer/Mamba layouts.
++    Without it, retain the legacy complete-page and SWA divisor calculation.
++    """
++    if type(divisor) is not int or divisor < 1:
++        raise ValueError("KVCR trailing_capacity_divisor must be a positive integer")
++    checkpoint_bytes = 0
++    if mamba_checkpoint_capacity is not None:
++        if type(mamba_checkpoint_capacity) is not int or mamba_checkpoint_capacity < 1:
++            raise ValueError("KVCR mamba_checkpoint_capacity must be a positive integer")
++        entries = {entry.name: entry for entry in layout.group.entries}
++        families = {name.partition("_")[0] for name, _ in layout.pool_layouts}
++        if (
++            not {"kv", "mamba"} <= entries.keys() <= {"kv", "indexer", "mamba"}
++            or families != entries.keys()
++            or any(layout.trailing_counts.values())
++            or any(
++                entry.indices_from_pool != ("kv" if name == "indexer" else name)
++                or entry.page_size != (1 if name == "mamba" else entries["kv"].page_size)
++                for name, entry in entries.items()
++            )
++        ):
++            raise ValueError(
++                "KVCR explicit Mamba capacity requires KV/indexer/Mamba topology"
++            )
++        checkpoint_bytes = (
++            sum(
++                size * layout.pool_counts[name]
++                for name, size in layout.pool_layouts
++                if name.startswith("mamba_")
++            )
++            * mamba_checkpoint_capacity
++        )
++    remaining = capacity - checkpoint_bytes
++    budgeted_pools = [
++        (name, size)
++        for name, size in layout.pool_layouts
++        if mamba_checkpoint_capacity is None or not name.startswith("mamba_")
++    ]
++    full_bytes = sum(
++        size * (layout.pool_counts[name] - layout.trailing_counts[name])
++        for name, size in budgeted_pools
++    )
++    trailing_bytes = sum(
++        size * layout.trailing_counts[name] for name, size in budgeted_pools
++    )
++    if remaining < full_bytes + trailing_bytes:
++        raise ValueError("KVCR DRAM capacity must fit at least one complete page")
++    page_count = remaining * divisor // (full_bytes * divisor + trailing_bytes)
++    if full_bytes:
++        # Even a large divisor must leave room for one full trailing page.
++        page_count = min(page_count, (remaining - trailing_bytes) // full_bytes)
++    trailing_pages = max(1, page_count // divisor)
++    return [
++        size
++        * (
++            mamba_checkpoint_capacity * layout.pool_counts[name]
++            if mamba_checkpoint_capacity is not None and name.startswith("mamba_")
++            else page_count * (layout.pool_counts[name] - layout.trailing_counts[name])
++            + trailing_pages * layout.trailing_counts[name]
++        )
++        for name, size in layout.pool_layouts
++    ]
++
++
+ class _TelemetryStats:
+     """Bounded interval aggregates recorded on the KVCR API owner thread."""
+ 
+@@ -64,6 +131,8 @@ class KVCRRuntime:
+             "startup_timeout_seconds": None,
+             "enable_telemetry": False,
+             "trailing_capacity_divisor": 1,
++            "mamba_checkpoint_capacity": None,
++            "residency_log_path": None,
+         }
+         unknown = options.keys() - defaults.keys()
+         if unknown:
+@@ -93,26 +162,14 @@ class KVCRRuntime:
+             or size_gb <= 0
+         ):
+             raise ValueError("KVCR dram_size_gb must be finite and positive")
+-        divisor = config["trailing_capacity_divisor"]
+-        if type(divisor) is not int or divisor < 1:
+-            raise ValueError(
+-                "KVCR trailing_capacity_divisor must be a positive integer"
+-            )
+-        full_bytes = sum(
+-            size * (layout.pool_counts[name] - layout.trailing_counts[name])
+-            for name, size in layout.pool_layouts
++        if config["mamba_checkpoint_capacity"] is not None and guard_socket is not None:
++            raise ValueError("KVCR mamba_checkpoint_capacity requires process-local DRAM")
++        pool_lengths = _pool_lengths(
++            layout,
++            int(size_gb * (1 << 30)),
++            config["trailing_capacity_divisor"],
++            config["mamba_checkpoint_capacity"],
+         )
+-        trailing_bytes = sum(
+-            size * layout.trailing_counts[name] for name, size in layout.pool_layouts
+-        )
+-        capacity = int(size_gb * (1 << 30))
+-        if capacity < full_bytes + trailing_bytes:
+-            raise ValueError("KVCR DRAM capacity must fit at least one complete page")
+-        page_count = capacity * divisor // (full_bytes * divisor + trailing_bytes)
+-        if full_bytes:
+-            # Even a large divisor must leave room for one full trailing page.
+-            page_count = min(page_count, (capacity - trailing_bytes) // full_bytes)
+-        trailing_pages = max(1, page_count // divisor)
+         for name in ("control_port", "nixl_port"):
+             port = config[name]
+             if type(port) is not int or not 1 <= port + rank <= 65535:
+@@ -155,15 +212,28 @@ class KVCRRuntime:
+         self.client = None
+         self.process_local = False
+ 
++        self._residency_observer = None
++        if config["residency_log_path"] is not None:
++            from residency_observer import ResidencyObserver
++
++            self._residency_observer = ResidencyObserver(
++                layout, config["residency_log_path"], rank
++            )
++
+         def inventory(event):
+             if event.tier is CacheTier.LOCAL_G2:
++                observed = []
+                 for key in event.keys:
+                     decoded = layout.decode_key(key)
+                     if decoded is not None:
++                        if self._residency_observer is not None:
++                            observed.append((key, decoded[0].value))
+                         if event.removed:
+                             self.removals[key] = decoded[1]
+                         else:
+                             self.removals.pop(key, None)
++                if self._residency_observer is not None:
++                    self._residency_observer.inventory(event, observed)
+ 
+         try:
+             kvcr_config = KVCRConfig(
+@@ -221,12 +291,7 @@ class KVCRRuntime:
+                         raise
+                     logger.warning("%s; using in-process KVCR DRAM", error)
+             pools = []
+-            for name, size in layout.pool_layouts:
+-                length = (
+-                    page_count
+-                    * (layout.pool_counts[name] - layout.trailing_counts[name])
+-                    + trailing_pages * layout.trailing_counts[name]
+-                ) * size
++            for (name, _), length in zip(layout.pool_layouts, pool_lengths):
+                 buffer = mmap.mmap(-1, length)
+                 self._buffers.append(buffer)
+                 address = ctypes.addressof(ctypes.c_char.from_buffer(buffer))
+@@ -279,6 +344,8 @@ class KVCRRuntime:
+             return
+         self._last_stats_log = now
+         try:
++            if self._residency_observer is not None:
++                self._residency_observer.pools(self.client)
+             stats = self.client.get_stats()
+             if stats is not None and not stats.is_empty():
+                 logger.info(
+@@ -299,6 +366,8 @@ class KVCRRuntime:
+             raise RuntimeError("KVCR startup did not establish safe resource ownership")
+         self.log_stats(force=True)
+         self.client.close()
++        if self._residency_observer is not None:
++            self._residency_observer.close()
+         self._close_buffers()
+ 
+     def _close_buffers(self) -> None:
+diff --git a/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py b/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py
+index f95b00a0..bca0d8a9 100644
+--- a/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py
++++ b/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_direct_linker.py
+@@ -2,6 +2,9 @@ from __future__ import annotations
+ 
+ import hashlib
+ import logging
++import math
++import os
++import sys
+ import threading
+ from queue import Empty, Queue
+ 
+@@ -78,6 +81,19 @@ class MooncakeDirectLinker(UnifiedCacheLinker):
+         extra_config, *_ = HybridCacheController.parse_storage_backend_extra_config(
+             get_memory().hicache_storage_backend_extra_config
+         )
++        if "python_gil_switch_interval_seconds" in extra_config:
++            extra_config = dict(extra_config)
++            interval = extra_config.pop("python_gil_switch_interval_seconds")
++            if type(interval) not in (int, float) or not math.isfinite(interval) or interval <= 0:
++                raise ValueError(
++                    "Mooncake python_gil_switch_interval_seconds must be finite and positive"
++                )
++            before = sys.getswitchinterval()
++            sys.setswitchinterval(interval)
++            logger.info(
++                "Mooncake Python GIL switch interval pid=%s rank=%s before=%s actual=%s",
++                os.getpid(), tp_rank, before, sys.getswitchinterval(),
++            )
+         # TODO: unlike `HiCacheController._generate_storage_config`, this sets no
+         # `dp_rank`. Aligning the storage-config producers changes persisted
+         # storage keys, so it waits for a storage-key format change.
+@@ -329,13 +345,17 @@ class MooncakeDirectLinker(UnifiedCacheLinker):
+                         )
+                     )
+             for keys, _ in batches.values():
+-                result = self.storage.store.batch_get_session_start(keys)
+-                if list(result) != [0] * len(keys):
++                result = list(self.storage.store.batch_get_session_start(keys))
++                started_keys = [
++                    key for key, status in zip(keys, result) if status == 0
++                ]
++                if started_keys:
++                    started.append(started_keys)
++                if result != [0] * len(keys):
+                     raise RuntimeError(
+                         f"Mooncake get session start failed: keys={len(keys)}, "
+                         f"results={result}"
+                     )
+-                started.append(keys)
+ 
+             for layer in range(self.num_layers):
+                 for name, (keys, locations) in batches.items():
+diff --git a/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py b/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
+index 5aa280fe..fe1b42c1 100644
+--- a/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
++++ b/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
+@@ -511,6 +511,8 @@ class MooncakeStore(HiCacheStorage, MooncakeBaseStore):
+                     transfer_engine = None
+ 
+                 setup_kwargs = {}
++                if os.getenv("MOONCAKE_CLIENT_HTTP_PORT"):
++                    setup_kwargs.update(enable_client_http_server=True, client_http_port=int(os.environ["MOONCAKE_CLIENT_HTTP_PORT"]))
+                 if self.config.enable_ssd_offload:
+                     setup_kwargs["enable_ssd_offload"] = True
+                 if self.config.ssd_offload_path is not None:
+@@ -573,6 +575,9 @@ class MooncakeStore(HiCacheStorage, MooncakeBaseStore):
+                     f"Failed to setup Mooncake store, error code: {ret_code}"
+                 )
+             logger.info("Mooncake store setup successfully.")
++            if os.getenv("MOONCAKE_TELEMETRY_PATH"):
++                from mooncake_observer import ObservedStore
++                self.store = ObservedStore(self.store, os.environ["MOONCAKE_TELEMETRY_PATH"])
+ 
+             self.local_rank = (
+                 storage_config.tp_rank if storage_config is not None else 0

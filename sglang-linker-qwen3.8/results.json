@@ -1,0 +1,134 @@
+[
+  {
+    "stage": "kvcr-baseline",
+    "ttft_mean_ms": 4260.857822178092,
+    "ttft_p50_ms": 2359.8686869999997,
+    "ttft_p90_ms": 9628.4670395,
+    "ttft_p99_ms": 29121.283988689996,
+    "itl_mean_ms": 82.28155024535229,
+    "output_tokens_per_s": 559.6828103045946,
+    "request_per_s": 0.8131135972931982,
+    "request_count": 1488.0
+  },
+  {
+    "stage": "kvcr-pool-index-m2261",
+    "ttft_mean_ms": 1117.53638591126,
+    "ttft_p50_ms": 554.360054,
+    "ttft_p90_ms": 2091.300471600001,
+    "ttft_p99_ms": 10042.414808839998,
+    "itl_mean_ms": 13.336890252177042,
+    "output_tokens_per_s": 1626.8663395595383,
+    "request_per_s": 1.8781410680241093,
+    "request_count": 3437.0
+  },
+  {
+    "stage": "kvcr-m2176",
+    "ttft_mean_ms": 1114.3312893209222,
+    "ttft_p50_ms": 501.72063099999997,
+    "ttft_p90_ms": 2150.1470236,
+    "ttft_p99_ms": 10765.209050659998,
+    "itl_mean_ms": 12.768546549592243,
+    "output_tokens_per_s": 1780.5510333826946,
+    "request_per_s": 1.9666650920170348,
+    "request_count": 3599.0
+  },
+  {
+    "stage": "kvcr-m1536",
+    "ttft_mean_ms": 810.5478374527784,
+    "ttft_p50_ms": 448.63377599999995,
+    "ttft_p90_ms": 1496.1354434000004,
+    "ttft_p99_ms": 6517.362444840002,
+    "itl_mean_ms": 7.697748819172258,
+    "output_tokens_per_s": 1985.7493310448365,
+    "request_per_s": 2.1928945309486187,
+    "request_count": 4013.0
+  },
+  {
+    "stage": "kvcr-first-page-negative",
+    "ttft_mean_ms": 825.2703065508261,
+    "ttft_p50_ms": 405.01143199999996,
+    "ttft_p90_ms": 1621.3604356000028,
+    "ttft_p99_ms": 7434.078617290026,
+    "itl_mean_ms": 7.8384943217193666,
+    "output_tokens_per_s": 1976.0341907060515,
+    "request_per_s": 2.182511590428033,
+    "request_count": 3994.0
+  },
+  {
+    "stage": "kvcr-incremental-confirmation",
+    "ttft_mean_ms": 802.133656501491,
+    "ttft_p50_ms": 374.20489749999996,
+    "ttft_p90_ms": 1471.8510368,
+    "ttft_p99_ms": 7797.815010769999,
+    "itl_mean_ms": 7.401535154188974,
+    "output_tokens_per_s": 1984.9758019058372,
+    "request_per_s": 2.1869544113459516,
+    "request_count": 4024.0
+  },
+  {
+    "stage": "kvcr-gil-1ms",
+    "ttft_mean_ms": 791.9822998781397,
+    "ttft_p50_ms": 390.258448,
+    "ttft_p90_ms": 1575.90764,
+    "ttft_p99_ms": 7014.983918200001,
+    "itl_mean_ms": 7.516172165104835,
+    "output_tokens_per_s": 2012.9866488406628,
+    "request_per_s": 2.2122255947042233,
+    "request_count": 4021.0
+  },
+  {
+    "stage": "kvcr-native-poll-1ms",
+    "ttft_mean_ms": 710.7220610667493,
+    "ttft_p50_ms": 397.1648975,
+    "ttft_p90_ms": 1332.6696880999996,
+    "ttft_p99_ms": 5751.875362240001,
+    "itl_mean_ms": 7.523587859989012,
+    "output_tokens_per_s": 2022.9704078970217,
+    "request_per_s": 2.219019998858177,
+    "request_count": 4030.0
+  },
+  {
+    "stage": "mooncake-baseline",
+    "ttft_mean_ms": 543.4649096550471,
+    "ttft_p50_ms": 344.606975,
+    "ttft_p90_ms": 838.836556,
+    "ttft_p99_ms": 4023.2202146999957,
+    "itl_mean_ms": 6.466412768353186,
+    "output_tokens_per_s": 2085.0280977953116,
+    "request_per_s": 2.2929933224785413,
+    "request_count": 4131.0
+  },
+  {
+    "stage": "mooncake-gil-1ms",
+    "ttft_mean_ms": 587.2894019786511,
+    "ttft_p50_ms": 340.879416,
+    "ttft_p90_ms": 861.6156383000001,
+    "ttft_p99_ms": 5750.635476929993,
+    "itl_mean_ms": 6.790367041092641,
+    "output_tokens_per_s": 2061.3744236089515,
+    "request_per_s": 2.2524585358480302,
+    "request_count": 4122.0
+  },
+  {
+    "stage": "mooncake-random",
+    "ttft_mean_ms": 557.9179179233939,
+    "ttft_p50_ms": 331.20998199999997,
+    "ttft_p90_ms": 855.2760483999998,
+    "ttft_p99_ms": 4853.818357559983,
+    "itl_mean_ms": 6.1999619519319795,
+    "output_tokens_per_s": 2061.042093436836,
+    "request_per_s": 2.254095988644662,
+    "request_count": 4125.0
+  },
+  {
+    "stage": "mooncake-local-first",
+    "ttft_mean_ms": 543.3735966878472,
+    "ttft_p50_ms": 340.654504,
+    "ttft_p90_ms": 833.2623004000004,
+    "ttft_p99_ms": 3991.3201836599937,
+    "itl_mean_ms": 6.473919375085871,
+    "output_tokens_per_s": 2074.555871389942,
+    "request_per_s": 2.2617475881169087,
+    "request_count": 4139.0
+  }
+]

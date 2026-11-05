@@ -1,0 +1,11 @@
+--- a/aiperf/dataset/loader/base_hf_dataset.py
++++ b/aiperf/dataset/loader/base_hf_dataset.py
+@@ -25,7 +25,7 @@
+ class BaseHFDatasetLoader(BasePublicDatasetLoader):
+     """Base class for loading datasets from HuggingFace via the datasets library."""
+ 
+-    hf_revision: str | None = None
++    hf_revision: str | None = "8fecd2fc56694469f758f0afbbb6335ad3043740"
+ 
+     def __init__(
+         self,
