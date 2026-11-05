@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "repositories": {
+    "kvcr": {
+      "head": "5ce23b1527725cf623a3fc7feb94dc6d3d5fafaa",
+      "working_tree_changes": [],
+      "tracked_file_entries": 96,
+      "git_index_manifest_sha256": "dd4214ce9c47ac39b0e54164f342cbcf7b7b4075a6ea80b6ae9b5e4f9f702e45",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_files_sha256": {}
+    },
+    "sglang": {
+      "head": "658755604ace9f476b84f98511f76b815606072a",
+      "working_tree_changes": [
+        "python/sglang/srt/arg_groups/fields/memory.py",
+        "python/sglang/srt/managers/scheduler.py",
+        "python/sglang/srt/mem_cache/pool_host/base.py",
+        "python/sglang/srt/mem_cache/pool_host/mamba.py",
+        "python/sglang/srt/mem_cache/storage/kvcr/host_layout.py",
+        "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py"
+      ],
+      "tracked_file_entries": 11036,
+      "git_index_manifest_sha256": "27be42242349c74070447a895c4c8f9201ca5b83c65d532344055e4960d19065",
+      "patch_sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d",
+      "changed_files_sha256": {
+        "python/sglang/srt/arg_groups/fields/memory.py": "3b9d2e2a6860402fdc847279f14a6058cb99b6654edec1b9f764c236333f79ea",
+        "python/sglang/srt/managers/scheduler.py": "dafa244efe4820ea13f8a8e3d894e3034e5165ba52b249b10abfd6e6b67e799d",
+        "python/sglang/srt/mem_cache/pool_host/base.py": "68c77a08dbe415f297aa3f88b9a201256be7056c7878504695ba75432a063b7e",
+        "python/sglang/srt/mem_cache/pool_host/mamba.py": "5574b8ad58dbf1c05d3c059b7d35fbeabb75d53ab2ffb5ba961d5c240f0268c9",
+        "python/sglang/srt/mem_cache/storage/kvcr/host_layout.py": "f0020ac56a5e6292a7ed5c6f3e11a191e4a80504d5389a8c7b5131609701ab08",
+        "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796"
+      }
+    }
+  },
+  "scope": "Pinned git index and actual tracked working-tree delta; all modified file bytes hashed; clean files identified by immutable git blob IDs"
+}

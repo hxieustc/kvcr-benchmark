@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "backend": "mooncake",
+  "linker_enabled": false,
+  "host_mode": "cache",
+  "write_policy": "write_through",
+  "prefetch_policy": "wait_complete",
+  "layout": "page_first_direct",
+  "service_pids_sha256": "4231ce2b459769c5551fd8ac4e61ad0db2f46e1f70cfd22b894f0865bd90c64f",
+  "backend_preflight_residue": "Checked independently; framework reset does not imply backend deletion."
+}

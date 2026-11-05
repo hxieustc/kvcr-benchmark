@@ -10,3 +10,5 @@ Source synchronization is defined by
 [hxieustc/kvcr-manifests](https://github.com/hxieustc/kvcr-manifests/blob/develop/manifests/kvcr-guard-direct-vllm.xml).
 
 See [sglang-linker-qwen3.8/](sglang-linker-qwen3.8/README.md) for the pinned GB300 Qwen3.8 KVCR/Mooncake direct-linker experiments, all measured optimization stages, Google Repo manifests, and manual per-component reproduction.
+
+See [sglang-hicache-qwen3.8/](sglang-hicache-qwen3.8/README.md) for pinned native HiCache KVCR/Mooncake reproductions on GB300, shared compatibility patches, exact cache budgets, and manual per-component execution.

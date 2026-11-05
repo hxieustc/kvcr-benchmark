@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "backend": "mooncake",
+  "linker_enabled": false,
+  "inventory_protocol": "sglang_hicache_v1",
+  "remote_peer_ranks": [
+    1,
+    2,
+    3
+  ],
+  "full_bytes_correct": true,
+  "full_bytes_correct_scope": "Independent native RDMA GPU fixture full-byte correctness + live HiCache semantic peer reads; native GET API byte counts include local+remote portions",
+  "components": [
+    "kv",
+    "indexer",
+    "mamba",
+    "draft_kv"
+  ],
+  "requests": [
+    {
+      "request": 0,
+      "destination_rank": 0,
+      "cached_tokens": 0,
+      "input_tokens": 4305,
+      "output": "899136<|im_end|>"
+    },
+    {
+      "request": 1,
+      "destination_rank": 0,
+      "cached_tokens": 4288,
+      "input_tokens": 4305,
+      "output": "899136<|im_end|>"
+    },
+    {
+      "request": 2,
+      "destination_rank": 1,
+      "cached_tokens": 4288,
+      "input_tokens": 4305,
+      "output": "899136<|im_end|>"
+    },
+    {
+      "request": 3,
+      "destination_rank": 2,
+      "cached_tokens": 4288,
+      "input_tokens": 4305,
+      "output": "899136<|im_end|>"
+    },
+    {
+      "request": 4,
+      "destination_rank": 3,
+      "cached_tokens": 4288,
+      "input_tokens": 4305,
+      "output": "899136<|im_end|>"
+    },
+    {
+      "request": 5,
+      "destination_rank": 0,
+      "cached_tokens": 4288,
+      "input_tokens": 4305,
+      "output": "899136<|im_end|>"
+    }
+  ],
+  "started_wall_ns": 1793756036174350775,
+  "note": "Synthetic accept length is stochastic; exact leading vault code and peer cache reuse are required, token-ID equality is not used."
+}

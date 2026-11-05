@@ -1,0 +1,10 @@
+{
+  "master_server_address": "127.0.0.1:25001",
+  "metadata_server": "P2PHANDSHAKE",
+  "global_segment_size": 109951162778,
+  "protocol": "rdma",
+  "device_name": "rocep190s0",
+  "local_hostname": "100.65.62.87:25101",
+  "standalone_storage": false,
+  "check_server": false
+}

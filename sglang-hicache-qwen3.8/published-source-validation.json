@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "path": "python/sglang/srt/arg_groups/fields/memory.py",
+      "blob": "0f5e23910289e4837e0dcd46c90b0f8f9dd63563",
+      "ok": true,
+      "repository": "hxieustc/sglang",
+      "commit": "081c4c5da234deb73078acfc09174286d5b3af05"
+    },
+    {
+      "path": "python/sglang/srt/managers/scheduler.py",
+      "blob": "4b504abb150c2d851d97f5d5887c7c6c8fbe8117",
+      "ok": true,
+      "repository": "hxieustc/sglang",
+      "commit": "081c4c5da234deb73078acfc09174286d5b3af05"
+    },
+    {
+      "path": "python/sglang/srt/mem_cache/pool_host/base.py",
+      "blob": "bcf53b284f9722af760f430572787a97322e994f",
+      "ok": true,
+      "repository": "hxieustc/sglang",
+      "commit": "081c4c5da234deb73078acfc09174286d5b3af05"
+    },
+    {
+      "path": "python/sglang/srt/mem_cache/pool_host/mamba.py",
+      "blob": "0f68d9cbba0cfe7228dd5a56186011fb357a4a19",
+      "ok": true,
+      "repository": "hxieustc/sglang",
+      "commit": "081c4c5da234deb73078acfc09174286d5b3af05"
+    },
+    {
+      "path": "python/sglang/srt/mem_cache/storage/kvcr/host_layout.py",
+      "blob": "4e46b9a89d83f763ef29f6e00136b6b697880ba0",
+      "ok": true,
+      "repository": "hxieustc/sglang",
+      "commit": "081c4c5da234deb73078acfc09174286d5b3af05"
+    },
+    {
+      "path": "python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py",
+      "blob": "1458ca89fe2c47d490cf9584e8fbddeb5817619b",
+      "ok": true,
+      "repository": "hxieustc/sglang",
+      "commit": "081c4c5da234deb73078acfc09174286d5b3af05"
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "path": "src/kvcr/runtime/progress.py",
+      "blob": "7b9e8980ddda86d3fca6050d6db18a0544ee1f34",
+      "ok": true
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "path": "src/kvcr/backends/remote_ops.py",
+      "blob": "d31ab01e6f0c0899bc282de263d42487ec818949",
+      "ok": true
+    },
+    {
+      "repository": "hxieustc/kvcr",
+      "path": "src/kvcr/backends/dangling_ops.py",
+      "blob": "5a424fc6fea509d4079bb2a3d6902ec7c193c931",
+      "ok": true
+    },
+    {
+      "repository": "hxieustc/dynamo",
+      "path": "components/src/dynamo/sglang/register.py",
+      "blob": "f162423a407b9362bb2608f04609fe2af1788aff",
+      "ok": true
+    },
+    {
+      "repository": "hxieustc/dynamo",
+      "path": "components/src/dynamo/sglang/kv_hints.py",
+      "blob": "3368d3e2fe9a45ef02928b26e0c2e4c04f57291d",
+      "ok": true
+    },
+    {
+      "repository": "hxieustc/dynamo",
+      "path": "components/src/dynamo/sglang/state_agent.py",
+      "blob": "169f90a76871658039341892dff518995c240969",
+      "ok": true
+    }
+  ],
+  "scope": "Published file contents compared byte-for-byte with recorded source postimages; all three HiCache arms have identical archived SGLang/KVCR source patch hashes. Offline only."
+}

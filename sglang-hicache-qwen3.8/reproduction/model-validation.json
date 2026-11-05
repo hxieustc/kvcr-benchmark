@@ -1,0 +1,201 @@
+{
+  "model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "revision": "fc694b54fb0174e0913e6adf86691ef85a4ead47",
+  "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model",
+  "files": [
+    {
+      "file": "README.md",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/README.md",
+      "bytes": 12109,
+      "sha": "f3edfc5b8f2cae8ae751162626d4c5aa3ed071a6",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "chat_template.jinja",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/chat_template.jinja",
+      "bytes": 8952,
+      "sha": "c0c686f9c38d70d179fb7b5f5aa7530bc913dda3",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/config.json",
+      "bytes": 30820,
+      "sha": "d9df7636dc5b8bdab82655aba8ce0ebe25b22342",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "generation_config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/generation_config.json",
+      "bytes": 202,
+      "sha": "023756cfadf88e5bf69eefeee3e172f38c448d64",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "hf_quant_config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/hf_quant_config.json",
+      "bytes": 23001,
+      "sha": "89bb1a48d2358f4b9ab7959bd4357a6d6d04020e",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "merges.txt",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/merges.txt",
+      "bytes": 3353259,
+      "sha": "a494e019ca1502219fd0128658b979e5f05ae8e8",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00001-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00001-of-00010.safetensors",
+      "bytes": 3115991696,
+      "sha": "63fde954be6f08b49b876f4f70a0ad0bcfee71aff7b1faa33779b6b32feca2a2",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00002-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00002-of-00010.safetensors",
+      "bytes": 10005510304,
+      "sha": "4dafaef62a908e49e0d92c7c2a3fa99f4d9651fdeeb0ca09f09a9b40095af4e0",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00003-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00003-of-00010.safetensors",
+      "bytes": 10005364728,
+      "sha": "3218ddc129258e91a721a8e81329ca8f00588332ec721bd8d2cf7d20e324bf47",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00004-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00004-of-00010.safetensors",
+      "bytes": 10006060112,
+      "sha": "55e2bdf6a3a1f6e65270787f65c63b2a2a56b308b54eb1fb318dfabc9b48b141",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00005-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00005-of-00010.safetensors",
+      "bytes": 10005362392,
+      "sha": "d3c169d3694bfba846455d01e48f047d770f78d071c5a4d22f129389411d686e",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00006-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00006-of-00010.safetensors",
+      "bytes": 10005375328,
+      "sha": "38f65a9d11090428e139cc60d0587e8e5433ea2ce79820883c583d7cfcc53130",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00007-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00007-of-00010.safetensors",
+      "bytes": 10005956544,
+      "sha": "8cf3fa05c04cb2e060963b69bb01f7a7b9f43c58435fbe380836a0457a19cd3e",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00008-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00008-of-00010.safetensors",
+      "bytes": 10005375200,
+      "sha": "53d1f80746aa0cc0a7c2f4836587002a8a4dd72c827432cd2e43abae3c3899e4",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00009-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00009-of-00010.safetensors",
+      "bytes": 5679113808,
+      "sha": "eaff6a87ece6fbfd6ad0fbaa0a5cf9ff542f8076acba38e62410b1ed55e12cc3",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-00010-of-00010.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-00010-of-00010.safetensors",
+      "bytes": 128587536,
+      "sha": "0d49b0cf7c15bf9b5bd1e17403b36727315860a8f2a2e0f5a53655547084f640",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model-fp8-mtp-ple.safetensors",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model-fp8-mtp-ple.safetensors",
+      "bytes": 53717551730,
+      "sha": "3525520c8602d850003eb1960aec0b64291dae33b83f8b65dd639a451df78823",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/model.safetensors.index.json",
+      "bytes": 31275518,
+      "sha": "660414e8300728ba80062e6a3c81cb76a65e2ab136ac9e9ceb450ba0c51c3c0d",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "preprocessor_config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/preprocessor_config.json",
+      "bytes": 390,
+      "sha": "2ea84a437d448ff71b08df68fdd949d5cc4ebb64",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "processor_config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/processor_config.json",
+      "bytes": 1191,
+      "sha": "33818c7f9e991ad735fd240209f4fa73e6c28c50",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "tokenizer.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/tokenizer.json",
+      "bytes": 12809320,
+      "sha": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+      "algorithm": "sha256",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "tokenizer_config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/tokenizer_config.json",
+      "bytes": 17928,
+      "sha": "5de744b3fca2129d7186979ae47c06be33903243",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "video_preprocessor_config.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/video_preprocessor_config.json",
+      "bytes": 385,
+      "sha": "3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    },
+    {
+      "file": "vocab.json",
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/assets-gb300/model/vocab.json",
+      "bytes": 6722759,
+      "sha": "0aa0ce0658d60ac4a5d609f4eadb0e8e43514176",
+      "algorithm": "sha1",
+      "reused_shared_readonly": false
+    }
+  ],
+  "verified": true,
+  "utc": 1793485510.9965613
+}

@@ -1,0 +1,5692 @@
+{
+  "cases": {
+    "kvcr": {
+      "case": "kvcr",
+      "attempt": "hicache-1800-r5",
+      "verification": {
+        "archive_sha256": "097b2453a5b2f16b93ee692bf66c1044a0278289808725db5879794bc16abba8",
+        "manifest_sha256": "9d614469983fdb7a0bd7216e8daf184744cdd135d5f95bed55dee6ef64d83bf9",
+        "files": 289,
+        "archived_only_input_maps": 3,
+        "archive_only_auxiliary_files": [],
+        "archive_only_auxiliary_bytes": 0,
+        "download_receipt_sha256": "83db54c693547abadab652e86d3b3f53addf77963c3c92fb1c74fb0a5722e776",
+        "external_collection_sha256": "96844d76e86496778a9ff58e86dc22ce725ad9f53e5bddf9ab23363c437319fc",
+        "timed_harness_ready_sha256": "17a033a630605bb517cda28ef600993fcb2ef3a9ffb73e0ed86ee3ed4dde3cf8",
+        "timed_sampler_sha256": "216124bf2310da808797d472463c64e0c53c3dfeba2054c4c46c43dbf9cde246"
+      },
+      "profile": {
+        "begin_utc": 1793749363.427168,
+        "end_utc": 1793751193.427933,
+        "actual_export_seconds": 1830.0007650852203,
+        "configured_sending_seconds": 1800
+      },
+      "client": {
+        "official": {
+          "time_to_first_token": {
+            "unit": "ms",
+            "avg": 850.8899132061855,
+            "p1": 227.70368536,
+            "p5": 239.57933119999998,
+            "p10": 248.9224425,
+            "p25": 273.098566,
+            "p50": 358.952067,
+            "p75": 630.66637725,
+            "p90": 1760.2828045000035,
+            "p95": 3554.579920049998,
+            "p99": 8420.25006182,
+            "min": 200.832868,
+            "max": 16272.671703,
+            "std": 1499.3703331716247,
+            "count": 4074,
+            "sum": 3466525.506402
+          },
+          "inter_token_latency": {
+            "unit": "ms",
+            "avg": 6.778140810200842,
+            "p1": 3.1235916744612067,
+            "p5": 3.530248357840719,
+            "p10": 4.066644539554555,
+            "p25": 4.6901134962946935,
+            "p50": 5.955252006755342,
+            "p75": 7.4494847811931235,
+            "p90": 9.617928924382845,
+            "p95": 11.569359608996049,
+            "p99": 22.464925553716924,
+            "min": 0.7101799999999999,
+            "max": 121.74740948148147,
+            "std": 4.794788066396481,
+            "count": 4074,
+            "sum": 27614.14566075823
+          },
+          "full_response_inter_token_latency": {
+            "unit": "ms",
+            "avg": 6.792012397077941,
+            "p1": 3.134159202950546,
+            "p5": 3.536269363992258,
+            "p10": 4.071977342880377,
+            "p25": 4.6962756725343615,
+            "p50": 5.9604063544656665,
+            "p75": 7.458978842731645,
+            "p90": 9.624306416630988,
+            "p95": 11.635158905580504,
+            "p99": 22.474884106976972,
+            "min": 2.2893992024169183,
+            "max": 121.77076248148147,
+            "std": 4.805544584108443,
+            "count": 4074,
+            "sum": 27670.658505695534
+          },
+          "request_latency": {
+            "unit": "ms",
+            "avg": 6585.311735082964,
+            "p1": 349.62222063999997,
+            "p5": 725.4444754,
+            "p10": 924.426288,
+            "p25": 1441.6073915,
+            "p50": 2884.8282784999997,
+            "p75": 6677.67325475,
+            "p90": 14602.55714220001,
+            "p95": 23092.856777099994,
+            "p99": 50143.77010649999,
+            "min": 237.780227,
+            "max": 356264.273137,
+            "std": 14019.69448920306,
+            "count": 4074,
+            "sum": 26828560.008727998
+          },
+          "output_token_throughput": {
+            "unit": "tokens/sec",
+            "avg": 2030.7275655142996
+          },
+          "request_throughput": {
+            "unit": "requests/sec",
+            "avg": 2.2262285766003522
+          },
+          "total_token_throughput": {
+            "unit": "tokens/sec",
+            "avg": 229560.57934701283
+          },
+          "effective_concurrency": {
+            "unit": "requests",
+            "avg": 14.6643002214699,
+            "p50": 14.0,
+            "p90": 25.0,
+            "p95": 29.0,
+            "p99": 36.0,
+            "min": 0.0,
+            "max": 41.0,
+            "std": 7.701430314571583
+          },
+          "request_count": {
+            "unit": "requests",
+            "avg": 4074.0
+          },
+          "error_summary": [],
+          "was_cancelled": false
+        },
+        "phase_log_outcomes": {
+          "completed": 4074,
+          "cancelled": 0,
+          "errors": 0
+        },
+        "exported_phase_counts": {
+          "warmup": {
+            "exported_records": 286,
+            "exported_success": 286
+          },
+          "profiling": {
+            "exported_records": 4074,
+            "exported_success": 4074
+          }
+        },
+        "phase_request_start_bounds": {
+          "warmup": {
+            "first": 1793749263.8756723,
+            "last": 1793749344.685851
+          },
+          "profiling": {
+            "first": 1793749363.448207,
+            "last": 1793751163.318995
+          }
+        },
+        "successful_export_distributions": {
+          "time_to_first_token": {
+            "count": 4074,
+            "mean": 850.8899132061855,
+            "p50": 358.952067,
+            "p90": 1760.2828045000035,
+            "p99": 8420.25006182
+          },
+          "inter_token_latency": {
+            "count": 4074,
+            "mean": 6.778140810200842,
+            "p50": 5.955252006755341,
+            "p90": 9.617928924382845,
+            "p99": 22.464925553716924
+          },
+          "full_response_inter_token_latency": {
+            "count": 4074,
+            "mean": 6.792012397077942,
+            "p50": 5.9604063544656665,
+            "p90": 9.624306416630988,
+            "p99": 22.474884106976972
+          },
+          "derived_tpot_ms": {
+            "count": 4074,
+            "mean": 6.778140810200843,
+            "p50": 5.955252006755341,
+            "p90": 9.617928924382847,
+            "p99": 22.464925553716924
+          }
+        },
+        "scope": "Official export for headline metrics. Request distributions cover successful exported profiling records; deadline cancellations may be absent. ITL is reported inter_token_latency. Derived per-request TPOT=(request_latency-TTFT)/(completion_tokens-1), N>1; it includes client response timing and is not GPU decode time. Full-response ITL retained separately. All client latency fields are ms."
+      },
+      "cache": {
+        "available": true,
+        "reasons": [],
+        "tokens": {
+          "input": 37596635.0,
+          "storage_hit": 1152.0,
+          "device_hit": 378053504.0,
+          "host_hit": 728512.0
+        },
+        "total_tokens": 416379803.0,
+        "fractions": {
+          "device_hit": 0.9079535108959164,
+          "host_hit": 0.001749633374988652,
+          "storage_hit": 2.7667048010011186e-06,
+          "input": 0.090294089024294
+        },
+        "per_rank": {
+          "0": {
+            "tokens": {
+              "input": 10551146.0,
+              "storage_hit": 1152.0,
+              "device_hit": 101565824.0,
+              "host_hit": 225408.0
+            },
+            "first_utc": 1793749363.5600235,
+            "last_utc": 1793751188.5896246
+          },
+          "1": {
+            "tokens": {
+              "storage_hit": 0.0,
+              "input": 8633599.0,
+              "host_hit": 239296.0,
+              "device_hit": 102340288.0
+            },
+            "first_utc": 1793749363.5600235,
+            "last_utc": 1793751188.5896246
+          },
+          "2": {
+            "tokens": {
+              "device_hit": 75004352.0,
+              "storage_hit": 0.0,
+              "input": 9101962.0,
+              "host_hit": 77504.0
+            },
+            "first_utc": 1793749363.5600235,
+            "last_utc": 1793751188.5896246
+          },
+          "3": {
+            "tokens": {
+              "host_hit": 186304.0,
+              "input": 9309928.0,
+              "storage_hit": 0.0,
+              "device_hit": 99143040.0
+            },
+            "first_utc": 1793749363.5600235,
+            "last_utc": 1793751188.5896246
+          }
+        },
+        "semantics": {
+          "device_hit": "HBM prefix reuse",
+          "host_hit": "persistent framework HiCache host reuse",
+          "storage_hit": "backend storage-prefetch reuse (KVCR or Moon, local+remote)",
+          "input": "recomputed prefill tokens"
+        },
+        "scope": "Pooled token-weighted counter deltas, four endpoint populations. Scrapes approximate official client window; no object/byte conversion."
+      },
+      "allocation_proof": {
+        "passed": true,
+        "workers": [
+          {
+            "rank": 0,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109934192208,
+            "pools": [
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 1,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109934192208,
+            "pools": [
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109934192208,
+            "pools": [
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109934192208,
+            "pools": [
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          }
+        ],
+        "requested_host_bytes": 27487790694,
+        "requested_backend_bytes": 109951162778,
+        "rounding": "Explicit host budgets rounded down to complete physical pages; KVCR backend pools also floor to pages."
+      },
+      "reservation": [
+        {
+          "rank": 0,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109934192208,
+          "total_quantization_underfill_bytes": 115041312
+        },
+        {
+          "rank": 1,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109934192208,
+          "total_quantization_underfill_bytes": 115041312
+        },
+        {
+          "rank": 2,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109934192208,
+          "total_quantization_underfill_bytes": 115041312
+        },
+        {
+          "rank": 3,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109934192208,
+          "total_quantization_underfill_bytes": 115041312
+        }
+      ],
+      "observed_geometry": [
+        {
+          "rank": 0,
+          "pid": 14330,
+          "utc": 1793749138.9318438,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109934192208,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "utc": 1793749173.9270828,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109934192208,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "utc": 1793749196.431719,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109934192208,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "utc": 1793749222.616798,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109934192208,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        }
+      ],
+      "occupancy": [
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 21391767876.974422,
+          "sampled_peak_allocated_bytes": 21464481792.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 3607484709.377434,
+          "sampled_peak_allocated_bytes": 4013311040.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 668492746.1554507,
+          "sampled_peak_allocated_bytes": 670765056.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "kv_0",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 14228729239.620577,
+          "sampled_peak_allocated_bytes": 22584819712,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "kv_1",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 14228729239.620577,
+          "sampled_peak_allocated_bytes": 22584819712,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "mamba_0",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 5495435321.2909775,
+          "sampled_peak_allocated_bytes": 9569304576,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "mamba_1",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 214665442.23792884,
+          "sampled_peak_allocated_bytes": 373800960,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "mamba_2",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 17888786.853160735,
+          "sampled_peak_allocated_bytes": 31150080,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "mamba_3",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 1552.846081003536,
+          "sampled_peak_allocated_bytes": 2704,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 14330,
+          "tier": "backend",
+          "pool": "indexer_0",
+          "covered_seconds": 1825.3560407161713,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 889374211.2700766,
+          "sampled_peak_allocated_bytes": 1411551232,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 21400614690.66132,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 0.6128477043524851,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 3622961044.231997,
+          "sampled_peak_allocated_bytes": 5252715920.0,
+          "full_percent_of_covered": 2.6424750023651864,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 668769209.0831662,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 0.6128477043524851,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "kv_0",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 14055710995.631233,
+          "sampled_peak_allocated_bytes": 20749680640,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "kv_1",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 14055710995.631233,
+          "sampled_peak_allocated_bytes": 20749680640,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "mamba_0",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 5348006279.8025465,
+          "sampled_peak_allocated_bytes": 9739173888,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "mamba_1",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 208906495.30478695,
+          "sampled_peak_allocated_bytes": 380436480,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "mamba_2",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 17408874.608732246,
+          "sampled_peak_allocated_bytes": 31703040,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "mamba_3",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 1511.1870320080075,
+          "sampled_peak_allocated_bytes": 2752,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 14391,
+          "tier": "backend",
+          "pool": "indexer_0",
+          "covered_seconds": 1828.9547328948975,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 878565536.2739924,
+          "sampled_peak_allocated_bytes": 1296855040,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 21399368949.894966,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 2.7854709496205996,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 4130383551.1303744,
+          "sampled_peak_allocated_bytes": 4544484560.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 668730279.6842177,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 2.7854709496205996,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "kv_0",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 14570692844.893005,
+          "sampled_peak_allocated_bytes": 22992912384,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "kv_1",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 14570692844.893005,
+          "sampled_peak_allocated_bytes": 22992912384,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "mamba_0",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 5858768091.670271,
+          "sampled_peak_allocated_bytes": 9625927680,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "mamba_1",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 228858128.58086997,
+          "sampled_peak_allocated_bytes": 376012800,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "mamba_2",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 19071510.715072498,
+          "sampled_peak_allocated_bytes": 31334400,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "mamba_3",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 1655.5130829055986,
+          "sampled_peak_allocated_bytes": 2720,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 14335,
+          "tier": "backend",
+          "pool": "indexer_0",
+          "covered_seconds": 1826.783231973648,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 910780382.8456974,
+          "sampled_peak_allocated_bytes": 1437057024,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 21391438789.415108,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 7.436331452814369,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 4183846376.733847,
+          "sampled_peak_allocated_bytes": 5252715920.0,
+          "full_percent_of_covered": 2.481105634794795,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 668482462.1692221,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 7.436331452814369,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "kv_0",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 16793305351.085579,
+          "sampled_peak_allocated_bytes": 25438060544,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "kv_1",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 16793305351.085579,
+          "sampled_peak_allocated_bytes": 25438060544,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "mamba_0",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 7856276432.544961,
+          "sampled_peak_allocated_bytes": 12287213568,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "mamba_1",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 306885798.14628756,
+          "sampled_peak_allocated_bytes": 479969280,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "mamba_2",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 25573816.51219063,
+          "sampled_peak_allocated_bytes": 39997440,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "mamba_3",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 2219.9493500165477,
+          "sampled_peak_allocated_bytes": 3472,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 14331,
+          "tier": "backend",
+          "pool": "indexer_0",
+          "covered_seconds": 1828.7621924877167,
+          "profile_seconds": 1830.0007650852203,
+          "time_weighted_mean_allocated_bytes": 1049635412.6303259,
+          "sampled_peak_allocated_bytes": 1589878784,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        }
+      ],
+      "operations": {
+        "kvcr_source_operation:kvcr:source": {
+          "records": 1873,
+          "distribution_records": 55,
+          "excluded_from_distribution": 1818,
+          "payload_scope": "Positive successful different-agent native WRITE; source requires unique native join. Not proof of cross-node RDMA.",
+          "reported_success": 1873,
+          "outcome_counts": {
+            "source_operation_success": 1873
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 55,
+              "mean": 2.343085890909091,
+              "p50": 2.551501,
+              "p90": 2.7760914000000003,
+              "p99": 3.1050410200000007
+            },
+            "completed_bytes": {
+              "count": 55,
+              "mean": 55302047.127272725,
+              "p50": 59019280.0,
+              "p90": 59019280.0,
+              "p99": 59019280.0
+            },
+            "requested_bytes": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "logical_blocks": {
+              "count": 55,
+              "mean": 1.5818181818181818,
+              "p50": 1.0,
+              "p90": 1.0,
+              "p99": 12.0
+            },
+            "physical_blocks": {
+              "count": 55,
+              "mean": 1.5818181818181818,
+              "p50": 1.0,
+              "p90": 1.0,
+              "p99": 12.0
+            },
+            "objects": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "descriptors": {
+              "count": 55,
+              "mean": 4.6909090909090905,
+              "p50": 4.0,
+              "p90": 4.0,
+              "p99": 17.52000000000001
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "wall_GBps": {
+              "count": 55,
+              "mean": 23.337301679390222,
+              "p50": 22.997370973316567,
+              "p90": 31.083804085507275,
+              "p99": 35.79569657694176
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 53,
+                "mean": 2.4249067547169814,
+                "p50": 2.557838,
+                "p90": 2.7827092,
+                "p99": 3.117416759999998
+              },
+              "wall_GBps": {
+                "count": 53,
+                "mean": 24.11707009148024,
+                "p50": 23.009708094393197,
+                "p90": 31.23496308317746,
+                "p99": 35.82004396774717
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 2,
+                "mean": 0.17483300000000002,
+                "p50": 0.17483300000000002,
+                "p90": 0.190001,
+                "p99": 0.1934138
+              },
+              "wall_GBps": {
+                "count": 2,
+                "mean": 2.6734387590047124,
+                "p50": 2.6734387590047124,
+                "p90": 3.172454853811851,
+                "p99": 3.284733475143457
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": 23.602227874717883,
+          "aggregate_api_logical_payload_GBps": null
+        },
+        "nixl_transfer:kvcr:WRITE:source_write": {
+          "records": 55,
+          "distribution_records": 55,
+          "excluded_from_distribution": 0,
+          "payload_scope": "Positive successful different-agent native WRITE; source requires unique native join. Not proof of cross-node RDMA.",
+          "reported_success": 55,
+          "outcome_counts": {
+            "native_transfer_completed": 55
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 55,
+              "mean": 2.213991472727273,
+              "p50": 2.415309,
+              "p90": 2.643886,
+              "p99": 2.9751117000000007
+            },
+            "completed_bytes": {
+              "count": 55,
+              "mean": 55302047.127272725,
+              "p50": 59019280.0,
+              "p90": 59019280.0,
+              "p99": 59019280.0
+            },
+            "requested_bytes": {
+              "count": 55,
+              "mean": 55302047.127272725,
+              "p50": 59019280.0,
+              "p90": 59019280.0,
+              "p99": 59019280.0
+            },
+            "logical_blocks": {
+              "count": 55,
+              "mean": 1.5818181818181818,
+              "p50": 1.0,
+              "p90": 1.0,
+              "p99": 12.0
+            },
+            "physical_blocks": {
+              "count": 55,
+              "mean": 1.5818181818181818,
+              "p50": 1.0,
+              "p90": 1.0,
+              "p99": 12.0
+            },
+            "objects": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "descriptors": {
+              "count": 55,
+              "mean": 4.6909090909090905,
+              "p50": 4.0,
+              "p90": 4.0,
+              "p99": 17.52000000000001
+            },
+            "native_descriptor_count": {
+              "count": 55,
+              "mean": 4.4,
+              "p50": 4.0,
+              "p90": 4.0,
+              "p99": 17.52000000000001
+            },
+            "api_logical_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "wall_GBps": {
+              "count": 55,
+              "mean": 24.878795356332855,
+              "p50": 24.247566483390298,
+              "p90": 33.71456026539854,
+              "p99": 38.8324009245063
+            },
+            "native_ms": {
+              "count": 55,
+              "mean": 2.0400545454545456,
+              "p50": 2.303,
+              "p90": 2.4768000000000003,
+              "p99": 2.51792
+            },
+            "native_post_us": {
+              "count": 55,
+              "mean": 34.163636363636364,
+              "p50": 35.0,
+              "p90": 45.6,
+              "p99": 47.46
+            },
+            "native_GBps": {
+              "count": 55,
+              "mean": 27.408088815153214,
+              "p50": 25.49428941684665,
+              "p90": 38.5495956744146,
+              "p99": 42.32003341999576
+            }
+          },
+          "size_bins": {
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 53,
+                "mean": 2.294619075471698,
+                "p50": 2.416941,
+                "p90": 2.64827,
+                "p99": 2.9871795999999984
+              },
+              "wall_GBps": {
+                "count": 53,
+                "mean": 25.59007237816892,
+                "p50": 24.352599574752706,
+                "p90": 33.74965248382448,
+                "p99": 38.86345865282717
+              },
+              "native_ms": {
+                "count": 53,
+                "mean": 2.1156037735849056,
+                "p50": 2.307,
+                "p90": 2.4774000000000003,
+                "p99": 2.51896
+              },
+              "native_GBps": {
+                "count": 53,
+                "mean": 27.979330230655307,
+                "p50": 25.53841627001298,
+                "p90": 38.57475859587309,
+                "p99": 42.329752667494176
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 2,
+                "mean": 0.07736,
+                "p50": 0.07736,
+                "p90": 0.0852064,
+                "p99": 0.08697184
+              },
+              "wall_GBps": {
+                "count": 2,
+                "mean": 6.029954277677031,
+                "p50": 6.029954277677031,
+                "p90": 7.070308036152147,
+                "p99": 7.304387631809048
+              },
+              "native_ms": {
+                "count": 2,
+                "mean": 0.038,
+                "p50": 0.038,
+                "p90": 0.0444,
+                "p99": 0.04584
+              },
+              "native_GBps": {
+                "count": 2,
+                "mean": 12.270191304347826,
+                "p50": 12.270191304347826,
+                "p90": 13.566664347826087,
+                "p99": 13.858370782608695
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": 24.978437274263626,
+          "aggregate_api_logical_payload_GBps": null
+        },
+        "nixl_transfer:kvcr:WRITE:other_or_unknown": {
+          "records": 1096,
+          "distribution_records": 0,
+          "excluded_from_distribution": 1096,
+          "payload_scope": "Positive successful different-agent native WRITE; source requires unique native join. Not proof of cross-node RDMA.",
+          "reported_success": 1096,
+          "outcome_counts": {
+            "native_transfer_completed": 1096
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "completed_bytes": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "requested_bytes": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "logical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "descriptors": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {},
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": null
+        },
+        "backend_api:kvcr:PUT": {
+          "records": 1122,
+          "distribution_records": 1122,
+          "excluded_from_distribution": 0,
+          "payload_scope": "API logical completion, not actual copied traffic",
+          "reported_success": 1122,
+          "outcome_counts": {
+            "complete_cache_operation": 1122
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 1122,
+              "mean": 9.05390314973262,
+              "p50": 9.671923,
+              "p90": 11.662292,
+              "p99": 14.034766079999999
+            },
+            "completed_bytes": {
+              "count": 1122,
+              "mean": 113955621.46167558,
+              "p50": 72650768.0,
+              "p90": 218103808.0,
+              "p99": 218103808.0
+            },
+            "requested_bytes": {
+              "count": 1122,
+              "mean": 113955621.46167558,
+              "p50": 72650768.0,
+              "p90": 218103808.0,
+              "p99": 218103808.0
+            },
+            "logical_blocks": {
+              "count": 1122,
+              "mean": 52.30837789661319,
+              "p50": 10.0,
+              "p90": 128.0,
+              "p99": 128.0
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "descriptors": {
+              "count": 1122,
+              "mean": 158.41889483065953,
+              "p50": 256.0,
+              "p90": 260.0,
+              "p99": 260.0
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 1122,
+              "mean": 14.285308840824316,
+              "p50": 12.948547671604695,
+              "p90": 21.20854609943734,
+              "p99": 93.39361271130171
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "1-8MiB": {
+              "wall_ms": {
+                "count": 54,
+                "mean": 3.0262530925925923,
+                "p50": 3.013089,
+                "p90": 5.0680747,
+                "p99": 6.355132029999999
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "64-256MiB": {
+              "wall_ms": {
+                "count": 676,
+                "mean": 11.10462901775148,
+                "p50": 10.547704,
+                "p90": 12.2453135,
+                "p99": 14.56057175
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 385,
+                "mean": 6.417702254545454,
+                "p50": 4.645817,
+                "p90": 7.3860032,
+                "p99": 11.535921439999964
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 7,
+                "mean": 2.5024404285714286,
+                "p50": 2.3187,
+                "p90": 3.1643366000000004,
+                "p99": 4.049250259999999
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": 12.586353043222129
+        },
+        "backend_api:kvcr:GET": {
+          "records": 6,
+          "distribution_records": 6,
+          "excluded_from_distribution": 0,
+          "payload_scope": "API logical completion, not actual copied traffic",
+          "reported_success": 6,
+          "outcome_counts": {
+            "complete_cache_operation": 6
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 6,
+              "mean": 4.848127333333333,
+              "p50": 5.061595499999999,
+              "p90": 6.200689000000001,
+              "p99": 6.2666275
+            },
+            "completed_bytes": {
+              "count": 6,
+              "mean": 24944645.333333332,
+              "p50": 15335424.0,
+              "p90": 59019280.0,
+              "p99": 59019280.0
+            },
+            "requested_bytes": {
+              "count": 6,
+              "mean": 24944645.333333332,
+              "p50": 15335424.0,
+              "p90": 59019280.0,
+              "p99": 59019280.0
+            },
+            "logical_blocks": {
+              "count": 6,
+              "mean": 3.0,
+              "p50": 0.0,
+              "p90": 9.0,
+              "p99": 11.700000000000001
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "descriptors": {
+              "count": 6,
+              "mean": 10.333333333333334,
+              "p50": 9.0,
+              "p90": 18.0,
+              "p99": 23.400000000000002
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 6,
+              "mean": 4.6863160635628685,
+              "p50": 2.660515792305749,
+              "p90": 11.253265200931583,
+              "p99": 12.712413864953806
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 4,
+                "mean": 5.63114225,
+                "p50": 5.833215,
+                "p90": 6.229995,
+                "p99": 6.269558099999999
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 2,
+                "mean": 3.2820975,
+                "p50": 3.2820975,
+                "p90": 3.3304307,
+                "p99": 3.34130567
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": 5.145212495106358
+        }
+      },
+      "observer": {
+        "loss": {
+          "writers": {
+            "14330": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "14391": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "14335": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "14331": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            }
+          },
+          "all_writers_closed": false,
+          "lossless": null,
+          "scope": "Missing final heartbeat/close is unknown coverage, never zero loss. SIGTERM can bypass atexit."
+        },
+        "module_install_events": [
+          {
+            "rank": 0,
+            "module": "sglang.srt.mem_cache.storage.kvcr.kvcr_store",
+            "source_sha256": "01d0de44674c00fd530784180c3dd9e945373aff9e8a6044db80440a294783e6",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749086305318637,
+            "pid": 14330,
+            "tid": 14330,
+            "wall_ns": 1793749086305318637,
+            "monotonic_ns": 717919232435917,
+            "thread_cpu_ns": 127693400736
+          },
+          {
+            "rank": 0,
+            "module": "kvcr.runtime.progress",
+            "source_sha256": "2bfc457aef1ea92a1a5597d471eeffd848832f97d86e6d460289b751e9d6a05c",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749134111089965,
+            "pid": 14330,
+            "tid": 14977,
+            "wall_ns": 1793749134111089965,
+            "monotonic_ns": 717967038210253,
+            "thread_cpu_ns": 96149184
+          },
+          {
+            "rank": 0,
+            "module": "kvcr.backends.remote_ops",
+            "source_sha256": "3fe0895a0beff975e9b25f8fc384f6a3e1fcdfa364413ca19539d5d22fc42a7a",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749134155449736,
+            "pid": 14330,
+            "tid": 14977,
+            "wall_ns": 1793749134155449736,
+            "monotonic_ns": 717967082569768,
+            "thread_cpu_ns": 137366560
+          },
+          {
+            "rank": 0,
+            "module": "kvcr.backends.dangling_ops",
+            "source_sha256": "903e5430ee381f526255f303fae0bf6039fc2c1ac57e00efa469152a2bd543c4",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749134155841353,
+            "pid": 14330,
+            "tid": 14977,
+            "wall_ns": 1793749134155841353,
+            "monotonic_ns": 717967082959561,
+            "thread_cpu_ns": 137755936
+          },
+          {
+            "rank": 1,
+            "module": "sglang.srt.mem_cache.storage.kvcr.kvcr_store",
+            "source_sha256": "01d0de44674c00fd530784180c3dd9e945373aff9e8a6044db80440a294783e6",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749119497270625,
+            "pid": 14391,
+            "tid": 14391,
+            "wall_ns": 1793749119497270625,
+            "monotonic_ns": 717952424388513,
+            "thread_cpu_ns": 148025409472
+          },
+          {
+            "rank": 1,
+            "module": "kvcr.runtime.progress",
+            "source_sha256": "2bfc457aef1ea92a1a5597d471eeffd848832f97d86e6d460289b751e9d6a05c",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749170235375171,
+            "pid": 14391,
+            "tid": 15371,
+            "wall_ns": 1793749170235375171,
+            "monotonic_ns": 718003162495651,
+            "thread_cpu_ns": 91811232
+          },
+          {
+            "rank": 1,
+            "module": "kvcr.backends.remote_ops",
+            "source_sha256": "3fe0895a0beff975e9b25f8fc384f6a3e1fcdfa364413ca19539d5d22fc42a7a",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749170282367755,
+            "pid": 14391,
+            "tid": 15371,
+            "wall_ns": 1793749170282367755,
+            "monotonic_ns": 718003209488363,
+            "thread_cpu_ns": 135074784
+          },
+          {
+            "rank": 1,
+            "module": "kvcr.backends.dangling_ops",
+            "source_sha256": "903e5430ee381f526255f303fae0bf6039fc2c1ac57e00efa469152a2bd543c4",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749170282795468,
+            "pid": 14391,
+            "tid": 15371,
+            "wall_ns": 1793749170282795468,
+            "monotonic_ns": 718003209913548,
+            "thread_cpu_ns": 135499552
+          },
+          {
+            "rank": 2,
+            "module": "sglang.srt.mem_cache.storage.kvcr.kvcr_store",
+            "source_sha256": "01d0de44674c00fd530784180c3dd9e945373aff9e8a6044db80440a294783e6",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749086295442781,
+            "pid": 14335,
+            "tid": 14335,
+            "wall_ns": 1793749086295442781,
+            "monotonic_ns": 717919222560125,
+            "thread_cpu_ns": 129624988736
+          },
+          {
+            "rank": 2,
+            "module": "kvcr.runtime.progress",
+            "source_sha256": "2bfc457aef1ea92a1a5597d471eeffd848832f97d86e6d460289b751e9d6a05c",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749190471351995,
+            "pid": 14335,
+            "tid": 14968,
+            "wall_ns": 1793749190471351995,
+            "monotonic_ns": 718023398472091,
+            "thread_cpu_ns": 99821248
+          },
+          {
+            "rank": 2,
+            "module": "kvcr.backends.remote_ops",
+            "source_sha256": "3fe0895a0beff975e9b25f8fc384f6a3e1fcdfa364413ca19539d5d22fc42a7a",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749190516604699,
+            "pid": 14335,
+            "tid": 14968,
+            "wall_ns": 1793749190516604699,
+            "monotonic_ns": 718023443724571,
+            "thread_cpu_ns": 141889728
+          },
+          {
+            "rank": 2,
+            "module": "kvcr.backends.dangling_ops",
+            "source_sha256": "903e5430ee381f526255f303fae0bf6039fc2c1ac57e00efa469152a2bd543c4",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749190517033341,
+            "pid": 14335,
+            "tid": 14968,
+            "wall_ns": 1793749190517033341,
+            "monotonic_ns": 718023444152221,
+            "thread_cpu_ns": 142317024
+          },
+          {
+            "rank": 3,
+            "module": "sglang.srt.mem_cache.storage.kvcr.kvcr_store",
+            "source_sha256": "01d0de44674c00fd530784180c3dd9e945373aff9e8a6044db80440a294783e6",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749086270990824,
+            "pid": 14331,
+            "tid": 14331,
+            "wall_ns": 1793749086270990824,
+            "monotonic_ns": 717919198108584,
+            "thread_cpu_ns": 127824043424
+          },
+          {
+            "rank": 3,
+            "module": "kvcr.runtime.progress",
+            "source_sha256": "2bfc457aef1ea92a1a5597d471eeffd848832f97d86e6d460289b751e9d6a05c",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749212447672294,
+            "pid": 14331,
+            "tid": 14959,
+            "wall_ns": 1793749212447672294,
+            "monotonic_ns": 718045374792870,
+            "thread_cpu_ns": 101871168
+          },
+          {
+            "rank": 3,
+            "module": "kvcr.backends.remote_ops",
+            "source_sha256": "3fe0895a0beff975e9b25f8fc384f6a3e1fcdfa364413ca19539d5d22fc42a7a",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749212493277415,
+            "pid": 14331,
+            "tid": 14959,
+            "wall_ns": 1793749212493277415,
+            "monotonic_ns": 718045420397543,
+            "thread_cpu_ns": 144099968
+          },
+          {
+            "rank": 3,
+            "module": "kvcr.backends.dangling_ops",
+            "source_sha256": "903e5430ee381f526255f303fae0bf6039fc2c1ac57e00efa469152a2bd543c4",
+            "event": "module_installed",
+            "emit_wall_ns": 1793749212493667305,
+            "pid": 14331,
+            "tid": 14959,
+            "wall_ns": 1793749212493667305,
+            "monotonic_ns": 718045420785097,
+            "thread_cpu_ns": 144487296
+          }
+        ],
+        "observer_module_manifest_present": true,
+        "exclusions": {
+          "operation_outside_window_or_invalid": 1510
+        },
+        "source_native_joins": {
+          "unique_pairs": 55,
+          "ambiguous_pairs": 0,
+          "unmatched_keys": 0,
+          "scope": "PID/source_operation/transfer_id exact joins only; reused/colliding keys excluded, no request-ID or cross-PID clock joins."
+        }
+      },
+      "cpu": {
+        "cgroup": {
+          "cpu_cores": {
+            "time_weighted_mean": 9.229382062008408,
+            "covered_seconds": 1825.029601097107,
+            "profile_seconds": 1830.0007650852203,
+            "excluded_intervals": 0
+          },
+          "user_cores": {
+            "time_weighted_mean": 6.377836703581592,
+            "covered_seconds": 1825.029601097107,
+            "profile_seconds": 1830.0007650852203,
+            "excluded_intervals": 0
+          },
+          "system_cores": {
+            "time_weighted_mean": 2.851545358974753,
+            "covered_seconds": 1825.029601097107,
+            "profile_seconds": 1830.0007650852203,
+            "excluded_intervals": 0
+          }
+        },
+        "sampler": {
+          "available": true,
+          "profile_records": 366,
+          "flagged_records": 0,
+          "scope": "Coverage flags only; thread/process CPU totals not inferred or added to cgroup CPU."
+        },
+        "scope": "Cgroup CPU includes all pod work, observer/collector threads; not exclusive model or owner CPU."
+      },
+      "memory": {
+        "sampled_bytes": {
+          "count": 366,
+          "mean": 878649615097.0055,
+          "p50": 878775369728.0,
+          "p90": 879401926656.0,
+          "p99": 879506518835.2
+        },
+        "sampled_peak_bytes": 879533031424,
+        "scope": "Cgroup charged memory includes cache/framework/model/runtime overhead; distinct from allocator reservation and not summed with it."
+      },
+      "native_counter_aggregates": {
+        "available": false,
+        "reasons": [
+          "Not a Moon native endpoint population"
+        ]
+      },
+      "gpu_sampled": {
+        "0": {
+          "utilization": {
+            "count": 366,
+            "mean": 85.18852459016394,
+            "p50": 97.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 269960.8579234973,
+            "p50": 269231.0,
+            "p90": 271321.0,
+            "p99": 271321.0
+          }
+        },
+        "1": {
+          "utilization": {
+            "count": 366,
+            "mean": 80.67486338797814,
+            "p50": 96.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 267312.1256830601,
+            "p50": 267317.0,
+            "p90": 267337.0,
+            "p99": 267337.0
+          }
+        },
+        "2": {
+          "utilization": {
+            "count": 366,
+            "mean": 81.36338797814207,
+            "p50": 96.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 270286.94535519124,
+            "p50": 270301.0,
+            "p90": 270305.0,
+            "p99": 270305.0
+          }
+        },
+        "3": {
+          "utilization": {
+            "count": 366,
+            "mean": 87.82513661202186,
+            "p50": 97.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 270481.9781420765,
+            "p50": 270485.0,
+            "p90": 270489.0,
+            "p99": 270489.0
+          }
+        }
+      },
+      "storage_occupancy_scope": "Host/indexer physical bytes from geometry and allocator units; KVCR backend allocated includes FILLING/READY/claimed. Moon backend occupancy is master-global, not per-worker/per-pool. Missing series are unavailable. No exact READY duplication inference.",
+      "transfer_scope": "Fully contained operations in official profile bounds. Successful positive bytes/duration for timing/BW CDFs; failed/zero/unknown populations retained separately. Input descriptors vs SDK descCount are distinct. No request-ID join or native/wall causal subtraction.",
+      "figures": [
+        "client-latency.png",
+        "client-latency.svg",
+        "backend_api-cdfs.png",
+        "backend_api-cdfs.svg",
+        "nixl_transfer-cdfs.png",
+        "nixl_transfer-cdfs.svg",
+        "kvcr_source_operation-cdfs.png",
+        "kvcr_source_operation-cdfs.svg",
+        "pool-occupancy.png",
+        "pool-occupancy.svg",
+        "resources.png",
+        "resources.svg"
+      ]
+    },
+    "mooncake-random": {
+      "case": "mooncake-random",
+      "attempt": "hicache-1800-r5",
+      "verification": {
+        "archive_sha256": "c858b10045f380e476af92f7c8f560ec8f510bd21ce34e14d10753c798a5c545",
+        "manifest_sha256": "7224f87376ee783befd099ca38178b272f4159aad089c7fb4630b056ea89c5f1",
+        "files": 283,
+        "archived_only_input_maps": 3,
+        "archive_only_auxiliary_files": [
+          "cases/mooncake-random/runs/hicache-1800-r5/aiperf_artifacts/profile_export_aiperf_timeslices.csv",
+          "cases/mooncake-random/runs/hicache-1800-r5/aiperf_artifacts/profile_export_aiperf_timeslices.json",
+          "cases/mooncake-random/runs/hicache-1800-r5/aiperf_artifacts/server_metrics_export.json"
+        ],
+        "archive_only_auxiliary_bytes": 672448026,
+        "download_receipt_sha256": "6117def11f575290fc56bec06fbf60bbd4c2353f51f5dcb28cc571e9f43200ec",
+        "external_collection_sha256": "6f32946977e1c1a557c6c190d04ae9260068495f1db2dba9e62c7afc32a6fc74",
+        "timed_harness_ready_sha256": "17a033a630605bb517cda28ef600993fcb2ef3a9ffb73e0ed86ee3ed4dde3cf8",
+        "timed_sampler_sha256": "216124bf2310da808797d472463c64e0c53c3dfeba2054c4c46c43dbf9cde246"
+      },
+      "profile": {
+        "begin_utc": 1793752804.277584,
+        "end_utc": 1793754634.279182,
+        "actual_export_seconds": 1830.0015978813171,
+        "configured_sending_seconds": 1800
+      },
+      "client": {
+        "official": {
+          "time_to_first_token": {
+            "unit": "ms",
+            "avg": 764.7420214592411,
+            "p1": 218.47885644,
+            "p5": 229.99257819999997,
+            "p10": 238.71473459999999,
+            "p25": 262.808084,
+            "p50": 341.286207,
+            "p75": 569.5651839999999,
+            "p90": 1575.787285799998,
+            "p95": 3160.791984,
+            "p99": 6913.960222679998,
+            "min": 181.560791,
+            "max": 15970.834063999999,
+            "std": 1297.1072533040817,
+            "count": 4085,
+            "sum": 3123971.157661
+          },
+          "inter_token_latency": {
+            "unit": "ms",
+            "avg": 6.734983825913536,
+            "p1": 3.094081629293318,
+            "p5": 3.5142979978752704,
+            "p10": 3.9106918495549947,
+            "p25": 4.646074912762519,
+            "p50": 5.8536544841269835,
+            "p75": 7.282632751243781,
+            "p90": 9.489345275344352,
+            "p95": 11.57929408549566,
+            "p99": 19.19254975727617,
+            "min": 0.07168702597402597,
+            "max": 469.6101521428571,
+            "std": 8.728420045203215,
+            "count": 4085,
+            "sum": 27512.408928856796
+          },
+          "full_response_inter_token_latency": {
+            "unit": "ms",
+            "avg": 6.748551250919328,
+            "p1": 3.102300734391198,
+            "p5": 3.5215262503291864,
+            "p10": 3.9300236351679696,
+            "p25": 4.6533222948960296,
+            "p50": 5.8679731875,
+            "p75": 7.295073891304347,
+            "p90": 9.507232526274104,
+            "p95": 11.584701140888324,
+            "p99": 19.530581307753508,
+            "min": 0.0906834935064935,
+            "max": 469.8316846428571,
+            "std": 8.734610417892787,
+            "count": 4085,
+            "sum": 27567.831860005455
+          },
+          "request_latency": {
+            "unit": "ms",
+            "avg": 6470.244072842104,
+            "p1": 343.08283656,
+            "p5": 694.2244686,
+            "p10": 889.0613278,
+            "p25": 1386.6305149999998,
+            "p50": 2813.130351,
+            "p75": 6459.728031,
+            "p90": 14192.696114599998,
+            "p95": 23571.832534599984,
+            "p99": 53025.78764047999,
+            "min": 223.751264,
+            "max": 374174.014574,
+            "std": 14358.820478093825,
+            "count": 4085,
+            "sum": 26430947.037559997
+          },
+          "output_token_throughput": {
+            "unit": "tokens/sec",
+            "avg": 2034.1566934262785
+          },
+          "request_throughput": {
+            "unit": "requests/sec",
+            "avg": 2.2322384876457946
+          },
+          "total_token_throughput": {
+            "unit": "tokens/sec",
+            "avg": 229996.60350537067
+          },
+          "effective_concurrency": {
+            "unit": "requests",
+            "avg": 14.446843922235228,
+            "p50": 13.0,
+            "p90": 25.0,
+            "p95": 30.0,
+            "p99": 37.0,
+            "min": 0.0,
+            "max": 42.0,
+            "std": 8.062942338373178
+          },
+          "request_count": {
+            "unit": "requests",
+            "avg": 4085.0
+          },
+          "error_summary": [],
+          "was_cancelled": false
+        },
+        "phase_log_outcomes": {
+          "completed": 4085,
+          "cancelled": 0,
+          "errors": 0
+        },
+        "exported_phase_counts": {
+          "warmup": {
+            "exported_records": 286,
+            "exported_success": 286
+          },
+          "profiling": {
+            "exported_records": 4085,
+            "exported_success": 4085
+          }
+        },
+        "phase_request_start_bounds": {
+          "warmup": {
+            "first": 1793752714.2954607,
+            "last": 1793752803.8667197
+          },
+          "profiling": {
+            "first": 1793752804.3000634,
+            "last": 1793754604.2284772
+          }
+        },
+        "successful_export_distributions": {
+          "time_to_first_token": {
+            "count": 4085,
+            "mean": 764.7420214592411,
+            "p50": 341.286207,
+            "p90": 1575.787285799998,
+            "p99": 6913.960222679998
+          },
+          "inter_token_latency": {
+            "count": 4085,
+            "mean": 6.734983825913536,
+            "p50": 5.8536544841269835,
+            "p90": 9.489345275344352,
+            "p99": 19.19254975727617
+          },
+          "full_response_inter_token_latency": {
+            "count": 4085,
+            "mean": 6.748551250919327,
+            "p50": 5.8679731875,
+            "p90": 9.507232526274104,
+            "p99": 19.530581307753504
+          },
+          "derived_tpot_ms": {
+            "count": 4085,
+            "mean": 6.734983825913536,
+            "p50": 5.8536544841269835,
+            "p90": 9.489345275344352,
+            "p99": 19.19254975727617
+          }
+        },
+        "scope": "Official export for headline metrics. Request distributions cover successful exported profiling records; deadline cancellations may be absent. ITL is reported inter_token_latency. Derived per-request TPOT=(request_latency-TTFT)/(completion_tokens-1), N>1; it includes client response timing and is not GPU decode time. Full-response ITL retained separately. All client latency fields are ms."
+      },
+      "cache": {
+        "available": true,
+        "reasons": [],
+        "tokens": {
+          "device_hit": 380710976.0,
+          "storage_hit": 6720.0,
+          "input": 35863023.0,
+          "host_hit": 589312.0
+        },
+        "total_tokens": 417170031.0,
+        "fractions": {
+          "device_hit": 0.912603849052618,
+          "host_hit": 0.0014126422230939211,
+          "storage_hit": 1.6108539685584463e-05,
+          "input": 0.08596740018460243
+        },
+        "per_rank": {
+          "0": {
+            "tokens": {
+              "device_hit": 90080064.0,
+              "storage_hit": 0.0,
+              "input": 9049929.0,
+              "host_hit": 287744.0
+            },
+            "first_utc": 1793752804.9637535,
+            "last_utc": 1793754629.9924
+          },
+          "1": {
+            "tokens": {
+              "host_hit": 214208.0,
+              "device_hit": 99324416.0,
+              "storage_hit": 1344.0,
+              "input": 8876762.0
+            },
+            "first_utc": 1793752804.9637535,
+            "last_utc": 1793754629.9924
+          },
+          "2": {
+            "tokens": {
+              "device_hit": 77362560.0,
+              "host_hit": 2880.0,
+              "storage_hit": 3712.0,
+              "input": 9154341.0
+            },
+            "first_utc": 1793752804.9637535,
+            "last_utc": 1793754629.9924
+          },
+          "3": {
+            "tokens": {
+              "storage_hit": 1664.0,
+              "input": 8781991.0,
+              "host_hit": 84480.0,
+              "device_hit": 113943936.0
+            },
+            "first_utc": 1793752804.9637535,
+            "last_utc": 1793754629.9924
+          }
+        },
+        "semantics": {
+          "device_hit": "HBM prefix reuse",
+          "host_hit": "persistent framework HiCache host reuse",
+          "storage_hit": "backend storage-prefetch reuse (KVCR or Moon, local+remote)",
+          "input": "recomputed prefill tokens"
+        },
+        "scope": "Pooled token-weighted counter deltas, four endpoint populations. Scrapes approximate official client window; no object/byte conversion."
+      },
+      "allocation_proof": {
+        "passed": true,
+        "workers": [
+          {
+            "rank": 0,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 1,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          }
+        ],
+        "requested_host_bytes": 27487790694,
+        "requested_backend_bytes": 109951162778,
+        "rounding": "Explicit host budgets rounded down to complete physical pages; KVCR backend pools also floor to pages."
+      },
+      "reservation": [
+        {
+          "rank": 0,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        },
+        {
+          "rank": 1,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        },
+        {
+          "rank": 2,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        },
+        {
+          "rank": 3,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        }
+      ],
+      "observed_geometry": [
+        {
+          "rank": 0,
+          "pid": 18531,
+          "utc": 1793752584.9563212,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 0,
+          "pid": 18531,
+          "utc": 1793752584.978081,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 0,
+          "pid": 18531,
+          "utc": 1793752584.9904144,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 18508,
+          "utc": 1793752565.579036,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 18508,
+          "utc": 1793752565.5941663,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 18508,
+          "utc": 1793752565.596163,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 18513,
+          "utc": 1793752565.6485333,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 18513,
+          "utc": 1793752565.7260408,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 18513,
+          "utc": 1793752565.7279813,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 18509,
+          "utc": 1793752565.3183253,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 18509,
+          "utc": 1793752565.334798,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 18509,
+          "utc": 1793752565.3370013,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        }
+      ],
+      "occupancy": [
+        {
+          "rank": 0,
+          "pid": 18531,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 3698416408.2539973,
+          "sampled_peak_allocated_bytes": 4544484560.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 18531,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 668925851.2483718,
+          "sampled_peak_allocated_bytes": 670765056.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 18531,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 21405627239.9479,
+          "sampled_peak_allocated_bytes": 21464481792.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 18508,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 3806474747.653431,
+          "sampled_peak_allocated_bytes": 4426446000.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 18508,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 669345114.4176351,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 9.937085766825023,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 18508,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 21419043661.364323,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 9.937085766825023,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 18513,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 4347615524.706132,
+          "sampled_peak_allocated_bytes": 5252715920.0,
+          "full_percent_of_covered": 4.986027848348117,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 18513,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 668574439.4468855,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 0.8206689683305206,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 18513,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 21394382062.300335,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 0.8206689683305206,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 18509,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 4087298196.85414,
+          "sampled_peak_allocated_bytes": 4544484560.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 18509,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 669565454.959607,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 30.107373347097905,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 18509,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1830.0015978813171,
+          "profile_seconds": 1830.0015978813171,
+          "time_weighted_mean_allocated_bytes": 21426094558.707424,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 30.107373347097905,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        }
+      ],
+      "operations": {
+        "backend_api:mooncake:PUT": {
+          "records": 1051,
+          "distribution_records": 1051,
+          "excluded_from_distribution": 0,
+          "payload_scope": "API logical completion, not actual copied traffic",
+          "reported_success": 1051,
+          "outcome_counts": {
+            "complete_cache_operation": 1051
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 1051,
+              "mean": 4.01435131208373,
+              "p50": 3.116464,
+              "p90": 7.406247,
+              "p99": 9.6114405
+            },
+            "completed_bytes": {
+              "count": 1051,
+              "mean": 97684063.68030447,
+              "p50": 63864848.0,
+              "p90": 218103808.0,
+              "p99": 218103808.0
+            },
+            "requested_bytes": {
+              "count": 1051,
+              "mean": 97684063.68030447,
+              "p50": 63864848.0,
+              "p90": 218103808.0,
+              "p99": 218103808.0
+            },
+            "logical_blocks": {
+              "count": 1051,
+              "mean": 87.88962892483349,
+              "p50": 61.0,
+              "p90": 256.0,
+              "p99": 256.0
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 1051,
+              "mean": 133.16936251189344,
+              "p50": 102.0,
+              "p90": 256.0,
+              "p99": 260.0
+            },
+            "descriptors": {
+              "count": 1051,
+              "mean": 133.16936251189344,
+              "p50": 102.0,
+              "p90": 256.0,
+              "p99": 260.0
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 1051,
+              "mean": 22.164055752933752,
+              "p50": 24.771000171542713,
+              "p90": 30.828874885860237,
+              "p99": 32.633062658338304
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "1-8MiB": {
+              "wall_ms": {
+                "count": 87,
+                "mean": 1.0480245172413793,
+                "p50": 0.971621,
+                "p90": 1.9376100000000005,
+                "p99": 2.92430684
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "64-256MiB": {
+              "wall_ms": {
+                "count": 505,
+                "mean": 6.239349526732673,
+                "p50": 6.81997,
+                "p90": 9.085819,
+                "p99": 9.70631336
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 449,
+                "mean": 2.162650547884187,
+                "p50": 2.165547,
+                "p90": 3.2997546,
+                "p99": 4.5618585199999995
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 10,
+                "mean": 0.6003489,
+                "p50": 0.5293950000000001,
+                "p90": 0.8933779999999999,
+                "p99": 1.1808065
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": 24.333710750791166
+        },
+        "backend_api:mooncake:GET": {
+          "records": 119,
+          "distribution_records": 88,
+          "excluded_from_distribution": 31,
+          "payload_scope": "API logical completion, not actual copied traffic",
+          "reported_success": 88,
+          "outcome_counts": {
+            "complete_cache_operation": 88,
+            "incomplete_cache_operation": 31
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 88,
+              "mean": 2.0474736022727273,
+              "p50": 1.352007,
+              "p90": 5.6149664,
+              "p99": 7.786266369999989
+            },
+            "completed_bytes": {
+              "count": 88,
+              "mean": 47810374.54545455,
+              "p50": 6815744.0,
+              "p90": 192374374.39999998,
+              "p99": 218103808.0
+            },
+            "requested_bytes": {
+              "count": 88,
+              "mean": 47810374.54545455,
+              "p50": 6815744.0,
+              "p90": 192374374.39999998,
+              "p99": 218103808.0
+            },
+            "logical_blocks": {
+              "count": 88,
+              "mean": 51.40909090909091,
+              "p50": 30.5,
+              "p90": 128.0,
+              "p99": 128.0
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 88,
+              "mean": 77.22727272727273,
+              "p50": 45.5,
+              "p90": 225.79999999999998,
+              "p99": 256.0
+            },
+            "descriptors": {
+              "count": 88,
+              "mean": 77.22727272727273,
+              "p50": 45.5,
+              "p90": 225.79999999999998,
+              "p99": 256.0
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 88,
+              "mean": 14.486631042512977,
+              "p50": 7.394568630233291,
+              "p90": 33.37078540528563,
+              "p99": 38.67334761959556
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "1-8MiB": {
+              "wall_ms": {
+                "count": 31,
+                "mean": 1.0595065806451613,
+                "p50": 0.945221,
+                "p90": 1.725064,
+                "p99": 1.9014714
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "64-256MiB": {
+              "wall_ms": {
+                "count": 21,
+                "mean": 5.04071119047619,
+                "p50": 5.182714,
+                "p90": 6.564674,
+                "p99": 9.448301200000001
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 22,
+                "mean": 1.622376318181818,
+                "p50": 1.711065,
+                "p90": 2.020538,
+                "p99": 2.9225926599999994
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 14,
+                "mean": 0.4132685,
+                "p50": 0.3806265,
+                "p90": 0.5228446,
+                "p99": 0.56280844
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": 23.350911334038344
+        }
+      },
+      "observer": {
+        "loss": {
+          "writers": {
+            "18531": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "18508": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "18513": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "18509": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            }
+          },
+          "all_writers_closed": false,
+          "lossless": null,
+          "scope": "Missing final heartbeat/close is unknown coverage, never zero loss. SIGTERM can bypass atexit."
+        },
+        "module_install_events": [
+          {
+            "rank": 0,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793752576909525662,
+            "pid": 18531,
+            "tid": 18531,
+            "wall_ns": 1793752576909525662,
+            "monotonic_ns": 721409836643678,
+            "thread_cpu_ns": 158621454016
+          },
+          {
+            "rank": 1,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793752555351282820,
+            "pid": 18508,
+            "tid": 18508,
+            "wall_ns": 1793752555351282820,
+            "monotonic_ns": 721388278400772,
+            "thread_cpu_ns": 142849142720
+          },
+          {
+            "rank": 2,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793752555350379169,
+            "pid": 18513,
+            "tid": 18513,
+            "wall_ns": 1793752555350379169,
+            "monotonic_ns": 721388277496993,
+            "thread_cpu_ns": 145181844640
+          },
+          {
+            "rank": 3,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793752555350407713,
+            "pid": 18509,
+            "tid": 18509,
+            "wall_ns": 1793752555350407713,
+            "monotonic_ns": 721388277525985,
+            "thread_cpu_ns": 145167224896
+          }
+        ],
+        "observer_module_manifest_present": true,
+        "exclusions": {
+          "operation_outside_window_or_invalid": 706
+        },
+        "source_native_joins": {
+          "unique_pairs": 0,
+          "ambiguous_pairs": 0,
+          "unmatched_keys": 0,
+          "scope": "PID/source_operation/transfer_id exact joins only; reused/colliding keys excluded, no request-ID or cross-PID clock joins."
+        }
+      },
+      "cpu": {
+        "cgroup": {
+          "cpu_cores": {
+            "time_weighted_mean": 5.1806479850561615,
+            "covered_seconds": 1825.0286464691162,
+            "profile_seconds": 1830.0015978813171,
+            "excluded_intervals": 0
+          },
+          "user_cores": {
+            "time_weighted_mean": 5.006452729756983,
+            "covered_seconds": 1825.0286464691162,
+            "profile_seconds": 1830.0015978813171,
+            "excluded_intervals": 0
+          },
+          "system_cores": {
+            "time_weighted_mean": 0.1741952558471141,
+            "covered_seconds": 1825.0286464691162,
+            "profile_seconds": 1830.0015978813171,
+            "excluded_intervals": 0
+          }
+        },
+        "sampler": {
+          "available": true,
+          "profile_records": 366,
+          "flagged_records": 0,
+          "scope": "Coverage flags only; thread/process CPU totals not inferred or added to cgroup CPU."
+        },
+        "scope": "Cgroup CPU includes all pod work, observer/collector threads; not exclusive model or owner CPU."
+      },
+      "memory": {
+        "sampled_bytes": {
+          "count": 366,
+          "mean": 890638051294.4263,
+          "p50": 890354368512.0,
+          "p90": 892780544000.0,
+          "p99": 892951671603.2
+        },
+        "sampled_peak_bytes": 893055991808,
+        "scope": "Cgroup charged memory includes cache/framework/model/runtime overhead; distinct from allocator reservation and not summed with it."
+      },
+      "native_counter_aggregates": {
+        "available": false,
+        "reasons": [
+          "25010: missing/new operation series (no implicit zero)",
+          "25011: missing/new operation series (no implicit zero)",
+          "25012: missing/new operation series (no implicit zero)",
+          "25013: missing/new operation series (no implicit zero)"
+        ],
+        "aggregates": null,
+        "scope": "Four native endpoint populations, stable labels/nonnegative adjacent deltas; exporter latency us. Aggregate ratio is not mean transfer BW; unavailable native means do not invalidate client metrics."
+      },
+      "gpu_sampled": {
+        "0": {
+          "utilization": {
+            "count": 366,
+            "mean": 79.8224043715847,
+            "p50": 96.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 268138.4918032787,
+            "p50": 268455.0,
+            "p90": 270997.0,
+            "p99": 270997.0
+          }
+        },
+        "1": {
+          "utilization": {
+            "count": 366,
+            "mean": 85.73497267759562,
+            "p50": 98.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 265918.7978142077,
+            "p50": 265923.0,
+            "p90": 265925.0,
+            "p99": 265945.0
+          }
+        },
+        "2": {
+          "utilization": {
+            "count": 366,
+            "mean": 81.71857923497268,
+            "p50": 97.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 271730.6612021858,
+            "p50": 271743.0,
+            "p90": 271745.0,
+            "p99": 271747.0
+          }
+        },
+        "3": {
+          "utilization": {
+            "count": 366,
+            "mean": 89.27868852459017,
+            "p50": 99.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 366,
+            "mean": 267055.68852459016,
+            "p50": 267069.0,
+            "p90": 267073.0,
+            "p99": 267073.0
+          }
+        }
+      },
+      "storage_occupancy_scope": "Host/indexer physical bytes from geometry and allocator units; KVCR backend allocated includes FILLING/READY/claimed. Moon backend occupancy is master-global, not per-worker/per-pool. Missing series are unavailable. No exact READY duplication inference.",
+      "transfer_scope": "Fully contained operations in official profile bounds. Successful positive bytes/duration for timing/BW CDFs; failed/zero/unknown populations retained separately. Input descriptors vs SDK descCount are distinct. No request-ID join or native/wall causal subtraction.",
+      "figures": [
+        "client-latency.png",
+        "client-latency.svg",
+        "backend_api-cdfs.png",
+        "backend_api-cdfs.svg",
+        "pool-occupancy.png",
+        "pool-occupancy.svg",
+        "mooncake-global-occupancy.png",
+        "mooncake-global-occupancy.svg",
+        "resources.png",
+        "resources.svg"
+      ]
+    },
+    "mooncake-local-first": {
+      "case": "mooncake-local-first",
+      "attempt": "hicache-1800-r5",
+      "verification": {
+        "archive_sha256": "d194be316451775e0b1ff9cf81753f260025b66ac08c17aa06a041eabdc17ca2",
+        "manifest_sha256": "072bbd150380e2f87fd8898d91e5944a839f7859e4c9b90c58a9935cdf4ae925",
+        "files": 283,
+        "archived_only_input_maps": 3,
+        "archive_only_auxiliary_files": [
+          "cases/mooncake-local-first/runs/hicache-1800-r5/aiperf_artifacts/profile_export_aiperf_timeslices.csv",
+          "cases/mooncake-local-first/runs/hicache-1800-r5/aiperf_artifacts/profile_export_aiperf_timeslices.json",
+          "cases/mooncake-local-first/runs/hicache-1800-r5/aiperf_artifacts/server_metrics_export.json"
+        ],
+        "archive_only_auxiliary_bytes": 669785517,
+        "download_receipt_sha256": "7a8f9ce6ba03f83fffd120316099841af081adf0e3cd3b93619a60eadf78e5aa",
+        "external_collection_sha256": "d08e2aa23180598692bc7e34b1da0e8b1280ceb19d78e2fb7305a65b99b20db4",
+        "timed_harness_ready_sha256": "17a033a630605bb517cda28ef600993fcb2ef3a9ffb73e0ed86ee3ed4dde3cf8",
+        "timed_sampler_sha256": "216124bf2310da808797d472463c64e0c53c3dfeba2054c4c46c43dbf9cde246"
+      },
+      "profile": {
+        "begin_utc": 1793756238.692637,
+        "end_utc": 1793758045.407367,
+        "actual_export_seconds": 1806.7147300243378,
+        "configured_sending_seconds": 1800
+      },
+      "client": {
+        "official": {
+          "time_to_first_token": {
+            "unit": "ms",
+            "avg": 819.7665277363883,
+            "p1": 212.91083143999998,
+            "p5": 227.26799759999997,
+            "p10": 238.5929288,
+            "p25": 264.544167,
+            "p50": 339.593575,
+            "p75": 576.4998635,
+            "p90": 1740.0644202000008,
+            "p95": 3496.560580499999,
+            "p99": 8355.628751380007,
+            "min": 190.79617,
+            "max": 15617.932083,
+            "std": 1464.8615076838191,
+            "count": 4059,
+            "sum": 3327432.336082
+          },
+          "inter_token_latency": {
+            "unit": "ms",
+            "avg": 6.775479557634185,
+            "p1": 3.0845570587900952,
+            "p5": 3.4807587969062377,
+            "p10": 3.8240135880076447,
+            "p25": 4.646048602272727,
+            "p50": 5.849050624999999,
+            "p75": 7.128092747799717,
+            "p90": 9.217705825128705,
+            "p95": 11.479117508256584,
+            "p99": 20.33798082658248,
+            "min": 1.4299899999999999,
+            "max": 212.08153942857143,
+            "std": 7.857880011781478,
+            "count": 4059,
+            "sum": 27501.671524437155
+          },
+          "full_response_inter_token_latency": {
+            "unit": "ms",
+            "avg": 6.787344024834438,
+            "p1": 3.0928698312467233,
+            "p5": 3.4866201994183967,
+            "p10": 3.832695493504273,
+            "p25": 4.65516274215913,
+            "p50": 5.85534919941349,
+            "p75": 7.132505576952261,
+            "p90": 9.23411267170439,
+            "p95": 11.49128182021711,
+            "p99": 20.347947262230687,
+            "min": 1.9743164652777776,
+            "max": 212.3888507142857,
+            "std": 7.864456967598867,
+            "count": 4059,
+            "sum": 27549.829396802987
+          },
+          "request_latency": {
+            "unit": "ms",
+            "avg": 6484.244759004434,
+            "p1": 346.07974451999996,
+            "p5": 671.0133682000001,
+            "p10": 869.8198836,
+            "p25": 1374.138624,
+            "p50": 2794.309484,
+            "p75": 6512.1383445,
+            "p90": 14224.099099800018,
+            "p95": 23373.83157719999,
+            "p99": 54561.43264110003,
+            "min": 221.596243,
+            "max": 371656.456961,
+            "std": 14538.350166022485,
+            "count": 4059,
+            "sum": 26319549.476799
+          },
+          "output_token_throughput": {
+            "unit": "tokens/sec",
+            "avg": 2042.7945480201467
+          },
+          "request_throughput": {
+            "unit": "requests/sec",
+            "avg": 2.246619199423254
+          },
+          "total_token_throughput": {
+            "unit": "tokens/sec",
+            "avg": 231447.57945864674
+          },
+          "effective_concurrency": {
+            "unit": "requests",
+            "avg": 14.571129612366164,
+            "p50": 14.0,
+            "p90": 25.0,
+            "p95": 29.0,
+            "p99": 36.0,
+            "min": 0.0,
+            "max": 42.0,
+            "std": 7.746295310961356
+          },
+          "request_count": {
+            "unit": "requests",
+            "avg": 4059.0
+          },
+          "error_summary": [],
+          "was_cancelled": false
+        },
+        "phase_log_outcomes": {
+          "completed": 4059,
+          "cancelled": 0,
+          "errors": 0
+        },
+        "exported_phase_counts": {
+          "warmup": {
+            "exported_records": 286,
+            "exported_success": 286
+          },
+          "profiling": {
+            "exported_records": 4059,
+            "exported_success": 4059
+          }
+        },
+        "phase_request_start_bounds": {
+          "warmup": {
+            "first": 1793756145.4327784,
+            "last": 1793756225.0893712
+          },
+          "profiling": {
+            "first": 1793756238.7110076,
+            "last": 1793758038.5386894
+          }
+        },
+        "successful_export_distributions": {
+          "time_to_first_token": {
+            "count": 4059,
+            "mean": 819.7665277363882,
+            "p50": 339.593575,
+            "p90": 1740.0644202000008,
+            "p99": 8355.628751380007
+          },
+          "inter_token_latency": {
+            "count": 4059,
+            "mean": 6.775479557634186,
+            "p50": 5.849050624999999,
+            "p90": 9.217705825128707,
+            "p99": 20.33798082658248
+          },
+          "full_response_inter_token_latency": {
+            "count": 4059,
+            "mean": 6.7873440248344385,
+            "p50": 5.85534919941349,
+            "p90": 9.234112671704388,
+            "p99": 20.347947262230687
+          },
+          "derived_tpot_ms": {
+            "count": 4059,
+            "mean": 6.775479557634185,
+            "p50": 5.849050624999997,
+            "p90": 9.217705825128704,
+            "p99": 20.33798082658248
+          }
+        },
+        "scope": "Official export for headline metrics. Request distributions cover successful exported profiling records; deadline cancellations may be absent. ITL is reported inter_token_latency. Derived per-request TPOT=(request_latency-TTFT)/(completion_tokens-1), N>1; it includes client response timing and is not GPU decode time. Full-response ITL retained separately. All client latency fields are ms."
+      },
+      "cache": {
+        "available": true,
+        "reasons": [],
+        "tokens": {
+          "host_hit": 585024.0,
+          "device_hit": 376452416.0,
+          "storage_hit": 6848.0,
+          "input": 37341189.0
+        },
+        "total_tokens": 414385477.0,
+        "fractions": {
+          "device_hit": 0.9084594825218741,
+          "host_hit": 0.0014117869290095801,
+          "storage_hit": 1.6525675681438035e-05,
+          "input": 0.09011220487343478
+        },
+        "per_rank": {
+          "0": {
+            "tokens": {
+              "host_hit": 136256.0,
+              "device_hit": 86414144.0,
+              "storage_hit": 6848.0,
+              "input": 9458381.0
+            },
+            "first_utc": 1793756240.212071,
+            "last_utc": 1793758045.240117
+          },
+          "1": {
+            "tokens": {
+              "storage_hit": 0.0,
+              "input": 10341080.0,
+              "host_hit": 257856.0,
+              "device_hit": 105432896.0
+            },
+            "first_utc": 1793756240.212071,
+            "last_utc": 1793758045.240117
+          },
+          "2": {
+            "tokens": {
+              "device_hit": 80499456.0,
+              "host_hit": 896.0,
+              "input": 8401864.0,
+              "storage_hit": 0.0
+            },
+            "first_utc": 1793756240.212071,
+            "last_utc": 1793758045.240117
+          },
+          "3": {
+            "tokens": {
+              "storage_hit": 0.0,
+              "input": 9139864.0,
+              "device_hit": 104105920.0,
+              "host_hit": 190016.0
+            },
+            "first_utc": 1793756240.212071,
+            "last_utc": 1793758045.240117
+          }
+        },
+        "semantics": {
+          "device_hit": "HBM prefix reuse",
+          "host_hit": "persistent framework HiCache host reuse",
+          "storage_hit": "backend storage-prefetch reuse (KVCR or Moon, local+remote)",
+          "input": "recomputed prefill tokens"
+        },
+        "scope": "Pooled token-weighted counter deltas, four endpoint populations. Scrapes approximate official client window; no object/byte conversion."
+      },
+      "allocation_proof": {
+        "passed": true,
+        "workers": [
+          {
+            "rank": 0,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 1,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 2,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "components": [
+              "draft_kv",
+              "indexer",
+              "kv",
+              "mamba"
+            ],
+            "host_allocated_bytes": 27389719952,
+            "backend_allocated_bytes": 109951162778,
+            "pools": [
+              {
+                "name": "mamba",
+                "slots": 89,
+                "page_tokens": 1,
+                "bytes_per_slot": 59019280,
+                "allocated_bytes": 5252715920,
+                "target_layers": 36,
+                "total_layers": 36,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "indexer",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 53248,
+                "allocated_bytes": 670818304,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+                "draft_mamba_pools": 0
+              },
+              {
+                "name": "kv",
+                "slots": 12598,
+                "page_tokens": 64,
+                "bytes_per_slot": 1703936,
+                "allocated_bytes": 21466185728,
+                "target_layers": 12,
+                "total_layers": 13,
+                "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+                "draft_mamba_pools": 0
+              }
+            ]
+          }
+        ],
+        "requested_host_bytes": 27487790694,
+        "requested_backend_bytes": 109951162778,
+        "rounding": "Explicit host budgets rounded down to complete physical pages; KVCR backend pools also floor to pages."
+      },
+      "reservation": [
+        {
+          "rank": 0,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        },
+        {
+          "rank": 1,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        },
+        {
+          "rank": 2,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        },
+        {
+          "rank": 3,
+          "requested_host_bytes": 27487790694,
+          "requested_backend_bytes": 109951162778,
+          "physical_host_reserved_bytes": 27389719952,
+          "backend_registered_capacity_bytes": 109951162778,
+          "total_quantization_underfill_bytes": 98070742
+        }
+      ],
+      "observed_geometry": [
+        {
+          "rank": 0,
+          "pid": 22416,
+          "utc": 1793756012.9810686,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 0,
+          "pid": 22416,
+          "utc": 1793756012.9995615,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 0,
+          "pid": 22416,
+          "utc": 1793756013.0020108,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 22413,
+          "utc": 1793755993.723555,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 22413,
+          "utc": 1793755993.7379477,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 1,
+          "pid": 22413,
+          "utc": 1793755993.7396772,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 22407,
+          "utc": 1793755996.8124402,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 22407,
+          "utc": 1793755996.8251555,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "pid": 22407,
+          "utc": 1793755996.8265886,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 22410,
+          "utc": 1793755993.9139676,
+          "host_bytes": 21466185728,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 22410,
+          "utc": 1793755993.9272506,
+          "host_bytes": 26718901648,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "pid": 22410,
+          "utc": 1793755993.9290385,
+          "host_bytes": 27389719952,
+          "backend_bytes": 109951162778,
+          "pools": [
+            {
+              "name": "mamba",
+              "slots": 89,
+              "page_tokens": 1,
+              "bytes_per_slot": 59019280,
+              "allocated_bytes": 5252715920,
+              "target_layers": 36,
+              "total_layers": 36,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "indexer",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 53248,
+              "allocated_bytes": 670818304,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+              "draft_mamba_pools": 0
+            },
+            {
+              "name": "kv",
+              "slots": 12598,
+              "page_tokens": 64,
+              "bytes_per_slot": 1703936,
+              "allocated_bytes": 21466185728,
+              "target_layers": 12,
+              "total_layers": 13,
+              "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+              "draft_mamba_pools": 0
+            }
+          ]
+        }
+      ],
+      "occupancy": [
+        {
+          "rank": 0,
+          "pid": 22416,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 4441416658.346507,
+          "sampled_peak_allocated_bytes": 5075658080.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 22416,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 669191815.4796631,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 21.438183607634244,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 0,
+          "pid": 22416,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 21414138095.34922,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 21.438183607634244,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 22413,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 3583467503.344845,
+          "sampled_peak_allocated_bytes": 3895272480.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 22413,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 668583844.1920006,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 36.70793974013908,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 1,
+          "pid": 22413,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 21394683014.14402,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 36.70793974013908,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 22407,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 4297522163.717402,
+          "sampled_peak_allocated_bytes": 5252715920.0,
+          "full_percent_of_covered": 4.178377240942297,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 22407,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 669014596.4769583,
+          "sampled_peak_allocated_bytes": 670765056.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 2,
+          "pid": 22407,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 21408467087.262665,
+          "sampled_peak_allocated_bytes": 21464481792.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 22410,
+          "tier": "host",
+          "pool": "mamba",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 3978605166.0818853,
+          "sampled_peak_allocated_bytes": 4249388160.0,
+          "full_percent_of_covered": 0.0,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 22410,
+          "tier": "host",
+          "pool": "indexer",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 669519517.8607839,
+          "sampled_peak_allocated_bytes": 670818304.0,
+          "full_percent_of_covered": 23.308647794737265,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        },
+        {
+          "rank": 3,
+          "pid": 22410,
+          "tier": "host",
+          "pool": "kv",
+          "covered_seconds": 1806.7147300243378,
+          "profile_seconds": 1806.7147300243378,
+          "time_weighted_mean_allocated_bytes": 21424624571.545086,
+          "sampled_peak_allocated_bytes": 21466185728.0,
+          "full_percent_of_covered": 23.308647794737265,
+          "scope": "Sample-hold capped15s; retains prewindow last state. Observed/censored allocation is not unconstrained demand."
+        }
+      ],
+      "operations": {
+        "backend_api:mooncake:GET": {
+          "records": 202,
+          "distribution_records": 143,
+          "excluded_from_distribution": 59,
+          "payload_scope": "API logical completion, not actual copied traffic",
+          "reported_success": 143,
+          "outcome_counts": {
+            "complete_cache_operation": 143,
+            "incomplete_cache_operation": 59
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 143,
+              "mean": 1.658665090909091,
+              "p50": 0.941765,
+              "p90": 4.134049399999999,
+              "p99": 8.959416260000003
+            },
+            "completed_bytes": {
+              "count": 143,
+              "mean": 34034838.71328671,
+              "p50": 6815744.0,
+              "p90": 107007180.8,
+              "p99": 218103808.0
+            },
+            "requested_bytes": {
+              "count": 143,
+              "mean": 34034838.71328671,
+              "p50": 6815744.0,
+              "p90": 107007180.8,
+              "p99": 218103808.0
+            },
+            "logical_blocks": {
+              "count": 143,
+              "mean": 37.34965034965035,
+              "p50": 16.0,
+              "p90": 128.0,
+              "p99": 128.0
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 143,
+              "mean": 56.07692307692308,
+              "p50": 24.0,
+              "p90": 128.0,
+              "p99": 256.0
+            },
+            "descriptors": {
+              "count": 143,
+              "mean": 56.07692307692308,
+              "p50": 24.0,
+              "p90": 128.0,
+              "p99": 256.0
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 143,
+              "mean": 11.82279960856694,
+              "p50": 7.99965258419845,
+              "p90": 29.896816641901353,
+              "p99": 34.827743265147625
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "1-8MiB": {
+              "wall_ms": {
+                "count": 39,
+                "mean": 1.0280707948717949,
+                "p50": 0.852005,
+                "p90": 1.8247002000000003,
+                "p99": 2.148580219999999
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "64-256MiB": {
+              "wall_ms": {
+                "count": 24,
+                "mean": 5.3241829166666665,
+                "p50": 4.3336375,
+                "p90": 8.7057489,
+                "p99": 9.50689445
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 43,
+                "mean": 1.299883906976744,
+                "p50": 1.145957,
+                "p90": 2.1392556000000003,
+                "p99": 2.41656084
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 37,
+                "mean": 0.3626742972972973,
+                "p50": 0.342946,
+                "p90": 0.45162479999999994,
+                "p99": 0.70801424
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": 20.519415824102683
+        },
+        "backend_api:mooncake:PUT": {
+          "records": 987,
+          "distribution_records": 987,
+          "excluded_from_distribution": 0,
+          "payload_scope": "API logical completion, not actual copied traffic",
+          "reported_success": 987,
+          "outcome_counts": {
+            "complete_cache_operation": 987
+          },
+          "distributions": {
+            "wall_ms": {
+              "count": 987,
+              "mean": 4.534552117527862,
+              "p50": 3.692981,
+              "p90": 9.5047454,
+              "p99": 10.20339216
+            },
+            "completed_bytes": {
+              "count": 987,
+              "mean": 102663108.9929078,
+              "p50": 70094864.0,
+              "p90": 218103808.0,
+              "p99": 218103808.0
+            },
+            "requested_bytes": {
+              "count": 987,
+              "mean": 102663108.9929078,
+              "p50": 70094864.0,
+              "p90": 218103808.0,
+              "p99": 218103808.0
+            },
+            "logical_blocks": {
+              "count": 987,
+              "mean": 90.21377912867274,
+              "p50": 69.0,
+              "p90": 256.0,
+              "p99": 256.0
+            },
+            "physical_blocks": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "objects": {
+              "count": 987,
+              "mean": 136.84397163120568,
+              "p50": 108.0,
+              "p90": 260.0,
+              "p99": 260.0
+            },
+            "descriptors": {
+              "count": 987,
+              "mean": 136.84397163120568,
+              "p50": 108.0,
+              "p90": 260.0,
+              "p99": 260.0
+            },
+            "native_descriptor_count": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "api_logical_GBps": {
+              "count": 987,
+              "mean": 21.476469517894678,
+              "p50": 22.580911501248245,
+              "p90": 29.88926993462364,
+              "p99": 32.35341939381546
+            },
+            "wall_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_ms": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_post_us": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            },
+            "native_GBps": {
+              "count": 0,
+              "mean": null,
+              "p50": null,
+              "p90": null,
+              "p99": null
+            }
+          },
+          "size_bins": {
+            "1-8MiB": {
+              "wall_ms": {
+                "count": 42,
+                "mean": 0.7859522380952381,
+                "p50": 0.5748504999999999,
+                "p90": 1.5872183999999996,
+                "p99": 2.4828178899999975
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "64-256MiB": {
+              "wall_ms": {
+                "count": 509,
+                "mean": 6.882020298624754,
+                "p50": 7.007364,
+                "p90": 9.698878,
+                "p99": 10.389241120000001
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "8-64MiB": {
+              "wall_ms": {
+                "count": 426,
+                "mean": 2.188671779342723,
+                "p50": 2.210827,
+                "p90": 3.2249445000000003,
+                "p99": 4.823568750000001
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            },
+            "<1MiB": {
+              "wall_ms": {
+                "count": 10,
+                "mean": 0.7270436,
+                "p50": 0.553299,
+                "p90": 1.0832855999999995,
+                "p99": 2.13188406
+              },
+              "wall_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_ms": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              },
+              "native_GBps": {
+                "count": 0,
+                "mean": null,
+                "p50": null,
+                "p90": null,
+                "p99": null
+              }
+            }
+          },
+          "aggregate_actual_payload_GBps": null,
+          "aggregate_api_logical_payload_GBps": 22.640187240559815
+        }
+      },
+      "observer": {
+        "loss": {
+          "writers": {
+            "22416": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "22413": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "22407": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            },
+            "22410": {
+              "closed": false,
+              "dropped": 0,
+              "invalid": 0
+            }
+          },
+          "all_writers_closed": false,
+          "lossless": null,
+          "scope": "Missing final heartbeat/close is unknown coverage, never zero loss. SIGTERM can bypass atexit."
+        },
+        "module_install_events": [
+          {
+            "rank": 0,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793756001535030800,
+            "pid": 22416,
+            "tid": 22416,
+            "wall_ns": 1793756001535030800,
+            "monotonic_ns": 724834462149008,
+            "thread_cpu_ns": 157027405792
+          },
+          {
+            "rank": 1,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793755983001399129,
+            "pid": 22413,
+            "tid": 22413,
+            "wall_ns": 1793755983001399129,
+            "monotonic_ns": 724815928516985,
+            "thread_cpu_ns": 145260951776
+          },
+          {
+            "rank": 2,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793755983863451650,
+            "pid": 22407,
+            "tid": 22407,
+            "wall_ns": 1793755983863451650,
+            "monotonic_ns": 724816790571074,
+            "thread_cpu_ns": 148589330240
+          },
+          {
+            "rank": 3,
+            "module": "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store",
+            "source_sha256": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+            "event": "module_installed",
+            "emit_wall_ns": 1793755983009039064,
+            "pid": 22410,
+            "tid": 22410,
+            "wall_ns": 1793755983009039064,
+            "monotonic_ns": 724815936158008,
+            "thread_cpu_ns": 150186524000
+          }
+        ],
+        "observer_module_manifest_present": true,
+        "exclusions": {
+          "operation_outside_window_or_invalid": 718
+        },
+        "source_native_joins": {
+          "unique_pairs": 0,
+          "ambiguous_pairs": 0,
+          "unmatched_keys": 0,
+          "scope": "PID/source_operation/transfer_id exact joins only; reused/colliding keys excluded, no request-ID or cross-PID clock joins."
+        }
+      },
+      "cpu": {
+        "cgroup": {
+          "cpu_cores": {
+            "time_weighted_mean": 5.166598898553891,
+            "covered_seconds": 1805.028046131134,
+            "profile_seconds": 1806.7147300243378,
+            "excluded_intervals": 0
+          },
+          "user_cores": {
+            "time_weighted_mean": 4.993955296329574,
+            "covered_seconds": 1805.028046131134,
+            "profile_seconds": 1806.7147300243378,
+            "excluded_intervals": 0
+          },
+          "system_cores": {
+            "time_weighted_mean": 0.1726436022243172,
+            "covered_seconds": 1805.028046131134,
+            "profile_seconds": 1806.7147300243378,
+            "excluded_intervals": 0
+          }
+        },
+        "sampler": {
+          "available": true,
+          "profile_records": 361,
+          "flagged_records": 0,
+          "scope": "Coverage flags only; thread/process CPU totals not inferred or added to cgroup CPU."
+        },
+        "scope": "Cgroup CPU includes all pod work, observer/collector threads; not exclusive model or owner CPU."
+      },
+      "memory": {
+        "sampled_bytes": {
+          "count": 362,
+          "mean": 890162330652.2874,
+          "p50": 890062012416.0,
+          "p90": 891191590912.0,
+          "p99": 891439155118.08
+        },
+        "sampled_peak_bytes": 891452784640,
+        "scope": "Cgroup charged memory includes cache/framework/model/runtime overhead; distinct from allocator reservation and not summed with it."
+      },
+      "native_counter_aggregates": {
+        "available": false,
+        "reasons": [
+          "25010: missing/new operation series (no implicit zero)",
+          "25011: missing/new operation series (no implicit zero)",
+          "25012: missing/new operation series (no implicit zero)",
+          "25013: missing/new operation series (no implicit zero)"
+        ],
+        "aggregates": null,
+        "scope": "Four native endpoint populations, stable labels/nonnegative adjacent deltas; exporter latency us. Aggregate ratio is not mean transfer BW; unavailable native means do not invalidate client metrics."
+      },
+      "gpu_sampled": {
+        "0": {
+          "utilization": {
+            "count": 362,
+            "mean": 87.76795580110497,
+            "p50": 98.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 362,
+            "mean": 263697.53038674034,
+            "p50": 263711.0,
+            "p90": 263713.0,
+            "p99": 263713.0
+          }
+        },
+        "1": {
+          "utilization": {
+            "count": 362,
+            "mean": 85.00552486187846,
+            "p50": 97.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 362,
+            "mean": 268496.95580110495,
+            "p50": 268503.0,
+            "p90": 268503.0,
+            "p99": 268503.0
+          }
+        },
+        "2": {
+          "utilization": {
+            "count": 362,
+            "mean": 84.57182320441989,
+            "p50": 98.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 362,
+            "mean": 270214.1491712707,
+            "p50": 270515.0,
+            "p90": 270517.0,
+            "p99": 270517.0
+          }
+        },
+        "3": {
+          "utilization": {
+            "count": 362,
+            "mean": 85.5524861878453,
+            "p50": 97.0,
+            "p90": 100.0,
+            "p99": 100.0
+          },
+          "memory_MiB": {
+            "count": 362,
+            "mean": 271546.72375690605,
+            "p50": 271553.0,
+            "p90": 271555.0,
+            "p99": 271555.0
+          }
+        }
+      },
+      "storage_occupancy_scope": "Host/indexer physical bytes from geometry and allocator units; KVCR backend allocated includes FILLING/READY/claimed. Moon backend occupancy is master-global, not per-worker/per-pool. Missing series are unavailable. No exact READY duplication inference.",
+      "transfer_scope": "Fully contained operations in official profile bounds. Successful positive bytes/duration for timing/BW CDFs; failed/zero/unknown populations retained separately. Input descriptors vs SDK descCount are distinct. No request-ID join or native/wall causal subtraction.",
+      "figures": [
+        "client-latency.png",
+        "client-latency.svg",
+        "backend_api-cdfs.png",
+        "backend_api-cdfs.svg",
+        "pool-occupancy.png",
+        "pool-occupancy.svg",
+        "mooncake-global-occupancy.png",
+        "mooncake-global-occupancy.svg",
+        "resources.png",
+        "resources.svg"
+      ]
+    }
+  },
+  "all_three_arms_available": true,
+  "matched": {
+    "checked": true,
+    "cases": [
+      "kvcr",
+      "mooncake-random",
+      "mooncake-local-first"
+    ],
+    "scope": "Matched declared hardware/workload/source settings. No identical timing/cache/batch history, causal allocation gain or inference parity inferred."
+  },
+  "scope": "Closed verified native HiCache controls only. No parity or causal performance conclusion.",
+  "source_tools_manifest_sha256": "0bbf3c180b4dda0cb669b3c8dc442bfcf2827ea7f6fd3e9e53f3ce0c93c438ac"
+}

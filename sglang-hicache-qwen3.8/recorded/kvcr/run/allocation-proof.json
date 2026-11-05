@@ -1,0 +1,192 @@
+{
+  "passed": true,
+  "workers": [
+    {
+      "rank": 0,
+      "components": [
+        "draft_kv",
+        "indexer",
+        "kv",
+        "mamba"
+      ],
+      "host_allocated_bytes": 27389719952,
+      "backend_allocated_bytes": 109934192208,
+      "pools": [
+        {
+          "name": "kv",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 1703936,
+          "allocated_bytes": 21466185728,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "mamba",
+          "slots": 89,
+          "page_tokens": 1,
+          "bytes_per_slot": 59019280,
+          "allocated_bytes": 5252715920,
+          "target_layers": 36,
+          "total_layers": 36,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "indexer",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 53248,
+          "allocated_bytes": 670818304,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+          "draft_mamba_pools": 0
+        }
+      ]
+    },
+    {
+      "rank": 1,
+      "components": [
+        "draft_kv",
+        "indexer",
+        "kv",
+        "mamba"
+      ],
+      "host_allocated_bytes": 27389719952,
+      "backend_allocated_bytes": 109934192208,
+      "pools": [
+        {
+          "name": "kv",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 1703936,
+          "allocated_bytes": 21466185728,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "mamba",
+          "slots": 89,
+          "page_tokens": 1,
+          "bytes_per_slot": 59019280,
+          "allocated_bytes": 5252715920,
+          "target_layers": 36,
+          "total_layers": 36,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "indexer",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 53248,
+          "allocated_bytes": 670818304,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+          "draft_mamba_pools": 0
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "components": [
+        "draft_kv",
+        "indexer",
+        "kv",
+        "mamba"
+      ],
+      "host_allocated_bytes": 27389719952,
+      "backend_allocated_bytes": 109934192208,
+      "pools": [
+        {
+          "name": "kv",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 1703936,
+          "allocated_bytes": 21466185728,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "mamba",
+          "slots": 89,
+          "page_tokens": 1,
+          "bytes_per_slot": 59019280,
+          "allocated_bytes": 5252715920,
+          "target_layers": 36,
+          "total_layers": 36,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "indexer",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 53248,
+          "allocated_bytes": 670818304,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+          "draft_mamba_pools": 0
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "components": [
+        "draft_kv",
+        "indexer",
+        "kv",
+        "mamba"
+      ],
+      "host_allocated_bytes": 27389719952,
+      "backend_allocated_bytes": 109934192208,
+      "pools": [
+        {
+          "name": "kv",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 1703936,
+          "allocated_bytes": 21466185728,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mha.MHATokenToKVPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "mamba",
+          "slots": 89,
+          "page_tokens": 1,
+          "bytes_per_slot": 59019280,
+          "allocated_bytes": 5252715920,
+          "target_layers": 36,
+          "total_layers": 36,
+          "pool_class": "sglang.srt.mem_cache.pool_host.mamba.MambaPoolHost",
+          "draft_mamba_pools": 0
+        },
+        {
+          "name": "indexer",
+          "slots": 12598,
+          "page_tokens": 64,
+          "bytes_per_slot": 53248,
+          "allocated_bytes": 670818304,
+          "target_layers": 12,
+          "total_layers": 13,
+          "pool_class": "sglang.srt.mem_cache.pool_host.qsa.QSAIndexerPoolHost",
+          "draft_mamba_pools": 0
+        }
+      ]
+    }
+  ],
+  "requested_host_bytes": 27487790694,
+  "requested_backend_bytes": 109951162778,
+  "rounding": "Explicit host budgets rounded down to complete physical pages; KVCR backend pools also floor to pages."
+}

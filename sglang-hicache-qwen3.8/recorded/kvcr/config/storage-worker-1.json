@@ -1,0 +1,8 @@
+{
+  "local_dram_bytes": 109951162778,
+  "control_advertise_host": "100.65.62.87",
+  "control_port": 24132,
+  "nixl_listen_port": 24532,
+  "enable_remote_hint": true,
+  "publish_inventory": true
+}

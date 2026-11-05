@@ -1,0 +1,26 @@
+{
+  "sglang": {
+    "repository": "hxieustc/sglang",
+    "sha": "081c4c5da234deb73078acfc09174286d5b3af05",
+    "branch": "sglang-hicache-qwen3.8-complete-checkpoints-budget-router-keys",
+    "original_base": "658755604ace9f476b84f98511f76b815606072a"
+  },
+  "kvcr": {
+    "repository": "hxieustc/kvcr",
+    "sha": "5ce23b1527725cf623a3fc7feb94dc6d3d5fafaa",
+    "branch": "sglang-hicache-qwen3.8-clean-native-base",
+    "original_base": "5ce23b1527725cf623a3fc7feb94dc6d3d5fafaa",
+    "source_changes": false
+  },
+  "dynamo": {
+    "repository": "hxieustc/dynamo",
+    "sha": "f28d277edaf403ba5cae65bece687f7b29c0eba3",
+    "branch": "sglang-hicache-qwen3.8-cache-key-handshake",
+    "original_base": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b"
+  },
+  "aiperf": {
+    "repository": "SemiAnalysisAI/agentx-harness",
+    "sha": "e4bb2f835ffedbbe6b76252ea5c93caec68c5faf",
+    "tag": "agentx-v1.0.12"
+  }
+}

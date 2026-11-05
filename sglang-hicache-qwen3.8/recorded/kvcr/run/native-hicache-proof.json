@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "backend": "kvcr",
+  "linker_enabled": false,
+  "host_mode": "cache",
+  "write_policy": "write_through",
+  "prefetch_policy": "wait_complete",
+  "layout": "page_first_direct",
+  "service_pids_sha256": "71201e95c03198a700ae7ed0fd8da453b8e2df0654d2c6106977ec81136961ab",
+  "backend_preflight_residue": "Checked independently; framework reset does not imply backend deletion."
+}

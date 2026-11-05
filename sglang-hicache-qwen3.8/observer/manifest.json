@@ -1,0 +1,7 @@
+{
+  "sglang.srt.mem_cache.storage.kvcr.kvcr_store": "01d0de44674c00fd530784180c3dd9e945373aff9e8a6044db80440a294783e6",
+  "sglang.srt.mem_cache.storage.mooncake_store.mooncake_store": "4a2eafc796c28d1a807d8102c6941f62458180254992aa50a529330d836d9796",
+  "kvcr.runtime.progress": "2bfc457aef1ea92a1a5597d471eeffd848832f97d86e6d460289b751e9d6a05c",
+  "kvcr.backends.remote_ops": "3fe0895a0beff975e9b25f8fc384f6a3e1fcdfa364413ca19539d5d22fc42a7a",
+  "kvcr.backends.dangling_ops": "903e5430ee381f526255f303fae0bf6039fc2c1ac57e00efa469152a2bd543c4"
+}

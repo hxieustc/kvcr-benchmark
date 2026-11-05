@@ -1,0 +1,160 @@
+diff --git a/python/sglang/srt/arg_groups/fields/memory.py b/python/sglang/srt/arg_groups/fields/memory.py
+index d913237c..0f5e2391 100644
+--- a/python/sglang/srt/arg_groups/fields/memory.py
++++ b/python/sglang/srt/arg_groups/fields/memory.py
+@@ -111,7 +111,7 @@ class Memory(msgspec.Struct):
+         "The ratio of the size of host KV cache memory pool to the size of device pool. Defaults to 2.0 in cache mode, 1.2 in buffer_only mode, or 0.2 for backup-only host-pool decode retraction.",
+     ] = None
+     hicache_size: A[
+-        int,
++        float,
+         "The size of host KV cache memory pool in gigabytes. Overrides --hicache-ratio in either host memory mode.",
+     ] = 0
+     hicache_host_memory_fraction: A[
+diff --git a/python/sglang/srt/managers/scheduler.py b/python/sglang/srt/managers/scheduler.py
+index da1dd327..4b504abb 100644
+--- a/python/sglang/srt/managers/scheduler.py
++++ b/python/sglang/srt/managers/scheduler.py
+@@ -1899,6 +1899,11 @@ class Scheduler(
+             "startup_time": self.startup_time,
+         }
+ 
++        cache_core = getattr(self.tree_cache, "tree_core", self.tree_cache)
++        cache_is_eagle = getattr(cache_core, "is_eagle", None)
++        if type(cache_is_eagle) is bool:
++            result_dict["cache_key_is_eagle"] = cache_is_eagle
++
+         cache_controller = self.tree_cache.cache_controller
+         if cache_controller is not None:
+             result_dict["kv_hint_sources"] = cache_controller.get_kv_hint_sources()
+diff --git a/python/sglang/srt/mem_cache/pool_host/base.py b/python/sglang/srt/mem_cache/pool_host/base.py
+index 630e1f85..bcf53b28 100644
+--- a/python/sglang/srt/mem_cache/pool_host/base.py
++++ b/python/sglang/srt/mem_cache/pool_host/base.py
+@@ -214,8 +214,9 @@ class HostKVCache(abc.ABC):
+             )
+         else:
+             self.size = int(device_capacity_tokens * host_to_device_ratio)
+-        # Align up the host memory pool size to the page size
+-        self.page_num = self.size // self.page_size + 1
++        # Align host memory to whole pages.
++        # Explicit byte budgets must not grow during page alignment.
++        self.page_num = self.size // self.page_size + (0 if host_size > 0 else 1)
+         self.size = self.page_num * self.page_size
+         self.start_layer = start_layer
+         self.end_layer = end_layer
+diff --git a/python/sglang/srt/mem_cache/pool_host/mamba.py b/python/sglang/srt/mem_cache/pool_host/mamba.py
+index 2dd729f4..0f68d9cb 100644
+--- a/python/sglang/srt/mem_cache/pool_host/mamba.py
++++ b/python/sglang/srt/mem_cache/pool_host/mamba.py
+@@ -170,7 +170,8 @@ class MambaPoolHost(HostKVCache):
+         else:
+             self.size = int(device_capacity * host_to_device_ratio)
+ 
+-        self.page_num = self.size // self.page_size + 1
++        # Explicit byte budgets must not grow during page alignment.
++        self.page_num = self.size // self.page_size + (0 if host_size > 0 else 1)
+         self.size = self.page_num * self.page_size
+ 
+         if self.size <= device_capacity:
+@@ -905,6 +906,29 @@ class MambaPoolHost(HostKVCache):
+             restored = tensor_bytes.view(dtype=tensor.dtype).reshape(tensor.shape)
+             tensor.copy_(restored)
+ 
++    def get_storage_page_buffer_meta(self, indices):
++        """Expose every registered checkpoint component to whole-page backends.
++
++        Side rows have independent dtype/stride and stay separate descriptors;
++        no payload is copied or omitted while the controller owns the slots.
++        """
++        if not self.slot_state_device_tensors:
++            return self.get_page_buffer_meta(indices)
++        if self.layout not in ("page_first", "page_first_direct"):
++            raise ValueError("Whole-page Mamba storage requires a page-first layout")
++        if len(indices) % self.page_size:
++            raise ValueError("Mamba storage requires complete pages")
++        pointers, sizes = [], []
++        for index in indices.tolist()[:: self.page_size]:
++            for tensor in self._iter_page_tensors(index):
++                if tensor.numel() == 0:
++                    continue
++                if not tensor.is_contiguous():
++                    raise ValueError("Mamba storage components must be contiguous")
++                pointers.append(tensor.data_ptr())
++                sizes.append(tensor.numel() * tensor.element_size())
++        return pointers, sizes
++
+     def get_page_buffer_meta(self, indices):
+         """Meta data for zero-copy storage I/O.
+ 
+diff --git a/python/sglang/srt/mem_cache/storage/kvcr/host_layout.py b/python/sglang/srt/mem_cache/storage/kvcr/host_layout.py
+index afccf65a..4e46b9a8 100644
+--- a/python/sglang/srt/mem_cache/storage/kvcr/host_layout.py
++++ b/python/sglang/srt/mem_cache/storage/kvcr/host_layout.py
+@@ -39,7 +39,10 @@ def describe_pool(name: str, pool) -> PoolLayout:
+     count = pool.size // pool.page_size
+     if pool.layout not in ("page_first", "page_first_direct") or count < 2:
+         raise ValueError("KVCR requires at least two host slots in a page-first layout")
+-    pointers, sizes = pool.get_page_buffer_meta(torch.arange(2 * pool.page_size))
++    page_metadata = getattr(
++        pool, "get_storage_page_buffer_meta", pool.get_page_buffer_meta
++    )
++    pointers, sizes = page_metadata(torch.arange(2 * pool.page_size))
+     if not pointers or len(pointers) % 2 or len(pointers) != len(sizes):
+         raise ValueError(f"Invalid host-page metadata for {name}")
+     parts = len(pointers) // 2
+@@ -119,6 +122,9 @@ class StorageKeyAdapter:
+             raise TypeError("KVCR storage keys must be bytes")
+         return framework_key
+ 
++    def encode_to_router(self, key: bytes) -> int:
++        return self.decode(key)
++
+     def decode(self, key: bytes) -> int:
+         # Inverts SGLang's hash_str_to_int64, as the unsigned router hash.
+         return int(key[:16], 16)
+diff --git a/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py b/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
+index 5aa280fe..1458ca89 100644
+--- a/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
++++ b/python/sglang/srt/mem_cache/storage/mooncake_store/mooncake_store.py
+@@ -786,14 +786,20 @@ class MooncakeStore(HiCacheStorage, MooncakeBaseStore):
+         if pool_name == PoolName.KV:
+             suffixes = [f"_{self.mla_suffix}_k"]
+         elif pool_name == PoolName.MAMBA:
+-            # Mamba stores one temporal object plus one object per conv state.
+-            # conv-only models have no ssm state; drop the 0-element temporal
+-            # object (mooncake rejects 0-size puts). get_page_buffer_meta drops
+-            # its temporal pointer under the same condition to stay aligned.
+-            conv_num = len(getattr(host_pool, "conv_buffer", None) or [])
+-            suffixes = [f"_{self.mha_suffix}_conv_{i}" for i in range(conv_num)]
+-            if getattr(host_pool, "temporal_state_elem_size", 1) > 0:
+-                suffixes = [f"_{self.mha_suffix}_temporal"] + suffixes
++            # Match whole-page metadata order, retaining stable component indices.
++            # Empty components have neither an object key nor a buffer descriptor.
++            if host_pool.temporal_buffer.numel() > 0:
++                suffixes.append(f"_{self.mha_suffix}_temporal")
++            suffixes.extend(
++                f"_{self.mha_suffix}_conv_{i}"
++                for i, buf in enumerate(host_pool.conv_buffer)
++                if buf.numel() > 0
++            )
++            suffixes.extend(
++                f"_{self.mha_suffix}_slot_state_{i}"
++                for i, buf in enumerate(getattr(host_pool, "slot_state_buffers", ()))
++                if buf.numel() > 0
++            )
+         elif pool_name == PoolName.DRAFT:
+             # Draft pool's MLA/MHA layout is independent from the target
+             # (e.g. EAGLE-MHA draft on top of an MLA target), so pick the
+@@ -1075,7 +1081,10 @@ class MooncakeStore(HiCacheStorage, MooncakeBaseStore):
+                 ]
+ 
+         selected_keys = [key_strs[i] for i in object_indices]
+-        ptr_list, element_size_list = host_pool.get_page_buffer_meta(host_indices)
++        get_meta = getattr(host_pool, "get_storage_page_buffer_meta", None)
++        if get_meta is None:
++            get_meta = host_pool.get_page_buffer_meta
++        ptr_list, element_size_list = get_meta(host_indices)
+         if len(ptr_list) != len(selected_keys):
+             ptr_list, element_size_list = self._pack_multi_buffer_meta(
+                 selected_keys, ptr_list, element_size_list

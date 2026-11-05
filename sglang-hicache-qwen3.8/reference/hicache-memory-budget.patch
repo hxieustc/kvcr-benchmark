@@ -1,0 +1,43 @@
+diff --git a/python/sglang/srt/arg_groups/fields/memory.py b/python/sglang/srt/arg_groups/fields/memory.py
+index d913237..0f5e239 100644
+--- a/python/sglang/srt/arg_groups/fields/memory.py
++++ b/python/sglang/srt/arg_groups/fields/memory.py
+@@ -111,7 +111,7 @@ class Memory(msgspec.Struct):
+         "The ratio of the size of host KV cache memory pool to the size of device pool. Defaults to 2.0 in cache mode, 1.2 in buffer_only mode, or 0.2 for backup-only host-pool decode retraction.",
+     ] = None
+     hicache_size: A[
+-        int,
++        float,
+         "The size of host KV cache memory pool in gigabytes. Overrides --hicache-ratio in either host memory mode.",
+     ] = 0
+     hicache_host_memory_fraction: A[
+diff --git a/python/sglang/srt/mem_cache/pool_host/base.py b/python/sglang/srt/mem_cache/pool_host/base.py
+index 630e1f8..bcf53b2 100644
+--- a/python/sglang/srt/mem_cache/pool_host/base.py
++++ b/python/sglang/srt/mem_cache/pool_host/base.py
+@@ -214,8 +214,9 @@ class HostKVCache(abc.ABC):
+             )
+         else:
+             self.size = int(device_capacity_tokens * host_to_device_ratio)
+-        # Align up the host memory pool size to the page size
+-        self.page_num = self.size // self.page_size + 1
++        # Align host memory to whole pages.
++        # Explicit byte budgets must not grow during page alignment.
++        self.page_num = self.size // self.page_size + (0 if host_size > 0 else 1)
+         self.size = self.page_num * self.page_size
+         self.start_layer = start_layer
+         self.end_layer = end_layer
+diff --git a/python/sglang/srt/mem_cache/pool_host/mamba.py b/python/sglang/srt/mem_cache/pool_host/mamba.py
+index 2dd729f..c9d66da 100644
+--- a/python/sglang/srt/mem_cache/pool_host/mamba.py
++++ b/python/sglang/srt/mem_cache/pool_host/mamba.py
+@@ -170,7 +170,8 @@ class MambaPoolHost(HostKVCache):
+         else:
+             self.size = int(device_capacity * host_to_device_ratio)
+ 
+-        self.page_num = self.size // self.page_size + 1
++        # Explicit byte budgets must not grow during page alignment.
++        self.page_num = self.size // self.page_size + (0 if host_size > 0 else 1)
+         self.size = self.page_num * self.page_size
+ 
+         if self.size <= device_capacity:

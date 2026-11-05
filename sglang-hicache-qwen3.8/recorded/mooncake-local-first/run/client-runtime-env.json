@@ -1,0 +1,8 @@
+{
+  "HF_HOME": "/workspace/sglang-hicache-parity-20261103-r1/cases/mooncake-local-first/cache/huggingface",
+  "HF_XET_CACHE": "/workspace/sglang-hicache-parity-20261103-r1/cases/mooncake-local-first/cache/xet",
+  "TMPDIR": "/workspace/t/hc2",
+  "MPLCONFIGDIR": "/workspace/sglang-hicache-parity-20261103-r1/cases/mooncake-local-first/cache/matplotlib",
+  "TOKENIZERS_PARALLELISM": "false",
+  "PYTHONNOUSERSITE": "1"
+}

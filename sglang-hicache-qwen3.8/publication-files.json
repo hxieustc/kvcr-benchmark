@@ -1,0 +1,834 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 409,
+      "sha256": "9c5650ca234e69c4e27d30450f0770984859cbdb510298348db02858afb85abe"
+    },
+    {
+      "path": "client-package.lock.json",
+      "bytes": 742,
+      "sha256": "3fbad4bf5e0551c5fb8a023adc5774e6b2e072071bd94a8ce86bbfedfec569b4"
+    },
+    {
+      "path": "collection/frontend-affinity.py",
+      "bytes": 447,
+      "sha256": "3f9329f68a9c3a0630dcb571075ec7b83f6aed9ff5f7d135411c513f7192cbd2"
+    },
+    {
+      "path": "collection/thread-cpu-sampler.py",
+      "bytes": 8379,
+      "sha256": "216124bf2310da808797d472463c64e0c53c3dfeba2054c4c46c43dbf9cde246"
+    },
+    {
+      "path": "manual-running.md",
+      "bytes": 14306,
+      "sha256": "73cd467a63f589a2518e464b361cedacc03af92cc3b697ff268471cf99104a1a"
+    },
+    {
+      "path": "observer/bounded_sink.py",
+      "bytes": 10471,
+      "sha256": "3d8a5b3aee7e88c86760fa74a4c766c32aa81dea4c90154ffeef4b7077c220e2"
+    },
+    {
+      "path": "observer/hicache_observer.py",
+      "bytes": 14016,
+      "sha256": "81cc618a43806bfc6d67b540064f1d8000a9f6d269ff40b21e53a99d56ff0248"
+    },
+    {
+      "path": "observer/manifest.json",
+      "bytes": 546,
+      "sha256": "07c244abce78b6bcee307c181a5fec44c48d0597486c020eef29d3c0aee627cf"
+    },
+    {
+      "path": "observer/sitecustomize.py",
+      "bytes": 108,
+      "sha256": "45f4d4df29b20535ed5d5aaf42148fe2353864cfcb207bcbd16f2d8afdc6a402"
+    },
+    {
+      "path": "offline-validation.json",
+      "bytes": 333,
+      "sha256": "4e5faf47a0d3c7e2c6565af2511f8dbbb6bd04d24a344dfedb8704b72596e30a"
+    },
+    {
+      "path": "provenance-reconstruction.json",
+      "bytes": 1278,
+      "sha256": "959e2c9517e8803ae9529bda43f5b9c9b2409febe02799bf36f84d381dd028ca"
+    },
+    {
+      "path": "published-source-validation.json",
+      "bytes": 2833,
+      "sha256": "556ff8224fa6edd6053caa0ba73410372ca166c014829689094b9203a0521364"
+    },
+    {
+      "path": "qualification-reference/live-hicache-qualifier.py",
+      "bytes": 9391,
+      "sha256": "6d332fbed12ec13ec0d899d53b019f2509884d1e1772655bc1ebdcf47e757b53"
+    },
+    {
+      "path": "qualification-reference/mooncake_peer.py",
+      "bytes": 4148,
+      "sha256": "a4c396a9079bb51a6732f03e7dbf2f4c002ebf58633da48844bfeb6b557dd222"
+    },
+    {
+      "path": "qualification-reference/nixl_peer.py",
+      "bytes": 7121,
+      "sha256": "70fde17223f97e1411150446c41be359338fbb9c9826eeb1ad66e97c7369c24e"
+    },
+    {
+      "path": "qualification-reference/qualify-kvcr-complete-state-peer.py",
+      "bytes": 5334,
+      "sha256": "fbf0856de1d8e03ecefdaded5582ebf8cd43b730d174f839c67673f47a6adb6d"
+    },
+    {
+      "path": "qualification-reference/qualify-kvcr-hicache-peer-r2.py",
+      "bytes": 5814,
+      "sha256": "5c25a58d1ae21133a27da42811bcb2ddec557a826cfcf8873f288b96652b18a6"
+    },
+    {
+      "path": "qualification-reference/qualify_native_rdma.py",
+      "bytes": 9956,
+      "sha256": "c82e38faafd9e53a711055d0f2508068eb0e633bd6e1d4bf1ca4e3ddfcf446f7"
+    },
+    {
+      "path": "qualification-reference/test_cache_key_handshake.py",
+      "bytes": 1369,
+      "sha256": "2f72b5b30c8734b739d98fe50c12da39d7ad830ca2ba20e572694113a68cd4b5"
+    },
+    {
+      "path": "qualification-reference/test_complete_mamba_storage.py",
+      "bytes": 2129,
+      "sha256": "8b1c6a1dfad5ea6d7a016caaf1be028663f55069f7c82a563891bc945b6bb1b3"
+    },
+    {
+      "path": "qualification-reference/test_fractional_host_budget.py",
+      "bytes": 948,
+      "sha256": "22bb0de40bd588e61526cd21559586110506ca90cb5df34e76bc39a0606871b4"
+    },
+    {
+      "path": "qualification-reference/test_hicache_mamba_slot_side_states.py",
+      "bytes": 8336,
+      "sha256": "49c5b27a1fc9331212e0b30a95db65716fa23e37c19493a1460b413160c41018"
+    },
+    {
+      "path": "qualification-reference/test_host_budget_rounding.py",
+      "bytes": 1765,
+      "sha256": "9e48a53581600bce17f6e6fd27d55719cd4584553f38e9605dbffd4ebae9ef77"
+    },
+    {
+      "path": "qualification-reference/test_mooncake_complete_checkpoint.py",
+      "bytes": 6748,
+      "sha256": "8323848e22804ee050a6795e823b346afeacbfe4c475ae31a38f02f7b4808aeb"
+    },
+    {
+      "path": "qualification-reference/test_router_key_adapter.py",
+      "bytes": 1595,
+      "sha256": "7107398bbf16401de5372b71f86013b5e454c60f22852c23e7d4d616516fc043"
+    },
+    {
+      "path": "recorded/kvcr/config/client-argv.approved.json",
+      "bytes": 658,
+      "sha256": "092685e8ee146b85a700322c7e36e0b26199152cf72021a8c78b848adade7181"
+    },
+    {
+      "path": "recorded/kvcr/config/client-env.json",
+      "bytes": 111,
+      "sha256": "30cde58deaab17c4823d0a240fef4f9bf8ee4dcda761247f3da5ec1217b683f9"
+    },
+    {
+      "path": "recorded/kvcr/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "recorded/kvcr/config/setup.deployment.json",
+      "bytes": 3634,
+      "sha256": "76210e6d61249e5cb5fe9e37f8555b3b77d3676ffda8902c5144ecd982add806"
+    },
+    {
+      "path": "recorded/kvcr/config/storage-worker-0.json",
+      "bytes": 196,
+      "sha256": "3f6aa5210960af704274c1220f2320f83a6f2fe4143860ee6299636cd0a91a5b"
+    },
+    {
+      "path": "recorded/kvcr/config/storage-worker-1.json",
+      "bytes": 196,
+      "sha256": "7d4e8e14178812936ce35940d4b2bed672092464b6353aace7973f547e3816ea"
+    },
+    {
+      "path": "recorded/kvcr/config/storage-worker-2.json",
+      "bytes": 196,
+      "sha256": "eaf4b93147d319bb44b8befdef693f95ff0acb3af005952c9200ba2fba373bd2"
+    },
+    {
+      "path": "recorded/kvcr/config/storage-worker-3.json",
+      "bytes": 196,
+      "sha256": "f577a99408ff6fd0d8ed5c5a23efb5287fde23f3a4de29751cf32573d08f2575"
+    },
+    {
+      "path": "recorded/kvcr/config/worker-args.json",
+      "bytes": 2539,
+      "sha256": "7840a1d0dc852fbe8244910f2287c510f18772da6d3456864cef6b111fc49346"
+    },
+    {
+      "path": "recorded/kvcr/preflight/input.json",
+      "bytes": 60011,
+      "sha256": "0df170309cfaa49db1d67711f1a863204c7bdb21464a33df8c3feb110df1a3e1"
+    },
+    {
+      "path": "recorded/kvcr/preflight/validation.json",
+      "bytes": 1564,
+      "sha256": "74cc2e96f8cd4c46dc0135a4c0cd2eeea48ef0d49d2ffc3c8fb6cdc819694193"
+    },
+    {
+      "path": "recorded/kvcr/run/allocation-proof.json",
+      "bytes": 5462,
+      "sha256": "e3f69740d63959829994cc92c8584cb83163579b5f5705f08e258262c14837ff"
+    },
+    {
+      "path": "recorded/kvcr/run/benchmark-command.json",
+      "bytes": 761,
+      "sha256": "199c5f69a8fe4e425129fb80409f4481b82b9a629688c17305ca7cdcf213bec7"
+    },
+    {
+      "path": "recorded/kvcr/run/client-environment-overrides.json",
+      "bytes": 111,
+      "sha256": "30cde58deaab17c4823d0a240fef4f9bf8ee4dcda761247f3da5ec1217b683f9"
+    },
+    {
+      "path": "recorded/kvcr/run/client-runtime-env.json",
+      "bytes": 370,
+      "sha256": "ae131c9b77479d61bc14ea45c79463ecad6115307238fbee274f78534a60ecfe"
+    },
+    {
+      "path": "recorded/kvcr/run/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/kvcr/run/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/kvcr/run/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/kvcr/run/native-hicache-proof.json",
+      "bytes": 398,
+      "sha256": "3a003f6a937671ef9b19f0dc124a28f4c410a6c5c521cb078ede177debc11893"
+    },
+    {
+      "path": "recorded/kvcr/run/profile_export_aiperf.json",
+      "bytes": 43061,
+      "sha256": "7aad3a6122af1a26f095cc544d09d0f1ce5a3879b350d2b4ad7bd8a6391b0cdb"
+    },
+    {
+      "path": "recorded/kvcr/run/runner-complete.json",
+      "bytes": 104,
+      "sha256": "b87d3af2da60f19023820d425352d8ca510cbc9e21a055806ae01e33d6c0192b"
+    },
+    {
+      "path": "recorded/kvcr/run/service-pids.json",
+      "bytes": 32354,
+      "sha256": "71201e95c03198a700ae7ed0fd8da453b8e2df0654d2c6106977ec81136961ab"
+    },
+    {
+      "path": "recorded/kvcr/run/setup.resolved.json",
+      "bytes": 3634,
+      "sha256": "76210e6d61249e5cb5fe9e37f8555b3b77d3676ffda8902c5144ecd982add806"
+    },
+    {
+      "path": "recorded/kvcr/run/thread-cpu-collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/kvcr/run/validation-cache-clear.json",
+      "bytes": 998,
+      "sha256": "f37020cea38453b67ffcb4fff9c6df8c640079f1d4ced13e6c8d7525b0dfecde"
+    },
+    {
+      "path": "recorded/kvcr/scripts/clear-validation-cache.py",
+      "bytes": 2133,
+      "sha256": "23682a7a36c1684e1cdc1f1c681d752c554b317c02439c74673d1089a5fd5108"
+    },
+    {
+      "path": "recorded/kvcr/scripts/collect.py",
+      "bytes": 2909,
+      "sha256": "a270f360c416ef29fca9121d7132d619af4887700cca629916b8149062a35bb4"
+    },
+    {
+      "path": "recorded/kvcr/scripts/preflight.py",
+      "bytes": 156,
+      "sha256": "bea0d3465950793fee61d359e155cd2796b953860036f7a38695430b1a8cd502"
+    },
+    {
+      "path": "recorded/kvcr/scripts/run-benchmark.py",
+      "bytes": 5881,
+      "sha256": "9210a7cbc25f8361a9ae80347ecc9df090ad01f00b4af896042c7fece3cd554c"
+    },
+    {
+      "path": "recorded/kvcr/scripts/runtime-proof.py",
+      "bytes": 160,
+      "sha256": "77c8955124e61541fd0bd2b8d5e6eb33682337ffb53aeeaa4d353998118f7bb1"
+    },
+    {
+      "path": "recorded/kvcr/scripts/services.py",
+      "bytes": 9140,
+      "sha256": "06ba2a74b4b4713e2a027f4a0e4d3ee6a8424624ffd06161eaaedb478e1e940a"
+    },
+    {
+      "path": "recorded/kvcr/scripts/verify-cache-mode.py",
+      "bytes": 1439,
+      "sha256": "176f628070350304aab674ca1a5fe8ccb840fe8ef85b5271b7a60410d2ad1dcc"
+    },
+    {
+      "path": "recorded/kvcr/source/dynamo-register-baseline.patch",
+      "bytes": 1807,
+      "sha256": "4f3ae5ff370a0be8474b641e95398b46c8594d8c6e715a3f9a801352a514e79c"
+    },
+    {
+      "path": "recorded/kvcr/source/dynamo-runtime-inventory.json",
+      "bytes": 936,
+      "sha256": "40f2094990dc17d8a7048ccc5ea69c2d5df0e966b943abaaadf4d1178bd80776"
+    },
+    {
+      "path": "recorded/kvcr/source/kvcr-source.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recorded/kvcr/source/sglang-source.patch",
+      "bytes": 8572,
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "path": "recorded/kvcr/source/source-inventory.json",
+      "bytes": 2107,
+      "sha256": "e26df79c4bca046e528084d9a049e015be40db1df14dbc390ee90dcda6a8838d"
+    },
+    {
+      "path": "recorded/kvcr/source/source-pins.json",
+      "bytes": 1580,
+      "sha256": "a5f3b53728d6253719ae683fdbe3d7076742c77c4f9c2f44ea09b25e784360ad"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/client-argv.approved.json",
+      "bytes": 674,
+      "sha256": "a59013314cbe188f8955bb647026acee924d740d0f7aba6b704ffcf7e3cc0fe8"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/client-env.json",
+      "bytes": 111,
+      "sha256": "30cde58deaab17c4823d0a240fef4f9bf8ee4dcda761247f3da5ec1217b683f9"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/setup.deployment.json",
+      "bytes": 3686,
+      "sha256": "db4aae4002c946a1ba57212d88393b1e59d7afae6896f78764a9ec860026e826"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/storage-worker-0.json",
+      "bytes": 276,
+      "sha256": "22aee4193a3aab8e0f30b19c3b232a87a1323df26ffe7c7c48e75a0306d6a124"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/storage-worker-1.json",
+      "bytes": 276,
+      "sha256": "c585454ce25e4d46bfe2f3ef004a457ece64e15c1a6891ce71e72dbe2a25b44d"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/storage-worker-2.json",
+      "bytes": 276,
+      "sha256": "7ae8983c45b5c56facb4b20b962d737eca91900fdfce1d3222d4062509d5724c"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/storage-worker-3.json",
+      "bytes": 276,
+      "sha256": "004df0247a9a9657d7c13a42be335b35e99fbd13374d5f1584e42543225645f6"
+    },
+    {
+      "path": "recorded/mooncake-local-first/config/worker-args.json",
+      "bytes": 2543,
+      "sha256": "3945ee696a9d4ca33d4220069e6ae6afc59c031a56b887bc05e47c8dac891d9b"
+    },
+    {
+      "path": "recorded/mooncake-local-first/preflight/input.json",
+      "bytes": 60024,
+      "sha256": "e57cb0af7f3474425a48b40d3992e91eb297b5a77b446586e750f15645e51c02"
+    },
+    {
+      "path": "recorded/mooncake-local-first/preflight/validation.json",
+      "bytes": 1584,
+      "sha256": "28b482eb56b5e52123350a7ab90da8699aa0736e72272e6c049fe0eb5fbb53ea"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/allocation-proof.json",
+      "bytes": 5462,
+      "sha256": "71a8d00e8cecf3b92ccbc3b89760c7557ab2009f482ad6c8de16b4b432ae59f2"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/benchmark-command.json",
+      "bytes": 777,
+      "sha256": "8c0f15673f8f167657f987b9b2a3717e1a8e7bf229721304887b8fb5562b3008"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/client-environment-overrides.json",
+      "bytes": 111,
+      "sha256": "30cde58deaab17c4823d0a240fef4f9bf8ee4dcda761247f3da5ec1217b683f9"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/client-runtime-env.json",
+      "bytes": 418,
+      "sha256": "baf13f3c46163c36a38696a54cb3d935b9fd25641b23c1567f2c3c23faab6bc5"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/native-hicache-proof.json",
+      "bytes": 402,
+      "sha256": "1b1b6871462c179561bbd3dda2bdd028c1d3d5c29a6579eb5dc13fd6cc3480e7"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/profile_export_aiperf.json",
+      "bytes": 43083,
+      "sha256": "c7a7829baa62345203b3e4af46a001acf4402cf7e6f20d9c4d3849661bbe01c2"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/runner-complete.json",
+      "bytes": 120,
+      "sha256": "7f5e292e60e698ad495f7b90c5438ed22230560e6d5ad94cc0e81a7b56c90955"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/service-pids.json",
+      "bytes": 36676,
+      "sha256": "184f17d5adfc940d7d99f8a1609f687abedaa46b02e83b07151271e5bbd099b2"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/setup.resolved.json",
+      "bytes": 3686,
+      "sha256": "db4aae4002c946a1ba57212d88393b1e59d7afae6896f78764a9ec860026e826"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/thread-cpu-collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-local-first/run/validation-cache-clear.json",
+      "bytes": 996,
+      "sha256": "56d4bab984ac92c9562caa8507747198c6487122024afaef651a3452be124da3"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/clear-validation-cache.py",
+      "bytes": 2149,
+      "sha256": "02f673cd4363bbbc7c8000c0f8f1e09f0ecd3e8756350bf996dc2069465ba401"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/collect.py",
+      "bytes": 2925,
+      "sha256": "49abd4130706cd1e46a6cb0f4c39bdbec52b60f16d005924124fe5b3d97b5d5b"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/preflight.py",
+      "bytes": 172,
+      "sha256": "61baae00e90a3228600e6ea80b88e86d31d947f792a2bb18113d82c0ea064125"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/run-benchmark.py",
+      "bytes": 5897,
+      "sha256": "081855f1232301754e0f6472a66a48c541500efb20a79b74a27ef01b0ce10123"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/runtime-proof.py",
+      "bytes": 176,
+      "sha256": "391f0122a00ab369070dd1c00d821b4873d9dc75781a7140fd1ea675db4ca7d8"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/services.py",
+      "bytes": 9188,
+      "sha256": "1e1fd73bc69a8cc7dc6382d74cdcce9bef5e4657597add54b23c3815cea87848"
+    },
+    {
+      "path": "recorded/mooncake-local-first/scripts/verify-cache-mode.py",
+      "bytes": 1455,
+      "sha256": "7a298a551f985c8f2de43eb035bd2de33ca0017ee5bee6cb01d5ba2ac0123302"
+    },
+    {
+      "path": "recorded/mooncake-local-first/source/dynamo-register-baseline.patch",
+      "bytes": 1807,
+      "sha256": "4f3ae5ff370a0be8474b641e95398b46c8594d8c6e715a3f9a801352a514e79c"
+    },
+    {
+      "path": "recorded/mooncake-local-first/source/dynamo-runtime-inventory.json",
+      "bytes": 936,
+      "sha256": "40f2094990dc17d8a7048ccc5ea69c2d5df0e966b943abaaadf4d1178bd80776"
+    },
+    {
+      "path": "recorded/mooncake-local-first/source/kvcr-source.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recorded/mooncake-local-first/source/sglang-source.patch",
+      "bytes": 8572,
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "path": "recorded/mooncake-local-first/source/source-inventory.json",
+      "bytes": 2107,
+      "sha256": "e26df79c4bca046e528084d9a049e015be40db1df14dbc390ee90dcda6a8838d"
+    },
+    {
+      "path": "recorded/mooncake-local-first/source/source-pins.json",
+      "bytes": 1580,
+      "sha256": "a5f3b53728d6253719ae683fdbe3d7076742c77c4f9c2f44ea09b25e784360ad"
+    },
+    {
+      "path": "recorded/mooncake-random/config/client-argv.approved.json",
+      "bytes": 669,
+      "sha256": "948dae00af3dd91b93837cc6c55201a2fe14c72b4a4530354778f4ce34948378"
+    },
+    {
+      "path": "recorded/mooncake-random/config/client-env.json",
+      "bytes": 111,
+      "sha256": "30cde58deaab17c4823d0a240fef4f9bf8ee4dcda761247f3da5ec1217b683f9"
+    },
+    {
+      "path": "recorded/mooncake-random/config/router-policy.json",
+      "bytes": 319,
+      "sha256": "96e2149448856c7b73bf3ecb6b074914d0ec37136d57b87ca849e5872e1e1a81"
+    },
+    {
+      "path": "recorded/mooncake-random/config/setup.deployment.json",
+      "bytes": 3671,
+      "sha256": "688ce9090ff907931072886971841c5a9bfc5b9937a309ffc29d0bae47dd97d5"
+    },
+    {
+      "path": "recorded/mooncake-random/config/storage-worker-0.json",
+      "bytes": 276,
+      "sha256": "22aee4193a3aab8e0f30b19c3b232a87a1323df26ffe7c7c48e75a0306d6a124"
+    },
+    {
+      "path": "recorded/mooncake-random/config/storage-worker-1.json",
+      "bytes": 276,
+      "sha256": "c585454ce25e4d46bfe2f3ef004a457ece64e15c1a6891ce71e72dbe2a25b44d"
+    },
+    {
+      "path": "recorded/mooncake-random/config/storage-worker-2.json",
+      "bytes": 276,
+      "sha256": "7ae8983c45b5c56facb4b20b962d737eca91900fdfce1d3222d4062509d5724c"
+    },
+    {
+      "path": "recorded/mooncake-random/config/storage-worker-3.json",
+      "bytes": 276,
+      "sha256": "004df0247a9a9657d7c13a42be335b35e99fbd13374d5f1584e42543225645f6"
+    },
+    {
+      "path": "recorded/mooncake-random/config/worker-args.json",
+      "bytes": 2543,
+      "sha256": "3945ee696a9d4ca33d4220069e6ae6afc59c031a56b887bc05e47c8dac891d9b"
+    },
+    {
+      "path": "recorded/mooncake-random/preflight/input.json",
+      "bytes": 60009,
+      "sha256": "75d490f48e33926b112ae6b36a05b4b8a34c536c687b609626c81566eb410fdb"
+    },
+    {
+      "path": "recorded/mooncake-random/preflight/validation.json",
+      "bytes": 1584,
+      "sha256": "393294004405c864df506d6637852ca12e5e8454b8ceae820920ea698c136c7c"
+    },
+    {
+      "path": "recorded/mooncake-random/run/allocation-proof.json",
+      "bytes": 5462,
+      "sha256": "71a8d00e8cecf3b92ccbc3b89760c7557ab2009f482ad6c8de16b4b432ae59f2"
+    },
+    {
+      "path": "recorded/mooncake-random/run/benchmark-command.json",
+      "bytes": 772,
+      "sha256": "7117060f8bb53d57a844420633d97eb471f9a7cf2b7ba22638bf59d262b3e8d2"
+    },
+    {
+      "path": "recorded/mooncake-random/run/client-environment-overrides.json",
+      "bytes": 111,
+      "sha256": "30cde58deaab17c4823d0a240fef4f9bf8ee4dcda761247f3da5ec1217b683f9"
+    },
+    {
+      "path": "recorded/mooncake-random/run/client-runtime-env.json",
+      "bytes": 403,
+      "sha256": "c535d6197082b75b977d59035811b26913f1e3b4f9b48d7ba6d0db2b403ed156"
+    },
+    {
+      "path": "recorded/mooncake-random/run/client.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-random/run/collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-random/run/driver.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-random/run/native-hicache-proof.json",
+      "bytes": 402,
+      "sha256": "ab79777da3261ace6fef36ba038443129caa8d0ce867b371547b61a5cc1c75b6"
+    },
+    {
+      "path": "recorded/mooncake-random/run/profile_export_aiperf.json",
+      "bytes": 42973,
+      "sha256": "180c7faca7df6da7f9a3cfe63e236bcec3a947b29a05443e39b2478225f28ea9"
+    },
+    {
+      "path": "recorded/mooncake-random/run/runner-complete.json",
+      "bytes": 115,
+      "sha256": "e208e2525b20d7152461373c496f6b62aadf3f388bd59510e5c659cac306902b"
+    },
+    {
+      "path": "recorded/mooncake-random/run/service-pids.json",
+      "bytes": 36396,
+      "sha256": "4231ce2b459769c5551fd8ac4e61ad0db2f46e1f70cfd22b894f0865bd90c64f"
+    },
+    {
+      "path": "recorded/mooncake-random/run/setup.resolved.json",
+      "bytes": 3671,
+      "sha256": "688ce9090ff907931072886971841c5a9bfc5b9937a309ffc29d0bae47dd97d5"
+    },
+    {
+      "path": "recorded/mooncake-random/run/thread-cpu-collector.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    {
+      "path": "recorded/mooncake-random/run/validation-cache-clear.json",
+      "bytes": 996,
+      "sha256": "416a24437dce0d8f61e32cd8bc98450353e3806b75d7ff1f794beaa5c641bdfd"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/clear-validation-cache.py",
+      "bytes": 2144,
+      "sha256": "54acd9448ef4cefa9a026ec1700892ecf05ada90f34dbfb8559d2ee327ac9ae8"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/collect.py",
+      "bytes": 2920,
+      "sha256": "4eb16970d478747e212093b62977d8ed57306a6c75b634fc2b79cb2af2f9a478"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/preflight.py",
+      "bytes": 167,
+      "sha256": "f5ca45ceff67ab6504f54c172d9abc9d53834003efafcc1e701a230d05233995"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/run-benchmark.py",
+      "bytes": 5892,
+      "sha256": "e942e886c2db546c18e7e3d852fc07a5431c46c01778ef8cd307040aea5f53d1"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/runtime-proof.py",
+      "bytes": 171,
+      "sha256": "0d17c01a75187e69622700e4feadd3b81f037e2350b13dfb546c9281389b1757"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/services.py",
+      "bytes": 9173,
+      "sha256": "644dd35e137395fec72560fabb7d35fcd4ef6ae57d6ad6cfb84442a22190e2e4"
+    },
+    {
+      "path": "recorded/mooncake-random/scripts/verify-cache-mode.py",
+      "bytes": 1450,
+      "sha256": "27798854aed6d03ea643f85663b6466e33be06b76f4fe7cb59f294ed0ba6d09c"
+    },
+    {
+      "path": "recorded/mooncake-random/source/dynamo-register-baseline.patch",
+      "bytes": 1807,
+      "sha256": "4f3ae5ff370a0be8474b641e95398b46c8594d8c6e715a3f9a801352a514e79c"
+    },
+    {
+      "path": "recorded/mooncake-random/source/dynamo-runtime-inventory.json",
+      "bytes": 936,
+      "sha256": "40f2094990dc17d8a7048ccc5ea69c2d5df0e966b943abaaadf4d1178bd80776"
+    },
+    {
+      "path": "recorded/mooncake-random/source/kvcr-source.patch",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "recorded/mooncake-random/source/sglang-source.patch",
+      "bytes": 8572,
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "path": "recorded/mooncake-random/source/source-inventory.json",
+      "bytes": 2107,
+      "sha256": "e26df79c4bca046e528084d9a049e015be40db1df14dbc390ee90dcda6a8838d"
+    },
+    {
+      "path": "recorded/mooncake-random/source/source-pins.json",
+      "bytes": 1580,
+      "sha256": "a5f3b53728d6253719ae683fdbe3d7076742c77c4f9c2f44ea09b25e784360ad"
+    },
+    {
+      "path": "reference/dynamo-register-baseline.patch",
+      "bytes": 1807,
+      "sha256": "4f3ae5ff370a0be8474b641e95398b46c8594d8c6e715a3f9a801352a514e79c"
+    },
+    {
+      "path": "reference/dynamo-runtime-inventory.json",
+      "bytes": 936,
+      "sha256": "40f2094990dc17d8a7048ccc5ea69c2d5df0e966b943abaaadf4d1178bd80776"
+    },
+    {
+      "path": "reference/hicache-integration.patch",
+      "bytes": 8572,
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "path": "reference/hicache-memory-budget.patch",
+      "bytes": 2255,
+      "sha256": "60b020faa6e796b3fb5dcca99702a27c72219d8fee70ece845c8a2fabdbf7107"
+    },
+    {
+      "path": "reference/model-config.json",
+      "bytes": 30820,
+      "sha256": "deef67a61f3311faf051b23dc4192f442c7fee4f9cd2f38cbcbe4da55c763a80"
+    },
+    {
+      "path": "reference/pod-r2-live.json",
+      "bytes": 7913,
+      "sha256": "72ce0c14c50eec160f0ea4fbcfa44dd0ff3de95fa955a3e1c816ce2571bbdcb1"
+    },
+    {
+      "path": "reference/pod-r2.json",
+      "bytes": 3413,
+      "sha256": "cd74dc3c3bb941e9da3144abdf8bc85349808b4b590dc30d2b08981a062da116"
+    },
+    {
+      "path": "reference/rdma-claim.json",
+      "bytes": 1945,
+      "sha256": "7c7876bc3cce43e518c9ff4796a42ef445a50d3a3dc4913eb4b208d7200946c2"
+    },
+    {
+      "path": "reference/source-inventory.json",
+      "bytes": 2107,
+      "sha256": "e26df79c4bca046e528084d9a049e015be40db1df14dbc390ee90dcda6a8838d"
+    },
+    {
+      "path": "reference/source-pins.json",
+      "bytes": 1580,
+      "sha256": "a5f3b53728d6253719ae683fdbe3d7076742c77c4f9c2f44ea09b25e784360ad"
+    },
+    {
+      "path": "reproduction/bootstrap/bootstrap-online.sh",
+      "bytes": 4091,
+      "sha256": "2fe1b6452ec40550987287886b2d75fcc427f7f3d4b7981ba8dd9c2ade4d6d71"
+    },
+    {
+      "path": "reproduction/bootstrap/online-pins-receipt.py",
+      "bytes": 3528,
+      "sha256": "b4cf522a16b98e020ba756a9a39906502bd164012803a321f5e0f38f48afdab6"
+    },
+    {
+      "path": "reproduction/bootstrap/original-effective-packages.json",
+      "bytes": 830,
+      "sha256": "652b358ff2960814e1c62c7fd51bbfaea2a3bad865742c35ac10eca35343a12a"
+    },
+    {
+      "path": "reproduction/client/client-constraints.txt",
+      "bytes": 7884,
+      "sha256": "444ce8e311d2c886c9710e48fd26840757a43047799a19cd4a6e4dadebb2911d"
+    },
+    {
+      "path": "reproduction/client/trace-receipt.json",
+      "bytes": 1395,
+      "sha256": "f3a41a82c572ebf5d91aee7a3dc2e9fe022777bb28e1c805d759d76d422b894e"
+    },
+    {
+      "path": "reproduction/model-validation.json",
+      "bytes": 7921,
+      "sha256": "8e5a5c2f2a033d6c01b6c0a49fabd814c9759f45f6eb9f971b676a3b51595b66"
+    },
+    {
+      "path": "results/historical-report.md",
+      "bytes": 4624,
+      "sha256": "b7167fb95d42b97ef81da4d8ed7a013db3d5f3461ca5a14fc91f39e15ac48260"
+    },
+    {
+      "path": "results/historical-summary.json",
+      "bytes": 193344,
+      "sha256": "0fc2b04b3b3d6adccbcfaa0ae424c2a4b197ab7a78e218f88f23d6f0d0e0d5e1"
+    },
+    {
+      "path": "scripts/install-client.py",
+      "bytes": 1096,
+      "sha256": "8de04fe032f68de81bb78690895968f9e5364ef137533ab98c35bcf82a6f6122"
+    },
+    {
+      "path": "scripts/pin-client-trace.py",
+      "bytes": 906,
+      "sha256": "332b1f9ae151b56d05f370d3ee894ece21eaaa8aa07e10cc0ff7960357e0dda5"
+    },
+    {
+      "path": "scripts/prepare-native.py",
+      "bytes": 3566,
+      "sha256": "32091a11850c97ad40e65fc2090d1b9d960a919c62f92ed572a587251402ee38"
+    },
+    {
+      "path": "scripts/record-process.py",
+      "bytes": 979,
+      "sha256": "85f825a1614c7002243ebc83e42f6fd0d670a8ef26ad3967eca316f0a12f71be"
+    },
+    {
+      "path": "scripts/render-commands.py",
+      "bytes": 6396,
+      "sha256": "7865e339afdbb0a8a66b21d8bdc93204ad73d6193a828b2d87acea57ffcbf0cc"
+    },
+    {
+      "path": "scripts/verify-sources.py",
+      "bytes": 757,
+      "sha256": "061af40c19b088b6552f95ee8aa5ba6aeaa7a7ec5a047d5ee53ce7c01b906bf6"
+    },
+    {
+      "path": "sglang-hicache-qwen3.8-kvcr.md",
+      "bytes": 13275,
+      "sha256": "80e4259be6dfccd4b3202d858b09167859ab41fdc46f9a8dd60bcb6e418ea173"
+    },
+    {
+      "path": "sglang-hicache-qwen3.8-mooncake.md",
+      "bytes": 13863,
+      "sha256": "911408f5a05ba7b61a39f1b130258c99ba73f91adc91049e983b6dfff3b4dcc7"
+    },
+    {
+      "path": "sources.lock.json",
+      "bytes": 904,
+      "sha256": "0e57350883ededbe09304c3c562b220d6364490365c08d9238691f7bae4a2c46"
+    }
+  ]
+}

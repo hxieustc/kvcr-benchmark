@@ -1,0 +1,137 @@
+{
+  "workers": 4,
+  "concurrency_total": 48,
+  "profiling_seconds": 1800,
+  "warmup": {
+    "extra_requests_per_lane": 5,
+    "mandatory_snapshot_primers": true,
+    "wall_clock_seconds": null,
+    "user_confirmed": true
+  },
+  "model": {
+    "repo": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "revision": "fc694b54fb0174e0913e6adf86691ef85a4ead47",
+    "quantization": "modelopt_mixed",
+    "checkpoint_weight_bytes": 132680249378,
+    "path_status": "exact revision assembled; all Git blob and SHA-256 LFS checks passed in model-validation.json",
+    "path": "/workspace/sglang-hicache-parity-20261103-r1/cases/mooncake-local-first/model"
+  },
+  "parallelism_per_worker": {
+    "TP": 1,
+    "PP": 1,
+    "DP": 1,
+    "EP": 1,
+    "CP": 1
+  },
+  "trace": {
+    "repo": "semianalysisai/cc-traces-weka-062126-256k",
+    "loader": "semianalysis_cc_traces_weka_062126_256k",
+    "dataset_entries": 393,
+    "random_seed": 42,
+    "trajectory_start_ratios": [
+      0.25,
+      0.75
+    ],
+    "idle_gap_cap_seconds": 300,
+    "system_idle_gap_cap_seconds": 10,
+    "revision": "8fecd2fc56694469f758f0afbbb6335ad3043740"
+  },
+  "router": {
+    "namespace": "sglkvcrreview",
+    "mode": "kv",
+    "policy": "dynamo-two-tier-cost-fn",
+    "parameters": {
+      "cache_threshold": 0.5,
+      "balance_abs_threshold": 4,
+      "balance_rel_threshold": 1.1
+    },
+    "request_plane": "tcp",
+    "event_plane": "zmq",
+    "discovery_backend": "file",
+    "max_state_agent_slots": 4,
+    "metrics_note": "Embedded SGLang metrics are attached to each Dynamo worker system /metrics endpoint, rather than a standalone SGLang HTTP server."
+  },
+  "ports": {
+    "router_http": 24000,
+    "router_system": 24900,
+    "state_agent_system": 24901,
+    "worker_http": [
+      24010,
+      24011,
+      24012,
+      24013
+    ],
+    "worker_system": [
+      24910,
+      24911,
+      24912,
+      24913
+    ],
+    "worker_kv_events": [
+      24020,
+      24021,
+      24022,
+      24023
+    ],
+    "worker_control": [
+      24100,
+      24132,
+      24164,
+      24196
+    ],
+    "worker_nixl": [
+      24500,
+      24532,
+      24564,
+      24596
+    ],
+    "worker_metrics": [
+      24910,
+      24911,
+      24912,
+      24913
+    ]
+  },
+  "worker_env": {
+    "PYTHONNOUSERSITE": "1",
+    "PYTHONUNBUFFERED": "1",
+    "NO_COLOR": "1",
+    "SGLANG_TIMEOUT_KEEP_ALIVE": "1800",
+    "SGLANG_NVFP4_CKPT_FP8_NEXTN_MOE": "0",
+    "SGLANG_SIMULATE_ACC_LEN": "2.32",
+    "SGLANG_SIMULATE_ACC_METHOD": "match-expected",
+    "SGLANG_SIMULATE_ACC_TOKEN_MODE": "real-draft-token",
+    "SGLANG_BUILD_RUST_EXTS": "none",
+    "SGLANG_RUST_BUILD_MODE": "never",
+    "SGLANG_UNIFIED_RADIX_TREE_CORE_BACKEND": "python",
+    "TOKENIZERS_PARALLELISM": "false",
+    "PYTHONHASHSEED": "0",
+    "OMP_NUM_THREADS": "4",
+    "SGLANG_JIT_DEEPGEMM_PRECOMPILE": "0",
+    "DYN_RUNTIME_NUM_WORKER_THREADS": "4",
+    "DYN_RUNTIME_MAX_BLOCKING_THREADS": "8",
+    "MC_TE_METRIC": "1",
+    "WITH_NVIDIA_PEERMEM": "0"
+  },
+  "transport": {
+    "NIXL_UCX_SGL_ENABLE": "1",
+    "UCX_TLS": "rc,self,cuda_copy",
+    "UCX_MAX_RNDV_RAILS": "1",
+    "UCX_MAX_EAGER_RAILS": "1",
+    "UCX_NET_DEVICES": "rocep190s0:1",
+    "note": "Single assigned RDMA port; native HiCache host staging, no linker.",
+    "UCX_MEMTYPE_CACHE": "n",
+    "UCX_MAX_RMA_RAILS": "1",
+    "UCX_LOG_LEVEL": "info"
+  },
+  "name": "mooncake-local-first",
+  "pod": "sglang-hicache-gb300-4gpu-20261103-r2",
+  "canonical_root": "/workspace/sglang-hicache-parity-20261103-r1/cases/mooncake-local-first",
+  "backend": "mooncake",
+  "host_bytes": 27487790694,
+  "backend_bytes": 109951162778,
+  "total_cache_bytes": 137438953472,
+  "cache": {
+    "ple_host_gib_per_worker": 64
+  }
+}

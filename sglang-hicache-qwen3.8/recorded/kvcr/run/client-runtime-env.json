@@ -1,0 +1,8 @@
+{
+  "HF_HOME": "/workspace/sglang-hicache-parity-20261103-r1/cases/kvcr/cache/huggingface",
+  "HF_XET_CACHE": "/workspace/sglang-hicache-parity-20261103-r1/cases/kvcr/cache/xet",
+  "TMPDIR": "/workspace/t/hc0",
+  "MPLCONFIGDIR": "/workspace/sglang-hicache-parity-20261103-r1/cases/kvcr/cache/matplotlib",
+  "TOKENIZERS_PARALLELISM": "false",
+  "PYTHONNOUSERSITE": "1"
+}

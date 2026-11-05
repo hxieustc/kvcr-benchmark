@@ -1,0 +1,16 @@
+{
+  "worker_selection": {
+    "aggregated": "two-tier",
+    "instances": [
+      {
+        "name": "two-tier",
+        "type": "dynamo-two-tier-cost-fn",
+        "parameters": {
+          "cache_threshold": 0.5,
+          "balance_abs_threshold": 4,
+          "balance_rel_threshold": 1.1
+        }
+      }
+    ]
+  }
+}

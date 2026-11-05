@@ -1,0 +1,19 @@
+{
+  "native": {
+    "/workspace/sglang-kvcr-parity-20261031-r1/env/lib/python3.12/site-packages/dynamo/_core.abi3.so": "9d865b98c1776245a451aad89fda232a20c7e4a6841b411a9e75b3513c29db9c"
+  },
+  "python": {
+    "dynamo.sglang.kv_hints": {
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/env/lib/python3.12/site-packages/dynamo/sglang/kv_hints.py",
+      "sha256": "d7791bb17f801a422d8d0570e6d09d15fa02c0e493ed73b22c5e280eb05d4747"
+    },
+    "dynamo.sglang.state_agent": {
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/env/lib/python3.12/site-packages/dynamo/sglang/state_agent.py",
+      "sha256": "001a1bf8d575934284be45de612e1cdf8253dfdc63306df7c80c1dfb07da78ff"
+    },
+    "dynamo.sglang.register": {
+      "path": "/workspace/sglang-kvcr-parity-20261031-r1/env/lib/python3.12/site-packages/dynamo/sglang/register.py",
+      "sha256": "12f1e8b34daefe90265d9e71a2e7bbea394e3e35f412f2e23b35765654d57178"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "cases": 3,
+  "rendered_component_commands": 41,
+  "materializer_cases_mocked": 3,
+  "native_binding_functions_unchanged": 13,
+  "allocation_writes_mocked": true,
+  "scope": "Offline syntax, links, flags/budgets, source invariants and operational binding checks only; no SDK/GPU/cluster/benchmark execution."
+}

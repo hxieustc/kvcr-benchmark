@@ -1,0 +1,6 @@
+{
+  "case": "mooncake-local-first",
+  "attempt": "hicache-1800-r5",
+  "services_closed": true,
+  "pod_retained": true
+}

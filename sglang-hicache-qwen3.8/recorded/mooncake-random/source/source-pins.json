@@ -1,0 +1,38 @@
+{
+  "kvcr": {
+    "head": "5ce23b1527725cf623a3fc7feb94dc6d3d5fafaa",
+    "repo": "https://github.com/ai-dynamo/kvcr.git",
+    "native_progress_defaults": {
+      "num_threads": 4,
+      "capture_telemetry": true,
+      "enable_listen_thread": true,
+      "source": "src/kvcr/runtime/progress.py::_initialize_nixl; no old direct-linker override is applied"
+    }
+  },
+  "sglang": {
+    "head": "658755604ace9f476b84f98511f76b815606072a",
+    "repo": "https://github.com/ziqifan617/sglang.git",
+    "integration_pr": "https://github.com/sgl-project/sglang/pull/45647",
+    "integration_fixture": "Complete Mamba/PLE checkpoint metadata accessor, KVCR indexed regions and Mooncake object keys; shared explicit byte budget. Full patch setup/hicache-integration.patch."
+  },
+  "dynamo": {
+    "head": "3f0ef62c22ce2e212fd7a6394ef98d84f5f9a23b",
+    "integration_pr": "https://github.com/ai-dynamo/dynamo/pull/17655",
+    "reuse_original_native_wheels": true,
+    "hicache_hint_discovery": true,
+    "inventory_protocol": "sglang_hicache_v1"
+  },
+  "cache_budget": {
+    "per_worker_total_bytes": 137438953472,
+    "requested_host_bytes": 27487790694,
+    "requested_backend_bytes": 109951162778,
+    "hicache_size_decimal_GB": 27.487790694,
+    "units_note": "Upstream CLI declares integer GB. Fractional-budget fixture and actual per-pool padding/rounding must be qualified before benchmarking."
+  },
+  "cases": [
+    "kvcr",
+    "mooncake-random",
+    "mooncake-local-first"
+  ],
+  "status": "native complete-state peer bytes and 77 CPU regressions passed; live r3 gates pending"
+}

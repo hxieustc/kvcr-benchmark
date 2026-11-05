@@ -1,0 +1,35 @@
+{
+  "scope": "Recorded patches common to all three completed hicache-1800-r5 arms; published feature commits reconstruct these bytes. Configured random/local_first is the only Moon policy delta. No separately measured HiCache performance optimization series exists.",
+  "source_patch_checks": [
+    {
+      "case": "kvcr",
+      "file": "sglang-source.patch",
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "case": "kvcr",
+      "file": "kvcr-source.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "mooncake-random",
+      "file": "sglang-source.patch",
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "case": "mooncake-random",
+      "file": "kvcr-source.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "mooncake-local-first",
+      "file": "sglang-source.patch",
+      "sha256": "bb4b9a20e8d67a6ed29c2c0c1e03fbfc3853b070ab3192f8c8def6689d5be05d"
+    },
+    {
+      "case": "mooncake-local-first",
+      "file": "kvcr-source.patch",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}
